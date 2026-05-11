@@ -1,0 +1,3043 @@
+{
+  "meta": {
+    "source_volumes": [
+      1,
+      2,
+      3
+    ],
+    "total_relationships": 122,
+    "total_items": 57,
+    "total_abilities": 70,
+    "total_worldview": 86
+  },
+  "relationships": [
+    {
+      "source": "崔采婷",
+      "target": "崔小玄",
+      "type": "master",
+      "since_chapter": "楔子",
+      "description": "崔采婷收养的遗孤，为其末徒儿（关门弟子），质属火行",
+      "change": "加深",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "雪涵",
+      "type": "master",
+      "since_chapter": "楔子",
+      "description": "大弟子，质合五行之金，入门最早根基最好，评价最高",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "李梦棠",
+      "type": "master",
+      "since_chapter": "楔子",
+      "description": "二弟子，木行属性极佳，灵力最强",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "程水若",
+      "type": "master",
+      "since_chapter": "楔子",
+      "description": "三弟子，体质属水，奉天侯程兆琦之女",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "夏小婉",
+      "type": "master",
+      "since_chapter": "楔子",
+      "description": "四弟子，原为千翠山下猎户之女，因五行禀异天生旺土被收为弟子",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "摘霞",
+      "type": "superior",
+      "since_chapter": "楔子",
+      "description": "贴身侍儿，青衫女僮，负责烧汤做饭等日常事务",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "黎山老母",
+      "type": "senior",
+      "since_chapter": "第三回",
+      "description": "黎山老母为玄教第二代弟子，崔采婷称其为三师姐",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "飞萝",
+      "type": "senior",
+      "since_chapter": "第三回",
+      "description": "飞萝为玄教第三代弟子排行三十三，崔采婷称其为三十三师妹，关系冷淡似有过节",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "武翩跹",
+      "type": "enemy",
+      "since_chapter": "第四回",
+      "description": "武翩跹为玄教叛徒，教主命崔采婷入京查探其是否化名迷姬",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔采婷",
+      "target": "方少麟",
+      "type": "senior",
+      "since_chapter": "第九回",
+      "description": "方少麟为摘星子门下，崔采婷称其为九师伯，方少麟跪拜",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "重元子",
+      "target": "飞萝",
+      "type": "master",
+      "since_chapter": "第三回",
+      "description": "教主重元子唯一的关门弟子，天赋异禀，最擅御甲术及机关术",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "重元子",
+      "target": "武翩跹",
+      "type": "master",
+      "since_chapter": "第四回",
+      "description": "武翩跹曾是重元子弟子，后叛出玄教盗去落宝金钱",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "重元子",
+      "target": "黎山老母",
+      "type": "superior",
+      "since_chapter": "第三回",
+      "description": "黎山老母为玄教第二代弟子，受教主之命传话",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "重元子",
+      "target": "崔采婷",
+      "type": "superior",
+      "since_chapter": "第三回",
+      "description": "崔采婷为玄教第三代弟子排行第九，受教主委派下山查探",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "重元子",
+      "target": "摘星子",
+      "type": "master",
+      "since_chapter": "第七回",
+      "description": "摘星子为玄教第三代弟子排行十一，地界散仙中绝顶的炼符师",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "黎山老母",
+      "target": "飞萝",
+      "type": "senior",
+      "since_chapter": "第三回",
+      "description": "黎山老母为第二代弟子，飞萝为第三代弟子，一同前来逍遥峰",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "黎山老母",
+      "target": "崔小玄",
+      "type": "protector",
+      "since_chapter": "第三回",
+      "description": "黎山老母对崔小玄颇为赏识，认为他日后出息大着呢",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "飞萝",
+      "target": "崔小玄",
+      "type": "manipulator",
+      "since_chapter": "第三回",
+      "description": "飞萝对崔小玄格外关注，听到其名字时反应异常，后以隐私要挟小玄听话",
+      "change": "加深",
+      "volume": 1
+    },
+    {
+      "source": "飞萝",
+      "target": "武翩跹",
+      "type": "enemy",
+      "since_chapter": "第四回",
+      "description": "受教主之命随崔采婷下山，协助对付叛徒武翩跹",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "飞萝",
+      "target": "昆仑奴",
+      "type": "superior",
+      "since_chapter": "第十回",
+      "description": "飞萝的幻兽/机关人，高达丈许的蓝色巨人，力大无穷",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "雪涵",
+      "target": "李梦棠",
+      "type": "ally",
+      "since_chapter": "楔子",
+      "description": "合称'霞霓双使'，同侍天道阁诛魔大帅刑飞麾下",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "雪涵",
+      "target": "刑飞",
+      "type": "subordinate",
+      "since_chapter": "第二回",
+      "description": "天道阁诛魔大帅刑飞麾下降妖伏魔，名动地界",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "李梦棠",
+      "target": "刑飞",
+      "type": "subordinate",
+      "since_chapter": "第二回",
+      "description": "正协助天道阁诛魔大帅参撰《周天诸灵榜》",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "程水若",
+      "type": "ambiguous",
+      "since_chapter": "第一回",
+      "description": "师姐弟水火不容经常斗嘴，但暗中关心。第六回末发生性关系，事后关系微妙",
+      "change": "加深",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "李梦棠",
+      "type": "crush",
+      "since_chapter": "第二回",
+      "description": "小玄暗恋二师姐，每次见面都觉得她更美",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "夏小婉",
+      "type": "ally",
+      "since_chapter": "第二回",
+      "description": "师姐弟关系亲密，经常合作布置石阵",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "雪涵",
+      "type": "ally",
+      "since_chapter": "第二回",
+      "description": "大师姐，关系融洽，小玄羡慕其金光纵和金罡斩",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "摘霞",
+      "type": "ally",
+      "since_chapter": "第四回",
+      "description": "师父的贴身侍儿，关系友好，小玄曾赠其湛蓝镯子",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "方少麟",
+      "type": "rival",
+      "since_chapter": "第八回",
+      "description": "同门师兄弟，进行杀怪比赛，方少麟以伏兵符险胜，二人争风吃醋",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "黑无霸",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "结义兄弟，黑无霸排第七，小玄排第八，十分交好",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "玉桃娘娘",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣，玉桃娘娘排第一（大姐），赠予桃枝精灵夭夭",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "袁自在",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣，袁自在排第二（二哥），赠予如意囊",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "飞天将军",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣，飞天将军排第三（三哥），蜈蜂精",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "闹海大帅",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣，闹海大帅排第四（四哥），赤蛟精",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "绮姬",
+      "type": "ambiguous",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣排第五（五姐），碧蝎精，曾引诱小玄采补元阳因显露蝎尾失败",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "黑白公子",
+      "type": "sworn",
+      "since_chapter": "第五回",
+      "description": "千翠山八圣，黑白公子排第六（六哥），花蛇精",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "夭夭",
+      "type": "protector",
+      "since_chapter": "第五回",
+      "description": "玉桃娘娘赠予的桃枝精灵，小玄带在身边希望她遇到机缘永久化形",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "无敌大将军",
+      "type": "superior",
+      "since_chapter": "第二回",
+      "description": "小玄花费五个月心血创造的火土双行人造灵灵，因配方相冲反噬失控",
+      "change": "解除",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "李梦棠",
+      "type": "ally",
+      "since_chapter": "楔子",
+      "description": "三师姐与二师姐关系非常亲近，水若常扑入梦棠怀中撒娇",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "程兆琦",
+      "type": "child",
+      "since_chapter": "楔子",
+      "description": "程水若之父，皇朝四大梁柱之一，奉天侯",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "百宝娘娘",
+      "type": "child",
+      "since_chapter": "楔子",
+      "description": "程水若之母，大名鼎鼎的炼器大家，三岛十洲无人不识",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "冰麒麟",
+      "type": "superior",
+      "since_chapter": "第一回",
+      "description": "水若的出山宝物/幻兽，用已亡灵兽炼就的顶级幻兽，能放出冰焰",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "程兆琦",
+      "target": "百宝娘娘",
+      "type": "spouse",
+      "since_chapter": "楔子",
+      "description": "奉天侯与炼器大家百宝娘娘为夫妻",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "方少麟",
+      "target": "摘星子",
+      "type": "disciple",
+      "since_chapter": "第七回",
+      "description": "摘星子嫌方少麟根俗福浅只教了一年多便云游离去",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "方少麟",
+      "target": "方柏钧",
+      "type": "child",
+      "since_chapter": "第九回",
+      "description": "方少麟之父，前大泽令，已亡故",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "方少麟",
+      "target": "方尚绍",
+      "type": "child",
+      "since_chapter": "第九回",
+      "description": "方少麟之祖父，日月皇朝名侯，已亡故",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "方少麟",
+      "target": "夏小婉",
+      "type": "crush",
+      "since_chapter": "第九回",
+      "description": "方少麟对小婉一见倾心，殷勤示好盛汤",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "方柏钧",
+      "target": "方尚绍",
+      "type": "child",
+      "since_chapter": "第九回",
+      "description": "方柏钧为方尚绍之子",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "长骸将军",
+      "type": "superior",
+      "since_chapter": "楔子",
+      "description": "骷髅老祖麾下魔将，生前百战上将，以千年蟒王骸合体重生",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "双首虎",
+      "type": "superior",
+      "since_chapter": "楔子",
+      "description": "骷髅老祖麾下魔将，双首（人首+骷髅虎头）",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "破空将军",
+      "type": "superior",
+      "since_chapter": "楔子",
+      "description": "骷髅老祖麾下魔将，背生双翼",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "赤甲将军",
+      "type": "superior",
+      "since_chapter": "第十回",
+      "description": "高阶血骷髅，骷髅骑兵首领，驾驭骷髅战车大屠杀",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "妖魅女子",
+      "type": "ally",
+      "since_chapter": "楔子",
+      "description": "根本教御使，代表少主监督骷髅老祖修复七邪覆",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "觅鼎子",
+      "type": "subordinate",
+      "since_chapter": "楔子",
+      "description": "胁迫觅鼎子在地狱之渊用五曜炉修复七邪覆长达十九年",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "焚虚",
+      "type": "enemy",
+      "since_chapter": "楔子",
+      "description": "数百年前被聚窟洲散人焚虚诛灭（重创），骷髅老祖自称未死",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "血骨巨龙",
+      "type": "superior",
+      "since_chapter": "楔子",
+      "description": "原为焚虚留在大泽的禁制之枢骊龙，被骷髅老祖魔化为坐骑",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "妖魅女子",
+      "target": "觅鼎子",
+      "type": "enemy",
+      "since_chapter": "楔子",
+      "description": "根本教血尊灭觅鼎子满门，胁迫其为骷髅老祖修复七邪覆",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "少轩辕",
+      "target": "武翩跹",
+      "type": "lover",
+      "since_chapter": "第四回",
+      "description": "武翩跹疑化名迷姬成为少轩辕宠妃，怂恿兴建迷楼",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "少轩辕",
+      "target": "方少麟",
+      "type": "superior",
+      "since_chapter": "第九回",
+      "description": "方少麟为日月皇朝世袭一等忠靖侯兼大泽令",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "玉桃娘娘",
+      "target": "夭夭",
+      "type": "superior",
+      "since_chapter": "第五回",
+      "description": "千年老桃树独蕾桃枝所化精灵，玉桃娘娘千百个孩儿中最得意的一个",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "绮姬",
+      "target": "黑无霸",
+      "type": "rival",
+      "since_chapter": "第五回",
+      "description": "绮姬曾打败上门挑衅的黑无霸",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "绮姬",
+      "target": "飞天将军",
+      "type": "rival",
+      "since_chapter": "第五回",
+      "description": "绮姬曾打败前来讨面子的飞天将军",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "绮姬",
+      "target": "闹海大帅",
+      "type": "rival",
+      "since_chapter": "第五回",
+      "description": "绮姬曾打败前来讨面子的闹海大帅",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "玄玄子",
+      "target": "七邪魔君",
+      "type": "enemy",
+      "since_chapter": "楔子",
+      "description": "玄玄子击败七邪魔君，七邪魔君形神俱灭",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "玄玄子",
+      "target": "邪皇渊乙",
+      "type": "enemy",
+      "since_chapter": "楔子",
+      "description": "玄玄子与邪皇渊乙两败俱伤，后被天庭诛伏",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "焚虚",
+      "target": "骷髅老祖",
+      "type": "enemy",
+      "since_chapter": "楔子",
+      "description": "聚窟洲散人焚虚曾诛灭骷髅老祖，并在大泽留下大禁制",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "虬髯汉子",
+      "target": "飞萝",
+      "type": "rival",
+      "since_chapter": "第八回",
+      "description": "猎魔团队二当家，对飞萝垂涎，被飞萝以煞气震慑",
+      "change": "新增",
+      "volume": 1
+    },
+    {
+      "source": "夏小婉",
+      "target": "雪涵",
+      "type": "senior",
+      "since_chapter": "楔子",
+      "description": "雪涵为大师姐，夏小婉为四师姐",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "夏小婉",
+      "target": "李梦棠",
+      "type": "senior",
+      "since_chapter": "楔子",
+      "description": "李梦棠为二师姐",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "夏小婉",
+      "target": "程水若",
+      "type": "senior",
+      "since_chapter": "楔子",
+      "description": "程水若为三师姐",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "雪涵",
+      "type": "senior",
+      "since_chapter": "楔子",
+      "description": "雪涵为大师姐",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "程水若",
+      "target": "夏小婉",
+      "type": "senior",
+      "since_chapter": "楔子",
+      "description": "程水若为三师姐，夏小婉为四师姐",
+      "change": "无变化",
+      "volume": 1
+    },
+    {
+      "source": "崔小玄",
+      "target": "程水若",
+      "type": "lover",
+      "since_chapter": "第16回",
+      "description": "小玄冒死从骷髅老祖手中救出水若，水若深受感动；后在翠华庐后山互诉衷肠并发生亲密行为，正式确立恋人关系，水若要求小玄叫她'水儿'",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "崔小玄",
+      "target": "飞萝",
+      "type": "ambiguous",
+      "since_chapter": "第20回",
+      "description": "飞萝在芭蕉亭睡着后，小玄为其盖衣时发生亲密行为，飞萝非但未怒反而主动迎合，称小玄为'小淫贼'，关系发生质变",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "崔小玄",
+      "target": "夏小婉",
+      "type": "crush",
+      "since_chapter": "第17回",
+      "description": "小玄公开宣称四个师姐都是他的，与小婉在潭中无意间发生亲密接触，情敌关系进一步明确",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "方少麟",
+      "target": "摘星子",
+      "type": "master",
+      "since_chapter": "第14回",
+      "description": "方少麟为摘星子（十一师叔）的徒弟，摘星子赠送其八荒十异符和阿修罗王之刃符等珍罕宝物",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "飞萝",
+      "target": "重元子",
+      "type": "master",
+      "since_chapter": "第12回",
+      "description": "飞萝是玄教教主重元子唯一的关门弟子，御甲术及机关术已修至非凡境界",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "崔小玄",
+      "target": "崔采婷",
+      "type": "master",
+      "since_chapter": "第11回",
+      "description": "崔采婷中骷髅老祖噬魂化魄咒后，小玄安排师父在青碧石台上打坐自疗，并参与守护",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "程水若",
+      "target": "程兆琦",
+      "type": "parent",
+      "since_chapter": "第14回",
+      "description": "程兆琦为当朝奉天侯、皇朝四大梁柱之一，水若之父",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "程水若",
+      "target": "百宝娘娘",
+      "type": "parent",
+      "since_chapter": "第14回",
+      "description": "百宝娘娘为三岛十洲无人不识的炼器大家，水若之母，炼造辟邪霹雳等宝物",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "圣皇",
+      "type": "superior",
+      "since_chapter": "第13回",
+      "description": "圣皇为骷髅老祖背后的最高上位者，曾救骷髅老祖于绝境，即将出关",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "少主",
+      "type": "rival",
+      "since_chapter": "第13回",
+      "description": "圣皇之子，骷髅老祖不认其权威，但忌惮圣皇出关后的力量",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "妖魅女子",
+      "target": "少主",
+      "type": "subordinate",
+      "since_chapter": "第13回",
+      "description": "妖魅女子为少主派来监督骷髅老祖的监军/御使，关心七邪覆下落",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "妖魅女子",
+      "target": "骷髅老祖",
+      "type": "manipulator",
+      "since_chapter": "第13回",
+      "description": "妖魅女子以监军身份监视骷髅老祖，了解其底细包括圣皇和血尊的过往",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "血尊",
+      "type": "ally",
+      "since_chapter": "第13回",
+      "description": "圣皇遣血尊大人助骷髅老祖破去焚虚设在大泽的镇秽台",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "崔小玄",
+      "type": "enemy",
+      "since_chapter": "第11回",
+      "description": "骷髅老祖以噬魂化魄咒重创崔采婷，后追杀众人至湖心小岛，亲自闯入石廊擒水若，被小玄以七邪覆引开",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "程水若",
+      "type": "enemy",
+      "since_chapter": "第12回",
+      "description": "骷髅老祖以冥皇之爪捏碎冰麒麟并擒住水若逼问魔君之覆下落，被水若以辟邪霹雳炸断一条手臂",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "玄玄子",
+      "target": "七邪魔君",
+      "type": "nemesis",
+      "since_chapter": "第11回",
+      "description": "玄玄子消灭七邪魔君令其神形俱灭，七邪覆从此下落不明",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "玄玄子",
+      "target": "邪皇渊乙",
+      "type": "rival",
+      "since_chapter": "第11回",
+      "description": "玄玄子与邪皇渊乙一战两败俱伤",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "玄玄子",
+      "target": "天庭",
+      "type": "enemy",
+      "since_chapter": "第11回",
+      "description": "天庭以扰乱天命为由出兵围剿玄玄子，最终将其诛伏",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "崔采婷",
+      "target": "玄玄子",
+      "type": "ambiguous",
+      "since_chapter": "第11回",
+      "description": "崔采婷不喜欢有人谈论有关玄玄子的任何事，暗示两人之间存在某种隐秘关联",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "方少麟",
+      "target": "贺天鹏",
+      "type": "ally",
+      "since_chapter": "第16回",
+      "description": "贺天鹏为荡魔堡少堡主，率大批伏魔好手前来泽阳助阵抵御邪秽",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "方少麟",
+      "target": "古将军",
+      "type": "superior",
+      "since_chapter": "第16回",
+      "description": "古将军为方少麟麾下军官，魁梧大胡子，腰悬粗铁鞭，是道中之人",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "夏小婉",
+      "target": "方少麟",
+      "type": "ally",
+      "since_chapter": "第12回",
+      "description": "小婉与方少麟并肩守吊桥抵御骷髅魔怪，毁断吊桥将妖秽倒入湖中",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "李梦棠",
+      "target": "崔小玄",
+      "type": "senior",
+      "since_chapter": "第11回",
+      "description": "李梦棠为小玄师姐，治疗术名扬地界，施止枯回荣术为方少麟封住伤势",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "雪涵",
+      "target": "崔小玄",
+      "type": "senior",
+      "since_chapter": "第11回",
+      "description": "雪涵为众弟子中功力最高且机警冷静者，向小玄讲述七邪魔君和玄玄子的传说",
+      "change": "加深",
+      "volume": 2
+    },
+    {
+      "source": "摘霞",
+      "target": "方少麟",
+      "type": "crush",
+      "since_chapter": "第14回",
+      "description": "小玄调侃摘霞喜欢方少麟被摘霞追打，暗示摘霞对方少麟有好感",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "飞萝",
+      "target": "昆仑奴",
+      "type": "subordinate",
+      "since_chapter": "第20回",
+      "description": "飞萝召唤昆仑奴参战抵御骷髅魔怪进攻，昆仑奴与长骸将军激战",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "焚虚散人",
+      "target": "骷髅老祖",
+      "type": "enemy",
+      "since_chapter": "第16回",
+      "description": "焚虚散人在大泽布下镇秽台和阵法群，后被血尊破去镇秽台，阵法群亦被人破掉",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "三十三师叔",
+      "target": "崔采婷",
+      "type": "subordinate",
+      "since_chapter": "第14回",
+      "description": "三十三师叔为玄教门人，负责点炼众人抄写的守神符以备抵御骷髅巨怪威煞",
+      "change": "新增",
+      "volume": 2
+    },
+    {
+      "source": "崔小玄",
+      "target": "夭夭",
+      "type": "lover",
+      "since_chapter": "第27回",
+      "description": "小玄以教做游戏为名诱夭夭脱衣，夺去其初夜，承诺做她的老公并约定只与她做游戏，夭夭对小玄产生深厚依恋",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "崔小玄",
+      "target": "婀妍",
+      "type": "ambiguous",
+      "since_chapter": "第22回",
+      "description": "小玄出手救下被刀隼围攻的婀妍，婀妍以断裂的木凤凰相赠，两人勾指约定，一路同行躲避巡逻队，婀妍各种嬉闹撩拨小玄",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "贺天鹏",
+      "target": "程水若",
+      "type": "crush",
+      "since_chapter": "第27回",
+      "description": "贺天鹏初见水若即为其美貌所摄，自称久仰程小姐才艺之名，主动示好赠送麒麟散，多次借机亲近水若",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "崔小玄",
+      "target": "贺天鹏",
+      "type": "rival",
+      "since_chapter": "第27回",
+      "description": "小玄察觉贺天鹏对水若的觊觎之心，视其为威胁；贺天鹏暗中设局想借七焰碧鸾之手除掉小玄，两人矛盾不断加深",
+      "change": "恶化",
+      "volume": 3
+    },
+    {
+      "source": "贺天鹏",
+      "target": "婀妍",
+      "type": "enemy",
+      "since_chapter": "第25回",
+      "description": "贺天鹏以金刚陷魔网公开威胁婀妍，直言识破其妖精身份，称非精即怪需提防",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "贺天鹏",
+      "target": "柳长青",
+      "type": "manipulator",
+      "since_chapter": "第24回",
+      "description": "贺天鹏以柳长青睡其小嫱儿之事要挟，软硬兼施逼迫柳长青偷偷采伐宝瓶竹",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "柳长青",
+      "target": "毛总管",
+      "type": "enemy",
+      "since_chapter": "第24回",
+      "description": "柳长青因毛总管阻止盗竹而怀恨，暗咒终有一日要让毛总管尸骨无存",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "柳长青",
+      "target": "贺天鹏",
+      "type": "enemy",
+      "since_chapter": "第24回",
+      "description": "柳长青被贺天鹏胁迫盗竹后怀恨，暗咒待自己登谷主之位时便是荡魔堡末日",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "崔小玄",
+      "target": "七焰碧鸾",
+      "type": "enemy",
+      "since_chapter": "第29回",
+      "description": "小玄为水若冒险采摘彩虹引来七焰碧鸾追杀，被扇飞坠入竹海险些丧命",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "绮姬",
+      "target": "七焰碧鸾",
+      "type": "enemy",
+      "since_chapter": "第29回",
+      "description": "绮姬与同伴布设法阵捕杀七焰碧鸾，以秘术将巨鸾击杀并取其脑髓救人",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "婀妍",
+      "target": "凌霄士",
+      "type": "disciple",
+      "since_chapter": "第23回",
+      "description": "婀妍透露自己的师尊为妖圣凌霄士，凌霄士曾参加逍遥大会做评判",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "程水若",
+      "target": "婀妍",
+      "type": "rival",
+      "since_chapter": "第25回",
+      "description": "水若见小玄与陌生女孩婀妍亲密同行，心生警惕与醋意",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "崔小玄",
+      "target": "飞萝",
+      "type": "senior",
+      "since_chapter": "第21回",
+      "description": "小玄对飞萝制造的开山神弩赞叹不已，缠着飞萝要学制造之法",
+      "change": "加深",
+      "volume": 3
+    },
+    {
+      "source": "方少麟",
+      "target": "飞萝",
+      "type": "ally",
+      "since_chapter": "第27回",
+      "description": "方少麟带众人前往后山观看飞萝制造的开山神弩，命人试射验证威力",
+      "change": "加深",
+      "volume": 3
+    },
+    {
+      "source": "古将军",
+      "target": "方少麟",
+      "type": "subordinate",
+      "since_chapter": "第27回",
+      "description": "古将军为虎头军军官，是方少麟麾下，道中之人",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "骷髅老祖",
+      "target": "妖魅女子",
+      "type": "subordinate",
+      "since_chapter": "第23回",
+      "description": "妖魅女子代表少主监督骷髅老祖，对骷髅老祖有命令权，关注七绝覆下落",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "程水若",
+      "target": "冰麒麟",
+      "type": "master",
+      "since_chapter": "第22回",
+      "description": "冰麒麟为水若的幻兽，能喷吐冰焰，被骷髅老祖的冥皇之爪捏碎",
+      "change": "恶化",
+      "volume": 3
+    },
+    {
+      "source": "飞萝",
+      "target": "昆仑奴",
+      "type": "master",
+      "since_chapter": "第21回",
+      "description": "昆仑奴为飞萝的灵宠，通体湛蓝如水晶，背生骨翼，具有快速自愈能力",
+      "change": "加深",
+      "volume": 3
+    },
+    {
+      "source": "程兆琦",
+      "target": "贺天鹏之父",
+      "type": "ally",
+      "since_chapter": "第27回",
+      "description": "三年前奉天侯程兆琦于东海之滨诛剿叛逆蒙白虎时，贺天鹏之父率五百伏魔手赶赴协力",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "袁自在",
+      "target": "小妖后",
+      "type": "ally",
+      "since_chapter": "第23回",
+      "description": "袁自在曾在小妖后举办的逍遥大会上夺魁",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "夭夭",
+      "target": "玉桃娘娘",
+      "type": "child",
+      "since_chapter": "第27回",
+      "description": "夭夭为桃花精，是玉桃娘娘之女，初成人形，每日只能在瓶子外待一个时辰",
+      "change": "新增",
+      "volume": 3
+    },
+    {
+      "source": "崔小玄",
+      "target": "程水若",
+      "type": "rival",
+      "since_chapter": "第30回",
+      "description": "小玄因贺天鹏搂抱水若之事醋意大发，与水若发生口角，气氛紧张",
+      "change": "恶化",
+      "volume": 3
+    }
+  ],
+  "items": [
+    {
+      "name": "八爪炎龙鞭",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "第四回",
+      "abilities": [
+        "擅发炎劲",
+        "长逾两丈",
+        "由炎龙鳞做成",
+        "擒缚敌人",
+        "从巨鳄口中救人",
+        "火系攻击",
+        "击碎竹制刀隼"
+      ],
+      "description": "崔采婷所赐中上神兵，属性为火。用八爪炎龙筋及三百六十片炎龙鳞制成，炼化八爪炎龙八足之髓。",
+      "first_volume": 1
+    },
+    {
+      "name": "焰浣罗",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "第五回",
+      "abilities": [
+        "日夜提升火行潜能"
+      ],
+      "description": "大红巾子，用炎洲火光兽皮毛织成，扎在腰上。崔采婷严禁小玄解下。",
+      "first_volume": 1
+    },
+    {
+      "name": "如意囊",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "第五回",
+      "abilities": [
+        "能装极大体积物品",
+        "收纳大型物品",
+        "分门别类储藏",
+        "装入千年灵鸾尸体"
+      ],
+      "description": "袁自在所赠，灰色编织囊，用青丘奇树藤所制。",
+      "first_volume": 1
+    },
+    {
+      "name": "七邪覆（魔君之覆）",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "楔子",
+      "abilities": [
+        "面具功能",
+        "具体能力未完全揭示"
+      ],
+      "description": "上古大魔头七邪魔君的至宝，数百年前七邪魔君灰飞烟灭后失落。觅鼎子被胁迫修复后传给小玄。",
+      "first_volume": 1
+    },
+    {
+      "name": "入梦",
+      "type": "兵器",
+      "owner": "崔采婷",
+      "first_appearance": "第七回",
+      "abilities": [
+        "玄教上上神兵长剑",
+        "能变大如舟供多人御剑飞行",
+        "神兵级别",
+        "载人飞行脱险",
+        "载人飞行",
+        "御剑飞行"
+      ],
+      "description": "崔采婷的佩剑，玄教上上神兵。",
+      "first_volume": 1
+    },
+    {
+      "name": "太幻图",
+      "type": "法宝",
+      "owner": "崔采婷",
+      "first_appearance": "第四回",
+      "abilities": [
+        "镇守梦巢",
+        "玄教至宝",
+        "唯崔采婷能掌"
+      ],
+      "description": "玄教至宝，由崔采婷执掌镇守逍遥峰上的梦巢。教主赐崔采婷下山时代守梦巢。",
+      "first_volume": 1
+    },
+    {
+      "name": "紫犀钗",
+      "type": "法宝",
+      "owner": "飞萝",
+      "first_appearance": "第三回",
+      "abilities": [
+        "发出闪灼紫电",
+        "蕴雷蓄电",
+        "无坚不摧",
+        "一击粉碎骷髅术士",
+        "瞬发攻击",
+        "施法需时极短"
+      ],
+      "description": "教中上宝，教祖无上圣母在茅野擒太古紫角犀取其角制成。",
+      "first_volume": 1
+    },
+    {
+      "name": "金霞降",
+      "type": "法宝",
+      "owner": "雪涵",
+      "first_appearance": "楔子",
+      "abilities": [
+        "内圈亮芒闪现无数金灿灿细小利齿",
+        "令鬼神闻风丧胆"
+      ],
+      "description": "铸着许多符篆图文的金色小镯，玄教上宝。",
+      "first_volume": 1
+    },
+    {
+      "name": "阿金盾",
+      "type": "法宝",
+      "owner": "雪涵",
+      "first_appearance": "楔子",
+      "abilities": [
+        "防御"
+      ],
+      "description": "出山时师父崔采婷所赐宝物。",
+      "first_volume": 1
+    },
+    {
+      "name": "木母神弓",
+      "type": "兵器",
+      "owner": "李梦棠",
+      "first_appearance": "楔子",
+      "abilities": [
+        "克所有邪秽",
+        "灵力激发箭矢源源不断",
+        "配合木母箭使用"
+      ],
+      "description": "李梦棠的兵器。",
+      "first_volume": 1
+    },
+    {
+      "name": "木母箭",
+      "type": "兵器",
+      "owner": "李梦棠",
+      "first_appearance": "楔子",
+      "abilities": [
+        "由太碧神木所生"
+      ],
+      "description": "配合木母神弓使用的箭矢。",
+      "first_volume": 1
+    },
+    {
+      "name": "碧波刃",
+      "type": "兵器",
+      "owner": "程水若",
+      "first_appearance": "第一回",
+      "abilities": [
+        "水系战斗",
+        "配合水灵术使用"
+      ],
+      "description": "程水若的兵器，后丢失在湖心岛。",
+      "first_volume": 1
+    },
+    {
+      "name": "霹雳珠（辟邪霹雳）",
+      "type": "法宝",
+      "owner": "程水若",
+      "first_appearance": "楔子",
+      "abilities": [
+        "辟邪霹雳所耗虽少但反噬之气太过霸道",
+        "灵力仍浅时强御会伤及根本"
+      ],
+      "description": "法宝，其母百宝娘娘所炼造。",
+      "first_volume": 1
+    },
+    {
+      "name": "冰麒麟胸坠",
+      "type": "法宝",
+      "owner": "程水若",
+      "first_appearance": "楔子",
+      "abilities": [
+        "召唤冰麒麟"
+      ],
+      "description": "冰蓝色玉麒麟胸坠，用墨绳系住。",
+      "first_volume": 1
+    },
+    {
+      "name": "土灵笛",
+      "type": "法宝",
+      "owner": "夏小婉",
+      "first_appearance": "楔子",
+      "abilities": [
+        "能将召唤土精术的威力提升一倍",
+        "配合土精召唤术可同时召唤八只土精",
+        "一次召唤多个土精",
+        "远胜从前的召唤土精术"
+      ],
+      "description": "师父崔采婷所赠。",
+      "first_volume": 1
+    },
+    {
+      "name": "落宝金钱",
+      "type": "法宝",
+      "owner": "武翩跹",
+      "first_appearance": "第四回",
+      "abilities": [
+        "宝物遇之即落",
+        "强如佛门至宝定海珠也不能得免"
+      ],
+      "description": "武翩跹叛逃时盗去的圣宫秘藏奇宝，原为五夷散人萧升、曹宝之物，法宝中的异数。",
+      "first_volume": 1
+    },
+    {
+      "name": "五曜炉",
+      "type": "法宝",
+      "owner": "觅鼎子（使用）",
+      "first_appearance": "楔子",
+      "abilities": [
+        "铸造法宝",
+        "修复七邪覆"
+      ],
+      "description": "聚窟洲铸造大师逆木所铸，三百年前神秘失踪。曾铸造天相宗镇派之宝天相轮。",
+      "first_volume": 1
+    },
+    {
+      "name": "役妖令",
+      "type": "法宝",
+      "owner": "骷髅老祖势力",
+      "first_appearance": "楔子",
+      "abilities": [
+        "役使妖邪"
+      ],
+      "description": "骷髅老祖势力使用的控制妖邪的令牌。",
+      "first_volume": 1
+    },
+    {
+      "name": "伏兵符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "第八回",
+      "abilities": [
+        "一次消灭二十余骷髅"
+      ],
+      "description": "摘星子独门炼制的秘符，方少麟用此符在杀怪比赛中逆转获胜。",
+      "first_volume": 1
+    },
+    {
+      "name": "金翅飞蝎符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "楔子",
+      "abilities": [
+        "召唤金翅飞蝎"
+      ],
+      "description": "方少麟持有的符篆之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "阿修罗王之刃符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "楔子",
+      "abilities": [
+        "救命符",
+        "召唤阿修罗王之刃",
+        "斩蛟诛龙"
+      ],
+      "description": "方少麟持有的符篆之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "八荒十异符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "楔子",
+      "abilities": [
+        "召唤各类异兽助战",
+        "召唤异兽"
+      ],
+      "description": "方少麟持有的符篆之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "沼泽王蟒符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "楔子",
+      "abilities": [
+        "召唤沼泽王蟒"
+      ],
+      "description": "方少麟持有的符篆之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "凝华丹",
+      "type": "丹药",
+      "owner": "崔小玄",
+      "first_appearance": "第五回",
+      "abilities": [
+        "仙丹",
+        "精怪食用后神酣体畅"
+      ],
+      "description": "崔小玄自制的仙丹，分发给千翠山众精怪食用。",
+      "first_volume": 1
+    },
+    {
+      "name": "青瑛",
+      "type": "其他",
+      "owner": "玄教（梦巢产出）",
+      "first_appearance": "第一回",
+      "abilities": [
+        "灵材",
+        "梦巢精华产出"
+      ],
+      "description": "逍遥峰梦巢的精华产物，近来因迷楼偷汲灵脉而越产越少。",
+      "first_volume": 1
+    },
+    {
+      "name": "金睛火猊心",
+      "type": "其他",
+      "owner": "无敌大将军（已毁）",
+      "first_appearance": "第二回",
+      "abilities": [
+        "作为人造灵灵的心脏",
+        "提供火行力量"
+      ],
+      "description": "李梦棠曾帮小玄寻找的珍稀材料，用作无敌大将军的心脏。",
+      "first_volume": 1
+    },
+    {
+      "name": "骷髅龙御（战车）",
+      "type": "兵器",
+      "owner": "骷髅老祖",
+      "first_appearance": "楔子",
+      "abilities": [
+        "骷髅老祖的战车"
+      ],
+      "description": "骷髅老祖的战车坐骑。",
+      "first_volume": 1
+    },
+    {
+      "name": "骷髅战车",
+      "type": "兵器",
+      "owner": "赤甲将军",
+      "first_appearance": "第十回",
+      "abilities": [
+        "三匹装甲骷髅马牵引",
+        "车轮轴上各横碧色利刃"
+      ],
+      "description": "赤甲将军驾驭的战车，在古兵营大屠杀中使用。",
+      "first_volume": 1
+    },
+    {
+      "name": "灰青钵子",
+      "type": "法宝",
+      "owner": "绮姬",
+      "first_appearance": "第五回",
+      "abilities": [
+        "具体能力未详述"
+      ],
+      "description": "绮姬的兵器之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "碧幽幽的双股长叉",
+      "type": "兵器",
+      "owner": "绮姬",
+      "first_appearance": "第五回",
+      "abilities": [
+        "具体能力未详述"
+      ],
+      "description": "绮姬的兵器之一。",
+      "first_volume": 1
+    },
+    {
+      "name": "湛蓝镯子",
+      "type": "法宝",
+      "owner": "摘霞",
+      "first_appearance": "楔子",
+      "abilities": [
+        "可蓄一个初级水遁法术"
+      ],
+      "description": "用青瑛之精制成，崔小玄赠予摘霞。",
+      "first_volume": 1
+    },
+    {
+      "name": "法囊",
+      "type": "其他",
+      "owner": "崔采婷/众弟子",
+      "first_appearance": "第一回",
+      "abilities": [
+        "储物"
+      ],
+      "description": "弟子们随身携带的储物囊，可装各种物品和食材。",
+      "first_volume": 1
+    },
+    {
+      "name": "七邪覆",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "第11回",
+      "abilities": [
+        "吸收七种邪恶气息转化为魔力",
+        "大幅提升佩戴者速度",
+        "操控佩戴者意志放大欲望"
+      ],
+      "description": "七邪魔君至宝，又称魔君之覆、七绝覆。能吸收愤怒、怨恨、嫉妒、淫欲、贪婪、残虐、傲慢七种邪恶气息转化为魔力。小玄以御宝禁咒使七邪覆覆面自身后速度比平日快近倍，但面具会操控意志、放大欲望。少主志在必得此物。",
+      "first_volume": 2
+    },
+    {
+      "name": "骊珠",
+      "type": "其他",
+      "owner": "崔小玄",
+      "first_appearance": "第18回",
+      "abilities": [
+        "辟污垢万毒",
+        "却妖魔邪秽",
+        "加速伤势恢复",
+        "充盈腑脏"
+      ],
+      "description": "从碧湖巨鳄精怪上颚挖出的绝世奇珍，传为青龙所藏癸水精华结成。小玄吞下后伤势恢复速度远超预期（原需两三个月，实际半月即可），脑海中闪现玉色巨龙等幻象。",
+      "first_volume": 2
+    },
+    {
+      "name": "辟邪霹雳",
+      "type": "法宝",
+      "owner": "程水若",
+      "first_appearance": "第13回",
+      "abilities": [
+        "炸断骷髅老祖手臂",
+        "蕴含强大破邪之力",
+        "专克邪灵",
+        "辟邪",
+        "蕴含反噬之力"
+      ],
+      "description": "又称霹雳珠，百宝娘娘以流洲昆吾石王炼成，专克邪灵。水若以此物炸断骷髅老祖一条手臂，威力惊人。",
+      "first_volume": 2
+    },
+    {
+      "name": "灯妖符",
+      "type": "法宝",
+      "owner": "方少麟",
+      "first_appearance": "第14回",
+      "abilities": [
+        "召唤灯妖"
+      ],
+      "description": "方少麟持有的召唤符，能召唤灯妖。",
+      "first_volume": 2
+    },
+    {
+      "name": "青瓷瓶",
+      "type": "法宝",
+      "owner": "崔小玄",
+      "first_appearance": "第15回",
+      "abilities": [
+        "封印精怪"
+      ],
+      "description": "玉桃娘娘赠送的青瓷瓶，瓶中封印着精怪夭夭。小玄可召唤夭夭出瓶，但夭夭每日只能在瓶外待一个时辰。",
+      "first_volume": 2
+    },
+    {
+      "name": "守神符",
+      "type": "其他",
+      "owner": "玄教众人",
+      "first_appearance": "第14回",
+      "abilities": [
+        "抵御骷髅巨怪的威煞"
+      ],
+      "description": "由众人抄写、三十三师叔点炼完成的符箓，以备抵御骷髅巨怪的威煞。小玄曾因抄出错符闯祸而被拒绝参与抄符。",
+      "first_volume": 2
+    },
+    {
+      "name": "地狱魔塔",
+      "type": "其他",
+      "owner": "骷髅老祖",
+      "first_appearance": "第20回",
+      "abilities": [
+        "由骷髅巨怪承载",
+        "攻城掠地"
+      ],
+      "description": "骷髅老祖已炼造十三座地狱魔塔，由骷髅巨怪承载，用于攻城。望泽城即遭骷髅巨怪及数千魔兵攻陷。",
+      "first_volume": 2
+    },
+    {
+      "name": "源魔力池",
+      "type": "其他",
+      "owner": "骷髅老祖",
+      "first_appearance": "第13回",
+      "abilities": [
+        "提供魔力来源",
+        "以鲜血脏器恢复"
+      ],
+      "description": "骷髅老祖的魔力来源，两座已被毁。骷髅老祖调遣骷髅巨怪攻打望泽城以收集鲜血脏器恢复源魔力池。",
+      "first_volume": 2
+    },
+    {
+      "name": "骷髅龙御",
+      "type": "其他",
+      "owner": "骷髅老祖",
+      "first_appearance": "第13回",
+      "abilities": [
+        "骷髅老祖的座驾/战具"
+      ],
+      "description": "骷髅老祖的座驾/战具，被玄教众人重创。",
+      "first_volume": 2
+    },
+    {
+      "name": "紫绫束胸",
+      "type": "其他",
+      "owner": "飞萝",
+      "first_appearance": "第20回",
+      "abilities": [],
+      "description": "飞萝的贴身衣物，小玄在飞萝半裸作战时偷藏其紫绫束胸，后在芭蕉亭亲密时再次取走。",
+      "first_volume": 2
+    },
+    {
+      "name": "七焰玄虹鉴",
+      "type": "法宝",
+      "owner": "七焰碧鸾(原主)/崔小玄(发现)",
+      "first_appearance": "第21回",
+      "abilities": [
+        "化虹为裳",
+        "背能销神灭圣",
+        "发出七彩光芒形成巨大彩虹",
+        "触碰时释放电火灼伤"
+      ],
+      "description": "传说中魔姬黄姖的异宝，大小如车轮的宝镜，周边缀满奇异宝石，周围流转环绕时隐时现的淡淡符篆图文。镜边宝石中含有金罡髓。置于太碧巨巢边，彩虹正是由其所发。",
+      "first_volume": 3
+    },
+    {
+      "name": "开山神弩",
+      "type": "兵器",
+      "owner": "方少麟/飞萝(制造)",
+      "first_appearance": "第27回",
+      "abilities": [
+        "发射巨矢炸碎岩石",
+        "三十余丈外精准命中",
+        "声势骇人威力巨大"
+      ],
+      "description": "飞萝设计制造的巨型弩机，停放于后山密林工坊。试射时巨矢脱弩而出，三十余丈外山壁前的巨大岩石轰然炸开，声势骇人。近十只停放在高大棚子中。",
+      "first_volume": 3
+    },
+    {
+      "name": "凝电鞭",
+      "type": "兵器",
+      "owner": "贺天鹏",
+      "first_appearance": "第28回",
+      "abilities": [
+        "驱策鹿蜀",
+        "释放雷电"
+      ],
+      "description": "贺天鹏的兵器，用于驱策四头白首赤尾虎纹鹿蜀拉车。",
+      "first_volume": 3
+    },
+    {
+      "name": "鹿蜀车",
+      "type": "其他",
+      "owner": "贺天鹏",
+      "first_appearance": "第28回",
+      "abilities": [
+        "高速行驶，半个时辰达百余里"
+      ],
+      "description": "由四头白首赤尾虎纹鹿蜀拉动，速度惊人，半个时辰即可从泽阳城到达百余里外的巨竹谷入口。",
+      "first_volume": 3
+    },
+    {
+      "name": "金刚陷魔网",
+      "type": "法宝",
+      "owner": "贺天鹏",
+      "first_appearance": "第25回",
+      "abilities": [
+        "罩住妖魔使其束手待毙",
+        "挤压妖魔至死"
+      ],
+      "description": "贺天鹏的法宝，曾用于万蛛岭罩住火蜘蛛将其挤压至死。贺天鹏以此物威胁婀妍，称任何妖魔落入网中只有束手待毙。",
+      "first_volume": 3
+    },
+    {
+      "name": "麒麟散",
+      "type": "丹药",
+      "owner": "贺天鹏(赠予程水若)",
+      "first_appearance": "第28回",
+      "abilities": [
+        "疗伤"
+      ],
+      "description": "贺天鹏赠予程水若的疗伤药，水若送来给小玄使用但小玄因嫉妒拒绝。",
+      "first_volume": 3
+    },
+    {
+      "name": "七焰碧鸾尸体",
+      "type": "其他",
+      "owner": "崔小玄(收入如意囊)",
+      "first_appearance": "第29回",
+      "abilities": [
+        "全身皆是无上之宝",
+        "脑髓可救人"
+      ],
+      "description": "守护太碧的千年灵禽，被绮姬以秘术击杀。绮姬取走脑髓救人，剩余尸体被小玄收入如意囊。",
+      "first_volume": 3
+    },
+    {
+      "name": "七焰碧鸾蛋",
+      "type": "其他",
+      "owner": "崔小玄/程水若(收养)",
+      "first_appearance": "第22回",
+      "abilities": [],
+      "description": "太碧巨巢中的两只青碧巨蛋，为七焰碧鸾所产。崔小玄与程水若决定带回去尝试孵化。",
+      "first_volume": 3
+    },
+    {
+      "name": "青瓷瓶与独蕾桃枝",
+      "type": "其他",
+      "owner": "崔小玄",
+      "first_appearance": "第27回",
+      "abilities": [
+        "桃枝为夭夭的栖身之所"
+      ],
+      "description": "小玄卧房窗台上的青瓷瓶，瓶中养着独蕾桃枝，是桃花精夭夭的栖身之所。",
+      "first_volume": 3
+    },
+    {
+      "name": "机关木凤凰",
+      "type": "兵器",
+      "owner": "婀妍(原)/崔小玄(获赠)",
+      "first_appearance": "第22回",
+      "abilities": [
+        "飞行骑乘",
+        "竹制机关术产物"
+      ],
+      "description": "形若凤凰却通体灰白棱角分明的机关木制飞行器，婀妍骑乘时被刀隼围攻断裂。婀妍将其送给小玄作为交换（换取手帕），小玄收入如意囊。",
+      "first_volume": 3
+    },
+    {
+      "name": "虎蛛战车",
+      "type": "兵器",
+      "owner": "毛总管/巨竹谷",
+      "first_appearance": "第24回",
+      "abilities": [
+        "高速移动",
+        "原型为恐怖之足"
+      ],
+      "description": "出自巨竹谷的机关战车，原型为'恐怖之足'。毛总管驾驭此车突然出现在宝瓶竹林喝止盗竹行为。奉天侯亦拥有一辆。",
+      "first_volume": 3
+    },
+    {
+      "name": "拘木令",
+      "type": "法宝",
+      "owner": "毛总管",
+      "first_appearance": "第24回",
+      "abilities": [
+        "收回螳螂工匠"
+      ],
+      "description": "毛总管使用的法器，用于收回被柳长青偷偷调出的螳螂工匠。",
+      "first_volume": 3
+    },
+    {
+      "name": "雪烟花符",
+      "type": "其他",
+      "owner": "婀妍",
+      "first_appearance": "第25回",
+      "abilities": [
+        "施放后照亮天空",
+        "发出烟花信号"
+      ],
+      "description": "婀妍施放的紫色符箓，升空后照亮天空如烟花绽放，用于引程水若前来会合。",
+      "first_volume": 3
+    },
+    {
+      "name": "紫色符(竹鞘短刀)",
+      "type": "其他",
+      "owner": "婀妍(绿衣女孩)",
+      "first_appearance": "第30回",
+      "abilities": [],
+      "description": "婀妍随身携带的竹鞘短刀和紫色符箓，系着绣着竹子的小囊。",
+      "first_volume": 3
+    },
+    {
+      "name": "七焰碧鸾羽毛",
+      "type": "其他",
+      "owner": "崔小玄(彩虹实质化)",
+      "first_appearance": "第29回",
+      "abilities": [
+        "凝成实质可做衣裳"
+      ],
+      "description": "小玄为博水若欢心跃出悬崖采得的一大片凝成实质的彩虹，由七焰玄虹鉴所发的光芒凝聚而成。",
+      "first_volume": 3
+    }
+  ],
+  "abilities": [
+    {
+      "name": "如意五行",
+      "type": "功法",
+      "practitioner": "崔采婷及门下弟子",
+      "first_appearance": "楔子",
+      "description": "玄教如意门的根基功法，包含金木水火土五行。崔采婷已臻化境，五个弟子各擅一行：雪涵（金）、李梦棠（木）、程水若（水）、夏小婉（土）、崔小玄（火）。",
+      "stages": [
+        "五行各系分别修炼",
+        "五元归宗（崔采婷已达到）"
+      ],
+      "first_volume": 1
+    },
+    {
+      "name": "离火诀",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "第一回",
+      "description": "火行功法，崔小玄的体质属火，擅长离火真气。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "水灵真气/水行功法",
+      "type": "法术",
+      "practitioner": "程水若",
+      "first_appearance": "第一回",
+      "description": "程水若的体质属水，擅长水系功法。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "弄潮之舞",
+      "type": "武技",
+      "practitioner": "程水若、崔采婷",
+      "first_appearance": "第三回",
+      "description": "水行绝技，双袖挥甩产生无形暗流，愈顺便愈强。程水若的拿手绝技。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "天池嬉波步",
+      "type": "武技",
+      "practitioner": "程水若",
+      "first_appearance": "第一回",
+      "description": "水系身法，程水若用以接近火魅割取赤发。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "水华斩",
+      "type": "武技",
+      "practitioner": "程水若",
+      "first_appearance": "第一回",
+      "description": "水系攻击术，配合碧波刃使用，可割取火魅赤发。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "金罡斩",
+      "type": "武技",
+      "practitioner": "雪涵",
+      "first_appearance": "第三回",
+      "description": "雪涵的成名绝技之一，凝掌成刀挥出月牙形金芒。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "金光纵",
+      "type": "武技",
+      "practitioner": "雪涵",
+      "first_appearance": "楔子",
+      "description": "身法，能化做一道金芒闪避。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "不动金罡诀",
+      "type": "法术",
+      "practitioner": "雪涵、崔采婷",
+      "first_appearance": "楔子",
+      "description": "金系防御功法。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "点金诀",
+      "type": "法术",
+      "practitioner": "雪涵、崔采婷",
+      "first_appearance": "楔子",
+      "description": "金系法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "蟒藤术",
+      "type": "法术",
+      "practitioner": "李梦棠",
+      "first_appearance": "第三回",
+      "description": "捏印法召唤碗口粗的怪藤缠缚敌人。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "止枯回荣术",
+      "type": "法术",
+      "practitioner": "李梦棠",
+      "first_appearance": "楔子",
+      "description": "木遁系疗伤术，恢复术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "召唤土精术",
+      "type": "法术",
+      "practitioner": "夏小婉",
+      "first_appearance": "第三回",
+      "description": "配合土灵笛使用，小婉能力极限为同时召唤四只土精，配合土灵笛可召唤八只。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "泥沼术",
+      "type": "法术",
+      "practitioner": "夏小婉",
+      "first_appearance": "第三回",
+      "description": "土系法术，可制造泥沼困敌。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "御物术",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "第二回",
+      "description": "崔小玄天赋极高，能同时操控数十块石头。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "火牢术",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "火遁系法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "火莲诀",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "火系法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "星火飞溅",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "火遁系移形术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "千山火鸟咒",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "火系咒术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "陆地腾飞术",
+      "type": "法术",
+      "practitioner": "崔采婷及众弟子、飞萝、方少麟等",
+      "first_appearance": "楔子",
+      "description": "道家玄门中最寻常的轻功，多数修仙者皆会。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "御剑飞行",
+      "type": "法术",
+      "practitioner": "崔采婷及众弟子",
+      "first_appearance": "第七回",
+      "description": "以飞剑载人飞行，崔采婷以入梦剑变大如舟载众人下山。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "小跏跌法",
+      "type": "武技",
+      "practitioner": "崔采婷",
+      "first_appearance": "第四回",
+      "description": "近身摔人技巧，崔采婷用此法将爬到身上的小玄摔下。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "铸魔印",
+      "type": "法术",
+      "practitioner": "崔采婷",
+      "first_appearance": "楔子",
+      "description": "崔采婷的法术之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "四象诀（惊电指）",
+      "type": "法术",
+      "practitioner": "飞萝",
+      "first_appearance": "楔子",
+      "description": "飞萝的法术之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "无相之眼",
+      "type": "法术",
+      "practitioner": "飞萝、崔小玄",
+      "first_appearance": "楔子",
+      "description": "飞萝和崔小玄皆掌握的法术。",
+      "stages": [
+        "皮毛（侦测阵式与机关）"
+      ],
+      "first_volume": 1
+    },
+    {
+      "name": "御甲术",
+      "type": "功法",
+      "practitioner": "飞萝",
+      "first_appearance": "第三回",
+      "description": "飞萝最擅长的技能，地界绝顶。崔小玄痴迷但尚未精通。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "机关术",
+      "type": "功法",
+      "practitioner": "飞萝",
+      "first_appearance": "第三回",
+      "description": "飞萝最擅长的技能，地界绝顶。崔小玄痴迷但尚未精通。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "炼符术",
+      "type": "功法",
+      "practitioner": "摘星子",
+      "first_appearance": "第七回",
+      "description": "摘星子为地界散仙中绝顶的炼符师，伏兵符为其独门秘符。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "先天无极诀/阵",
+      "type": "阵法",
+      "practitioner": "重元子、武翩跹",
+      "first_appearance": "第四回",
+      "description": "教主重元子所创，原为功法后改为阵法布于凤凰崖，因威力险恶霸道而封闭。武翩跹曾秘密习得，用于迷楼偷汲天下一十九灵脉精华。",
+      "stages": [
+        "先天无极诀（功法）",
+        "先天无极阵（阵法）"
+      ],
+      "first_volume": 1
+    },
+    {
+      "name": "聚怨拘灵阵",
+      "type": "阵法",
+      "practitioner": "根本教",
+      "first_appearance": "第八回",
+      "description": "根本教秘术，用活人头颅、鲜血及内脏魔化古战场遗骸。每隔七里艮位设一血池。数百年前骷髅老祖曾使用，被焚虚诛灭后未曾出现，如今再现。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "灰飞烟灭",
+      "type": "法术",
+      "practitioner": "骷髅老祖",
+      "first_appearance": "楔子",
+      "description": "骷髅老祖的独门绝技。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "噬魂化魄咒",
+      "type": "法术",
+      "practitioner": "骷髅老祖",
+      "first_appearance": "楔子",
+      "description": "骷髅老祖的法术之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "修罗之焰",
+      "type": "法术",
+      "practitioner": "骷髅老祖",
+      "first_appearance": "楔子",
+      "description": "骷髅老祖的法术之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "蚀魂爪",
+      "type": "武技",
+      "practitioner": "妖魅女子",
+      "first_appearance": "楔子",
+      "description": "妖魅女子（根本教御使）的武功，用于杀死觅鼎子。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "雾化之能",
+      "type": "法术",
+      "practitioner": "夭夭",
+      "first_appearance": "第五回",
+      "description": "夭夭天生异质，一成人形就具雾化之能。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "收纳法诀",
+      "type": "法术",
+      "practitioner": "李梦棠、袁自在",
+      "first_appearance": "楔子",
+      "description": "李梦棠曾为小玄的法囊加持过。袁自在自创收纳法诀用于如意囊。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "制丹术",
+      "type": "功法",
+      "practitioner": "崔小玄",
+      "first_appearance": "第五回",
+      "description": "崔小玄自学成才，能自制凝华丹等仙丹。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "分水诀",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "崔小玄的法术之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "冰漩术",
+      "type": "法术",
+      "practitioner": "程水若",
+      "first_appearance": "楔子",
+      "description": "水系冰属性法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "冰锥术",
+      "type": "法术",
+      "practitioner": "程水若",
+      "first_appearance": "楔子",
+      "description": "水系冰属性法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "漩涡术",
+      "type": "法术",
+      "practitioner": "程水若",
+      "first_appearance": "楔子",
+      "description": "水系法术。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "金钟倒挂式",
+      "type": "武技",
+      "practitioner": "崔小玄",
+      "first_appearance": "楔子",
+      "description": "崔小玄的武技之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "八爪炎龙鞭法",
+      "type": "武技",
+      "practitioner": "崔小玄",
+      "first_appearance": "第四回",
+      "description": "崔采婷传授的炎龙鞭使用要诀，崔小玄精通鞭法。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "棒法",
+      "type": "武技",
+      "practitioner": "方少麟",
+      "first_appearance": "楔子",
+      "description": "方少麟使用的武技，似有来历。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "御岩符",
+      "type": "法术",
+      "practitioner": "夏小婉",
+      "first_appearance": "楔子",
+      "description": "夏小婉能写三十六道御岩符。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "花径蕴浆",
+      "type": "法术",
+      "practitioner": "夭夭",
+      "first_appearance": "第五回",
+      "description": "夭夭的能力之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "禁咒",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "第三回",
+      "description": "设定召唤物的控制咒语，小玄曾念错导致无敌大将军暴走。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "先天卜算",
+      "type": "法术",
+      "practitioner": "武翩跹",
+      "first_appearance": "第四回",
+      "description": "武翩跹的能力之一。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "移山倒海之术",
+      "type": "法术",
+      "practitioner": "武翩跹",
+      "first_appearance": "第四回",
+      "description": "武翩跹号称三绝之一的能力。",
+      "stages": [],
+      "first_volume": 1
+    },
+    {
+      "name": "四象诀",
+      "type": "武技",
+      "practitioner": "飞萝",
+      "first_appearance": "第16回",
+      "description": "包含惊电指等招式，飞萝用惊电指激发符印法能恢复石廊残阵。",
+      "stages": [
+        "惊电指"
+      ],
+      "first_volume": 2
+    },
+    {
+      "name": "操控离光",
+      "type": "法术",
+      "practitioner": "飞萝、崔小玄",
+      "first_appearance": "第16回",
+      "description": "利用夔首阵法发射专克亡灵的白色光束，射程达十余丈。飞萝恢复芭蕉亭残阵后传授小玄操控之法。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "大地之缚",
+      "type": "阵法",
+      "practitioner": "飞萝",
+      "first_appearance": "第16回",
+      "description": "上古禁制，能借用大地先天之力成倍放大进入禁制中活物的重量以限制移动。飞萝恢复近七成，配合木母神弓使用。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "风电禁制",
+      "type": "阵法",
+      "practitioner": "飞萝",
+      "first_appearance": "第18回",
+      "description": "风、电二象守护禁制，飞萝在小竹林潭子外布下以防外人闯入。小玄误入后触发此禁制狼狈逃出。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "冥皇之爪",
+      "type": "法术",
+      "practitioner": "骷髅老祖",
+      "first_appearance": "第12回",
+      "description": "骷髅老祖三大独门邪技之一，从虚空召唤过丈骷髅巨爪攻击。以此捏碎冰麒麟、重创小玄。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "威煞",
+      "type": "法术",
+      "practitioner": "骷髅老祖",
+      "first_appearance": "第13回",
+      "description": "蕴含威煞的厉啸，能干扰敌人内息令意志崩溃。小玄戴上七邪覆后受此影响。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "召唤冰麒麟",
+      "type": "法术",
+      "practitioner": "程水若",
+      "first_appearance": "第12回",
+      "description": "召唤幻兽冰麒麟助阵，冰麒麟能喷吐冰焰。被骷髅老祖以冥皇之爪捏碎后需较长时间恢复。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "召唤土精",
+      "type": "法术",
+      "practitioner": "夏小婉",
+      "first_appearance": "第12回",
+      "description": "通过土灵笛一次召唤多个土精，远胜从前的召唤土精术。小婉以此在吊桥处封堵桥头抵御骷髅魔怪。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "御宝禁咒",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "第12回",
+      "description": "使法宝覆面自身的小玄速度大增，用于操控七邪覆。",
+      "stages": [],
+      "first_volume": 2
+    },
+    {
+      "name": "离火真气",
+      "type": "功法",
+      "practitioner": "崔小玄",
+      "first_appearance": "第21回",
+      "description": "崔小玄修炼的火系真气功法",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "陆地飞腾术",
+      "type": "法术",
+      "practitioner": "崔小玄",
+      "first_appearance": "第29回",
+      "description": "崔小玄用于跃出悬崖飞向对崖采彩虹的轻功法术",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "水灵真气",
+      "type": "功法",
+      "practitioner": "程水若",
+      "first_appearance": "第21回",
+      "description": "程水若修炼的水系真气功法",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "紫犀钗",
+      "type": "法术",
+      "practitioner": "飞萝",
+      "first_appearance": "第21回",
+      "description": "飞萝使用的无上法宝级法术",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "木母神弓",
+      "type": "武技",
+      "practitioner": "李梦棠",
+      "first_appearance": "第21回",
+      "description": "李梦棠的武器技能，能克所有邪秽，使用木母箭（由太碧神木所生）",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "变形之能",
+      "type": "法术",
+      "practitioner": "长骸将军",
+      "first_appearance": "第23回",
+      "description": "长骸将军的能力，由千年蟒王之骸合体重生后获得，可进行蟒类骸骨复合变形",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "化形术",
+      "type": "法术",
+      "practitioner": "夭夭",
+      "first_appearance": "第27回",
+      "description": "桃花精夭夭的化形术，初成人形，每日只能在瓶子外待一个时辰",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "绣带",
+      "type": "法术",
+      "practitioner": "绮姬",
+      "first_appearance": "第29回",
+      "description": "绮姬的武器兼法术，蝎子精的战斗手段",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "操控法阵",
+      "type": "法术",
+      "practitioner": "绮姬",
+      "first_appearance": "第29回",
+      "description": "绮姬与同伴布设的捕杀七焰碧鸾的法阵，地面镂刻繁复玄异图案，困住灵禽使其久挣不脱渐渐颓势",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "秘术(击杀灵禽)",
+      "type": "法术",
+      "practitioner": "绮姬",
+      "first_appearance": "第29回",
+      "description": "绮姬以秘术将已被法阵困住的七焰碧鸾击杀，取其脑髓救人",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "驱魔术",
+      "type": "法术",
+      "practitioner": "崔采婷",
+      "first_appearance": "第21回",
+      "description": "如意娘娘崔采婷在湖心岛大殿内运功驱邪的法术",
+      "stages": [],
+      "first_volume": 3
+    },
+    {
+      "name": "羞花闭月",
+      "type": "其他",
+      "practitioner": "程水若",
+      "first_appearance": "第21回",
+      "description": "程水若体内拥有的罕世名器，小玄在两人亲密时发现",
+      "stages": [],
+      "first_volume": 3
+    }
+  ],
+  "worldview": [
+    {
+      "category": "境界体系",
+      "topic": "散仙体系",
+      "content": "散仙者流传于世，诸仙之末逍遥自在。修炼境界包括飞仙境界（崔采婷已达到）。散仙中有太乙级别（如黎山老母）。修炼以五行（金木水火土）为基础，各人因五行奇异方能入门。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "境界体系",
+      "topic": "五行修炼体系",
+      "content": "玄教以如意五行功法为根基，修炼者体质各属一行。崔采婷五个弟子：雪涵（金）、李梦棠（木）、程水若（水）、夏小婉（土）、崔小玄（火）。最高境界为五元归宗。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "境界体系",
+      "topic": "灵力与真气",
+      "content": "修仙者修炼灵力与真气。灵力有深浅之分，真气可耗光需恢复。如意五行各系有不同真气，如水灵真气、金罡真气、离火真气等。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "境界体系",
+      "topic": "法宝等级",
+      "content": "法宝分为不同等级：上上神兵（入梦）、上宝（紫犀钗、金霞降）、中上神兵（八爪炎龙鞭）。法宝中的异数如落宝金钱，宝物遇之即落。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "境界体系",
+      "topic": "威煞",
+      "content": "天然威煞只有龙凤麟等非凡生物才能产生。无敌大将军作为人造灵灵竟能产生天然威煞，实属罕见。",
+      "source_chapter": "第二回",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "玄教",
+      "content": "修仙门派，教主为重元子，教祖为无上圣母。教中弟子按辈分排行，第二代弟子如黎山老母，第三代弟子如崔采婷（排行第九）、摘星子（排行十一）、飞萝（排行三十三）。宗旨之一为降妖除魔。教内有至宝先天太幻图、入梦剑等。曾重挫邪皇，令地界邪魔元气大伤。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "如意门",
+      "content": "玄教下属门派，由崔采婷掌门。收徒不分男女只看质地，五个弟子皆因五行奇异方能入门。道场在千翠山逍遥峰。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "天道阁",
+      "content": "玄教下属机构，诛魔大帅刑飞坐镇。雪涵与李梦棠出山后侍于其麾下降妖伏魔。李梦棠正协助参撰《周天诸灵榜》。",
+      "source_chapter": "第二回",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "根本教",
+      "content": "邪教势力，与骷髅老祖势力合作。教主未具名，派出御使监督骷髅老祖。使用聚怨拘灵阵、修罗之焰等邪法。血尊为其手下，曾灭觅鼎子满门。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "骷髅老祖势力",
+      "content": "以骷髅老祖为首的魔族势力，藏匿于大泽地下的地狱之渊中。拥有大规模血骷髅军队（骷髅骑兵、骷髅弓箭手、骷髅血蛛等）。巢穴内有巨型兵工厂和血炼池。利用聚怨拘灵阵魔化古战场遗骸，奴役活人充当苦役。骷髅老祖自称修至不死不灭境界。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "日月皇朝",
+      "content": "当朝皇朝，皇帝少轩辕登基后自号'少轩辕'。穷兵黩武讨伐北方十五族，国力亏空。荒淫无度，强征三十万民夫建造四海五岳三十六宫。近来在玉京附近兴建迷楼偷汲天下灵脉。拥有虎头军等正规军队。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "千翠山八圣",
+      "content": "崔小玄与千翠山七位得道精怪结义金兰。排行：玉桃娘娘（桃花精，千年道行）、袁自在（白猿精）、飞天将军（蜈蜂精）、闹海大帅（赤蛟精）、绮姬（碧蝎精，六百多年道行）、黑白公子（花蛇精）、黑无霸（熊罴精）、崔小玄。",
+      "source_chapter": "第五回",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "猎魔者联盟",
+      "content": "由三山五岳的能人异士组成的猎魔团队，受方少麟悬红招募进入大泽猎捕骷髅。其中有铁血盟、天师宗等组织。在古兵营遭骷髅骑兵大屠杀。",
+      "source_chapter": "第八回",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "精怪/妖族",
+      "content": "千翠山居住着众多得道精怪，修炼数百年以上。包括桃花精（玉桃娘娘）、白猿精（袁自在）、蜈蜂精（飞天将军）、赤蛟精（闹海大帅）、碧蝎精（绮姬）、花蛇精（黑白公子）、熊罴精（黑无霸）等。多为非恶类。",
+      "source_chapter": "第五回",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "血骷髅",
+      "content": "骷髅老祖势力的大规模军队，包括骷髅骑兵（骑骷髅马、披乌盔乌甲）、骷髅弓箭手、骷髅血蛛等复合骷髅。高阶血骷髅具备七情六欲。骷髅将军可驾驭战车。",
+      "source_chapter": "第八回",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "灵兽/幻兽",
+      "content": "修仙者可拥有灵兽或幻兽。冰麒麟为水若的出山宝物，用已亡灵兽炼就的顶级幻兽。昆仑奴为飞萝的机关人/幻兽。骷髅骊龙原为焚虚的禁制之枢，被魔化为骷髅老祖坐骑。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "桃枝精灵",
+      "content": "千年老桃树上的桃枝可化生精灵。夭夭为玉桃娘娘千年老桃树上唯一一根独蕾桃枝的精灵，初初炼化成人形。每日至多只有一个时辰能出来，用露水或清水养着。具雾化之能。",
+      "source_chapter": "第五回",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "玄狐一脉",
+      "content": "玄玄子为第二只玄狐，不属九幽十类，不入六道轮回，不在三界五行，神佛邪魔皆忌。邪皇渊乙曾立下禁咒，诅咒天地之间再不允有玄狐一脉。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "种族",
+      "topic": "四大魔君",
+      "content": "上古有四大魔君，七邪魔君与邪皇渊乙齐名。七邪魔君为七绝界之主，麾下邪魔无数，被玄玄子击败后形神俱灭。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "千翠山",
+      "content": "绵延数百里的巍峨山脉，山上郁郁葱葱，云雾缭绕。主峰之一逍遥峰为崔采婷道场。山中居住着众多得道精怪。山南有迷踪岭、玉泉谷，山北有大风岭。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "逍遥峰",
+      "content": "千翠山主峰之一，崔采婷道场所在。峰东南有紫芝阁（会客议事），峰上有锦绣阁（赐宝），峰后有梦巢（禁地，产青瑛）。峰北通往大风岭，峰南通往玉泉谷。师门有令：凡未出山者，一律禁止私出逍遥峰。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "大泽平原",
+      "content": "数百里外的广阔平原，曾是古战场。两个诸侯国在此交兵，其中一方屠杀了四十万降兵，千百年来怨气一直未散。近日秽物丛生异象连连。有望泽、堑丘、泽阳城等城镇。地下有骷髅老祖的地狱之渊巢穴。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "玉京",
+      "content": "日月皇朝的京城，少轩辕帝都所在。城附近正兴建迷楼，暗合先天无极阵，偷汲天下一十九灵脉精华。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "凤凰崖",
+      "content": "玄教重地，教主曾将先天无极阵布镇于此，日夜自行为圣宫汲取灵气，后因威力太过险恶霸道而封闭。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "聚窟洲",
+      "content": "焚虚散人所在之地。三百年前铸造大师逆木在此神秘失踪，五曜炉下落不明。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "地理",
+      "topic": "七绝界",
+      "content": "上古大魔头七邪魔君的领地，强盛无匹。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "太古时期-紫衫少年降世",
+      "content": "太古散仙玄玄子在千翠山拦截试图降世的紫衫少年。邪皇渊乙现身救下紫衫少年，邀请玄玄子联手平分天地被拒，遂立下禁咒诅咒玄狐一脉。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "数百年前-诛灭骷髅老祖",
+      "content": "骷髅老祖遭众仙围剿，被聚窟洲散人焚虚诛灭（重创），骷髅老祖自称未死。焚虚回聚窟洲前曾到大泽设下大禁制，以骊龙为禁制之枢。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "数百年前-七邪魔君覆灭",
+      "content": "七邪魔君被玄玄子击败后形神俱灭，其至宝魔君之覆（七邪覆）失落。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "三百年前-五曜炉失踪",
+      "content": "聚窟洲铸造大师逆木神秘失踪，五曜炉下落不明。五曜炉曾铸造天相宗镇派之宝天相轮。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "数年前-武翩跹叛教",
+      "content": "武翩跹叛出玄教，盗去圣宫秘藏奇宝落宝金钱。教主将先天无极诀改为阵法布于凤凰崖后不久封闭。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "近年-少轩辕登基",
+      "content": "少轩辕登帝位，改号'少轩辕'，御驾亲征讨伐北方十五族，国力亏空。之后采选天下、淫乱后宫，强征三十万民夫建造宫殿。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "数月前-兴建迷楼",
+      "content": "少轩辕在玉京附近兴建迷楼，暗合先天无极阵，偷偷吸汲天下一十九灵脉精华，导致梦巢精华大泄、青瑛越产越少。少轩辕新得宠妃迷姬（疑为武翩跹）怂恿建楼。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "约十九年前-觅鼎子被胁迫",
+      "content": "根本教派人（血尊）去觅鼎子府上捉其家人作为胁迫，血尊嗜人血，将觅鼎子全家灭门。觅鼎子被胁迫至地狱之渊修复魔君之覆。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "历史",
+      "topic": "近三个月-聚怨拘灵阵再现",
+      "content": "有人在大泽用活人头颅、鲜血及内脏堆砌血池，布置聚怨拘灵阵魔化古战场遗骸。骷髅老祖势力在地狱之渊建立大规模兵工厂。",
+      "source_chapter": "第一回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "梦巢与青瑛",
+      "content": "逍遥峰上的重要禁地，由崔采婷执掌太幻图镇守。梦巢精华产出青瑛（灵材），近来因迷楼偷汲灵脉而精华大泄，青瑛越产越少。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "人造灵灵",
+      "content": "崔小玄具有凭空创造前所未有新生灵的天赋。无敌大将军为其花费五个月心血创造的火土双行人造灵灵，以金睛火猊心为心脏，因配方中赤蟒信与琰精相冲导致反噬失控。",
+      "source_chapter": "第二回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "《周天诸灵榜》",
+      "content": "天道阁正在编撰的典籍，李梦棠协助诛魔大帅刑飞参撰。",
+      "source_chapter": "第二回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "崔小玄腹内异物",
+      "content": "崔小玄腹部脐眼内含一物，平滑洁白如明玉，上有铭文符篆花纹。崔采婷查看后表情变幻不定，如痴似醉，对此事讳莫如深。具体身份未揭示。",
+      "source_chapter": "第五回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "大泽古战场",
+      "content": "两个诸侯国在此交兵，其中一方屠杀了四十万降兵，千百年来怨气一直未散。焚虚散人曾在此忧虑不散怨魂，设下大禁制。如今骷髅老祖利用聚怨拘灵阵魔化遗骸。",
+      "source_chapter": "第四回",
+      "volume": 1
+    },
+    {
+      "category": "其他",
+      "topic": "藏形匿影阵法",
+      "content": "夏小婉了解的阵法之一，能向方少麟解释其原理。",
+      "source_chapter": "楔子",
+      "volume": 1
+    },
+    {
+      "category": "组织",
+      "topic": "玄教",
+      "content": "玄教教主为重元子，飞萝是其唯一关门弟子。教规严禁门人私授秘技，违者重处。门下有崔采婷（大师姐）、雪涵（功力最高且机警冷静）、李梦棠（治疗术名扬地界）、飞萝、水若、小婉、摘霞等弟子。三十三师叔负责点炼守神符。摘星子为十一师叔，是方少麟的师父。",
+      "source_chapter": "第11-16回",
+      "volume": 2
+    },
+    {
+      "category": "组织",
+      "topic": "日月皇朝",
+      "content": "统治大泽平原及周边地区的皇朝政权。奉天侯程兆琦为皇朝四大梁柱之一，坐拥十余万虎狼之师，仙家之后，识得千百世外玄术。方少麟世袭忠靖侯、官拜大泽令，统辖大泽一方，手下有一万六千名重装刀牌手。泽阳城为大泽平原最大城镇，镇有万余虎头军。望泽城已被骷髅老祖攻陷。",
+      "source_chapter": "第13-14回",
+      "volume": 2
+    },
+    {
+      "category": "组织",
+      "topic": "骷髅老祖势力",
+      "content": "骷髅老祖以古代四十万战死将士尸骸魔化成军，巢穴为地狱之渊。麾下有妖魅女子（少主监军）、长骸将军、破空将军、双首虎等魔将，以及骷髅术士、骷髅甲士、骨翼骷髅、骷髅血蛛、骷髅巨怪等兵种。背后有'圣皇'和'少主'的势力。已炼造十三座地狱魔塔。",
+      "source_chapter": "第12-13回",
+      "volume": 2
+    },
+    {
+      "category": "组织",
+      "topic": "荡魔堡",
+      "content": "大泽平原的伏魔势力，少堡主贺天鹏率大批伏魔好手前来泽阳助阵抵御邪秽。贺天鹏修为不俗，真元充盈，神情颇见倨傲。",
+      "source_chapter": "第16回",
+      "volume": 2
+    },
+    {
+      "category": "历史",
+      "topic": "七邪魔君与七绝界",
+      "content": "七邪魔君为天地间四大魔君之一，统领七绝界，麾下邪魔无数。拥有至宝七邪覆，能吸收愤怒、怨恨、嫉妒、淫欲、贪婪、残虐、傲慢七种邪恶气息转化为魔力。天庭曾两次出兵征讨七绝界均失败。最终被玄玄子所灭，神形俱灭。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "历史",
+      "topic": "玄玄子传说",
+      "content": "玄玄子为玄狐一脉，不属九幽十类，不入六道轮回，不在三界五行，神佛邪魔皆忌。曾消灭七邪魔君令其神形俱灭，后又与邪皇渊乙一战两败俱伤。天庭以其扰乱天命为由出兵围剿，最终将之诛伏，据说亦形神俱灭。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "历史",
+      "topic": "邪皇渊乙",
+      "content": "天地间四大魔君之一，与七邪魔君齐名。曾与玄玄子一战两败俱伤，元气大伤后与玄教争夺灵脉被挫败。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "地理",
+      "topic": "大泽平原",
+      "content": "本卷主要舞台。包含湖心小岛（焚虚散人所布阵法群）、碧湖（栖息上古鳄鱼精怪）、望泽城（已沦陷）、泽阳城（最大城镇兵家要塞）、忠靖侯府（方少麟府第）、翠华庐（摘星子清修之地）、地狱之渊（骷髅老祖巢穴）等地点。",
+      "source_chapter": "第11-16回",
+      "volume": 2
+    },
+    {
+      "category": "地理",
+      "topic": "聚窟洲",
+      "content": "仙家胜地，奇人异士无数。焚虚散人为其中佼佼者，所布阵法能发离光，绝学与海内诸门截然不同。",
+      "source_chapter": "第16回",
+      "volume": 2
+    },
+    {
+      "category": "地理",
+      "topic": "七绝界",
+      "content": "七邪魔君的领地，强盛无匹。七邪魔君被玄玄子消灭后，七绝界随之覆亡。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "地理",
+      "topic": "天庭",
+      "content": "曾两次出兵征讨七绝界均告失败。后出兵围剿玄玄子，将其诛伏。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "其他",
+      "topic": "焚虚散人的阵法群",
+      "content": "焚虚散人在大泽湖心小岛布下大禁制（阵法群），包含夔首离光阵法（发射夔龙之光专破邪秽）、大地之缚禁制（借用大地先天之力成倍放大活物重量）、石廊土系陷阱阵法（石条石块飞聚组成人形怪物拦截敌人）等。骷髅老祖曾受圣皇之助由血尊破去焚虚设在大泽的镇秽台。",
+      "source_chapter": "第16回",
+      "volume": 2
+    },
+    {
+      "category": "其他",
+      "topic": "骷髅巨怪（地狱魔塔）",
+      "content": "骷髅老祖以古代战死将士尸骸炼造的巨型战争兵器，由骷髅术士操控。体内有骷髅术士坐镇眼眶，击杀术士即可使巨怪失控。已炼造十三座，曾以七、八个骷髅巨怪及数千魔兵攻陷望泽城。",
+      "source_chapter": "第13回、第20回",
+      "volume": 2
+    },
+    {
+      "category": "其他",
+      "topic": "流洲昆吾石王",
+      "content": "百宝娘娘到流洲取得昆吾石王，以此炼成辟邪霹雳（霹雳珠），能专克邪灵。",
+      "source_chapter": "第14回",
+      "volume": 2
+    },
+    {
+      "category": "种族",
+      "topic": "巨鳄精怪",
+      "content": "碧湖中栖息的上古鳄鱼精怪，体型巨大，巢穴在湖底七弯八拐的大洞中。被小玄从上颚挖出骊珠后当场毙命萎缩。骊珠传为青龙所藏癸水精华结成。",
+      "source_chapter": "第17-18回",
+      "volume": 2
+    },
+    {
+      "category": "种族",
+      "topic": "玄狐一脉",
+      "content": "玄玄子所属种族，不属九幽十类，不入六道轮回，不在三界五行，神佛邪魔皆忌。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "其他",
+      "topic": "四大魔君",
+      "content": "天地间有四大魔君，已知七邪魔君和邪皇渊乙为其中之二。七邪魔君统领七绝界已被玄玄子所灭，邪皇渊乙与玄玄子两败俱伤。",
+      "source_chapter": "第11回",
+      "volume": 2
+    },
+    {
+      "category": "其他",
+      "topic": "圣皇与少主",
+      "content": "骷髅老祖背后的上位势力。圣皇曾救骷髅老祖于绝境，遣血尊助其破镇秽台，即将出关。少主为圣皇之子，骷髅老祖不认其权威但忌惮圣皇。少主派遣妖魅女子监军骷髅老祖，志在必得七邪覆。",
+      "source_chapter": "第13回",
+      "volume": 2
+    },
+    {
+      "category": "地理",
+      "topic": "巨竹谷",
+      "content": "距泽阳城百余里处，天地之间的一道裂缝，非天非地。漫山遍野尽是苍翠欲滴的参天巨竹。谷中出产宝瓶竹，强韧之度远胜龙纹紫杉，且蕴有克邪特质。入口为裂罅纵横矮小石碑，需闭眼绕行方可进入。谷中机关守卫森严，有刀隼、枪卒、螳螂工匠等。谷主不在时由毛总管代管，少主为柳长青。属于七绝界。",
+      "source_chapter": "第28回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "玉带湾与太碧",
+      "content": "巨竹谷南部，环着一湾碧水，水中有块陆地，上边绿茵如毯，其间耸立着太碧——径达四五丈、高逾百丈的奇巨竹子，枝繁叶密浓荫森森，蔽盖周围数十亩水面。为地界一十九灵脉中太碧所在，天地间最美丽的地方之一。太碧中部生出一道七彩光芒（由七焰玄虹鉴所发），弧空纵向远处形成巨大彩虹。",
+      "source_chapter": "第29回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "万蛛岭",
+      "content": "巨竹谷内一处禁地，地势陡峭，宝瓶竹繁密，顶上遮天蔽日底下间狭隙窄阴暗潮湿。到处飘挂蜘蛛网，有通体殷赤大若熊罴的火蜘蛛出没。凡私入者巨竹谷必定格杀无论。",
+      "source_chapter": "第25回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "宝瓶竹林",
+      "content": "巨竹谷内遥遥延去不见尽处的竹林，竹子枝杆每节俱呈弧形如同许多瓶子接迭而成。为天地间独一无二的宝瓶竹产地，每一棵都要登记入薄，硬度与生命力惊人。设有采伐区，由螳螂工匠负责采伐。",
+      "source_chapter": "第24回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "快活岛",
+      "content": "妖界领地，拥有一十九灵脉之一的快活泉。小妖后因恼妖界精怪从未受邀参加天界蟠桃会而在此举办逍遥大会，每七年举行一次。快活泉又名灵泉、忘忧泉、不尘泉、濯心泉，饮过者能延年益寿并大幅增强灵力。",
+      "source_chapter": "第23回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "龙隐渡",
+      "content": "东海之滨的一处渡口。三年前奉天侯程兆琦于东海之滨诛剿皇朝叛逆蒙白虎时，贺天鹏之父率五百伏魔手赶赴协力，在此用陷魔网擒妖将。",
+      "source_chapter": "第27回",
+      "volume": 3
+    },
+    {
+      "category": "地理",
+      "topic": "泽阳城与翠华庐",
+      "content": "众人逃至泽阳城养伤，方少麟将众人安置在忠靖侯府翠华庐。后山腰密林空地为飞萝制造开山神弩的工坊。",
+      "source_chapter": "第27回",
+      "volume": 3
+    },
+    {
+      "category": "组织",
+      "topic": "巨竹谷势力",
+      "content": "巨竹谷为秘境势力，有谷主（不在时由毛总管代管）、少主柳长青。拥有强大的机关术，制造刀隼（竹制飞行器，用于巡逻和攻击）、枪卒（竹制士兵）、螳螂工匠（负责采伐和制造）、虎蛛战车（原型为恐怖之足）等。设有宝瓶竹林采伐区，严格管控资源。万蛛岭为禁地，私入者格杀无论。",
+      "source_chapter": "第24回",
+      "volume": 3
+    },
+    {
+      "category": "组织",
+      "topic": "荡魔堡",
+      "content": "贺天鹏为荡魔堡少堡主，拥有鹿蜀车、凝电鞭、金刚陷魔网、法囊等装备。可调动三百伏魔手。贺天鹏之父为堡主，三年前曾率五百伏魔手协助奉天侯程兆琦。与日月皇朝有联盟关系。",
+      "source_chapter": "第27回",
+      "volume": 3
+    },
+    {
+      "category": "组织",
+      "topic": "日月皇朝",
+      "content": "方少麟为世袭靖忠侯、官拜大泽令，辖有一万六千名虎头军重装刀牌手。程兆琦为皇朝四大梁柱之一，坐拥十余万虎狼之师。少轩辕为当今天子。",
+      "source_chapter": "第22回",
+      "volume": 3
+    },
+    {
+      "category": "组织",
+      "topic": "地狱之渊",
+      "content": "骷髅老祖为地狱之渊魔主，麾下有长骸将军、破空将军、双首虎等魔将。骷髅老祖受圣皇和少主节制，妖魅女子代表少主监督骷髅老祖。骷髅老祖拥有冥皇之爪、灰飞烟灭等三大绝技。",
+      "source_chapter": "第23回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "七焰碧鸾",
+      "content": "守护太碧的千年灵禽，通体带焰，长近三丈的翅膀，拖曳长长的绚烂尾焰。雌雄缠绵但雄鸾会敌视子女，雌鸾怀孕后赶走雄鸾。在巢中产蛋。全身皆是无上之宝，脑髓可救人。被绮姬以法阵和秘术击杀。",
+      "source_chapter": "第22回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "桃花精",
+      "content": "夭夭为桃花精，玉桃娘娘之女。初成人形，每日只能在瓶子外待一个时辰。化形术修为尚浅，天真可爱，学东西极快。",
+      "source_chapter": "第27回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "机关生物",
+      "content": "巨竹谷擅长制造各种竹制机关生物：刀隼（竹制飞行器，用于巡逻围攻）、枪卒（竹制士兵）、螳螂工匠（负责采伐和制造）、虎蛛战车（原型为恐怖之足，高速移动）、木凤凰（飞行骑乘器）。这些机关生物展现了巨竹谷高超的机关术水平。",
+      "source_chapter": "第22回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "火蜘蛛",
+      "content": "万蛛岭中的危险生物，通体殷赤大若熊罴，到处飘挂蜘蛛网。被贺天鹏以金刚陷魔网罩住挤压至死。",
+      "source_chapter": "第25回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "鹿蜀",
+      "content": "白首赤尾虎纹鹿蜀，四头拉车速度惊人，半个时辰即可行百余里。由贺天鹏以凝电鞭驱策。",
+      "source_chapter": "第28回",
+      "volume": 3
+    },
+    {
+      "category": "种族",
+      "topic": "昆仑奴",
+      "content": "飞萝的灵宠，高逾一丈，通体湛蓝如水晶雕琢，块块隆起的雄肌虬结盘错，背生骨翼。具有快速自愈能力，强悍无匹。",
+      "source_chapter": "第21回",
+      "volume": 3
+    },
+    {
+      "category": "历史",
+      "topic": "魔姬黄姖与上古大战",
+      "content": "七焰玄虹鉴为传说中魔姬黄姖的异宝，可化虹为裳背能销神灭圣。水若讲述了黄姖与天帝大战、九天玄女诛魔的传说，以及玄玄子的事迹。这些为上古时期的大战传说。",
+      "source_chapter": "第21回",
+      "volume": 3
+    },
+    {
+      "category": "历史",
+      "topic": "龙隐渡之战",
+      "content": "三年前奉天侯程兆琦于东海之滨诛剿皇朝叛逆蒙白虎时，贺天鹏之父率五百伏魔手赶赴协力，在龙隐渡用陷魔网擒妖将。此战体现了荡魔堡与皇朝的合作关系。",
+      "source_chapter": "第27回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "地界一十九灵脉",
+      "content": "太碧所在之处为地界一十九灵脉之一。快活岛的快活泉亦为灵脉之一。灵脉为天地间重要的灵气汇聚之地。",
+      "source_chapter": "第29回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "逍遥大会",
+      "content": "小妖后因恼妖界精怪从未受邀参加天界蟠桃会，在妖界快活岛举办逍遥大会，每七年举行一次。妖圣凌霄士曾参加做评判。袁自在曾在逍遥大会上夺魁。",
+      "source_chapter": "第23回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "天界蟠桃会",
+      "content": "天界举办的盛会，妖界精怪从未受邀参加，小妖后因此不满而创办逍遥大会与之抗衡。",
+      "source_chapter": "第23回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "宝瓶竹",
+      "content": "天地间独一无二的宝材，产自巨竹谷宝瓶竹林。竹子枝杆每节俱呈弧形如同许多瓶子接迭而成。强韧之度远胜龙纹紫杉，且蕴有克邪特质。硬度与生命力惊人。每一棵都要登记入薄，严格管控。可用于制造开山神弩的箭矢。",
+      "source_chapter": "第24回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "金罡髓",
+      "content": "小玄在观察七焰玄虹鉴时认出镜边宝石中含有金罡髓，为珍贵材料。",
+      "source_chapter": "第21回",
+      "volume": 3
+    },
+    {
+      "category": "境界体系",
+      "topic": "道中之人",
+      "content": "古将军被描述为'道中之人'，双手光华隐透，表明其修习道法有一定境界。这是对修仙者的一种称呼。",
+      "source_chapter": "第26回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "百宝娘娘炼器术",
+      "content": "百宝娘娘为大名鼎鼎的炼器大家，三岛十洲无人不识。曾到流洲取昆吾石王炼成辟邪霹雳（霹雳珠）。",
+      "source_chapter": "第21回",
+      "volume": 3
+    },
+    {
+      "category": "其他",
+      "topic": "七绝覆",
+      "content": "妖魅女子代表少主对七绝覆的下落十分关注，暗示七绝覆为重要物品或秘密，与七绝界有关。",
+      "source_chapter": "第23回",
+      "volume": 3
+    }
+  ]
+}

@@ -1,0 +1,1384 @@
+{
+  "meta": {
+    "volume": 17,
+    "chapter_range": "第161-170回",
+    "summary": "第十七卷讲述迷楼惊变之夜，皇帝（晁紫阁）与武翩跹、崔小玄在炼心殿展开生死决战。武翩跹以七绝覆、落宝金钱等至宝击败皇帝，小玄在绝境中反击，皇帝现出紫麒麟元形而亡。事后皇后安排小玄戴上七绝覆假扮皇帝，武翩跹重伤养伤。小玄在雍怡宫中逐渐适应帝王生活，与皇后关系日益亲密，同时暗中探望被贬冷宫的雪妃（程雪若）。朝局方面，方少麟反叛、南宫阳围攻、各地灾祸频发，小玄决定御驾亲征云州救援奉天候程兆琦，遭到皇后强烈反对。"
+  },
+  "locations": [
+    {
+      "name": "迷楼",
+      "type": "宫殿群",
+      "parent": "日月皇朝",
+      "importance": 5,
+      "description": "日月皇朝皇宫，由武翩跹设计督造，内含先天无极阵，可移物换位，宫苑位置可变化"
+    },
+    {
+      "name": "炼心殿",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 5,
+      "description": "迷楼核心宫殿，皇帝遇刺身亡之处，战后损毁严重"
+    },
+    {
+      "name": "蟢房",
+      "type": "宫殿内室",
+      "parent": "炼心殿",
+      "importance": 3,
+      "description": "炼心殿内的密室，设有百叠任意榻等淫具"
+    },
+    {
+      "name": "锦心殿",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 3,
+      "description": "皇帝平日居住之所，藏有百羞秘卷"
+    },
+    {
+      "name": "雍怡宫",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 4,
+      "description": "皇后寝宫，小玄假扮皇帝后居住于此"
+    },
+    {
+      "name": "仪真宫",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 4,
+      "description": "武翩跹（迷妃）寝宫，武翩跹重伤后在此养伤"
+    },
+    {
+      "name": "栖霞宫",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 4,
+      "description": "冷宫，雪妃（程雪若）被贬后居于此，种有甘华、洞冥草等灵物"
+    },
+    {
+      "name": "枕雪阁",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "原为雪妃所居，后由林美人居住"
+    },
+    {
+      "name": "水帘香榭",
+      "type": "水榭",
+      "parent": "迷楼",
+      "importance": 3,
+      "description": "四面环水之水榭，水幕环绕，夏季凉爽，小玄在此接见妃嫔与大臣"
+    },
+    {
+      "name": "天宝苑",
+      "type": "宫苑",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "迷楼内一处宫苑"
+    },
+    {
+      "name": "积珍苑",
+      "type": "宫苑",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "迷楼内一处宫苑"
+    },
+    {
+      "name": "栖星楼",
+      "type": "楼阁",
+      "parent": "迷楼",
+      "importance": 1,
+      "description": "迷楼内一处楼阁"
+    },
+    {
+      "name": "迎圣台",
+      "type": "台阁",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "邪宗众煞长驻守护之处"
+    },
+    {
+      "name": "移星塔",
+      "type": "塔楼",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "迷楼最高处，为灵妃奶拉忽专建"
+    },
+    {
+      "name": "天魔宫",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "为灵妃奶拉忽专建之宫殿"
+    },
+    {
+      "name": "熙华宫",
+      "type": "宫殿",
+      "parent": "迷楼",
+      "importance": 2,
+      "description": "唐淑妃（唐凤山之女）寝宫"
+    },
+    {
+      "name": "宝林苑",
+      "type": "宫苑",
+      "parent": "迷楼",
+      "importance": 1,
+      "description": "宋昭容居所"
+    },
+    {
+      "name": "韶宁院",
+      "type": "宫苑",
+      "parent": "迷楼",
+      "importance": 1,
+      "description": "洛美人居所"
+    },
+    {
+      "name": "骀荡苑",
+      "type": "宫苑",
+      "parent": "迷楼",
+      "importance": 1,
+      "description": "丹绮丝（胡女美人）居所"
+    },
+    {
+      "name": "玉京",
+      "type": "都城",
+      "parent": "日月皇朝",
+      "importance": 4,
+      "description": "日月皇朝京城，南宫阳曾在此屠戮晁家宗亲二百六十七口"
+    },
+    {
+      "name": "云州",
+      "type": "州府",
+      "parent": "日月皇朝",
+      "importance": 4,
+      "description": "南宫阳老巢，程兆琦奉命征讨被困于坠星岭"
+    },
+    {
+      "name": "坠星岭",
+      "type": "山岭",
+      "parent": "云州",
+      "importance": 3,
+      "description": "程兆琦残部被围困之处，地势险峻"
+    },
+    {
+      "name": "大泽",
+      "type": "州府",
+      "parent": "日月皇朝",
+      "importance": 3,
+      "description": "皇朝最大粮仓所在地，方少麟反叛之地"
+    },
+    {
+      "name": "赤龙关",
+      "type": "关隘",
+      "parent": "日月皇朝",
+      "importance": 2,
+      "description": "冯晋东征讨方少麟途中遭遇真武荡魔大帝显圣之处"
+    },
+    {
+      "name": "定州",
+      "type": "州府",
+      "parent": "日月皇朝",
+      "importance": 2,
+      "description": "忠武将军冯晋东坐镇之处"
+    },
+    {
+      "name": "向阳诸县",
+      "type": "县",
+      "parent": "日月皇朝",
+      "importance": 2,
+      "description": "玉京西南四百余里，遭逢地动山摇大灾"
+    },
+    {
+      "name": "承恩城",
+      "type": "城池",
+      "parent": "日月皇朝",
+      "importance": 2,
+      "description": "平宁候扈鉴亭封邑所在，距向阳诸县甚近"
+    },
+    {
+      "name": "中州",
+      "type": "州府",
+      "parent": "日月皇朝",
+      "importance": 2,
+      "description": "程兆琦从云州撤退途中遭南宫阳伏击之处"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s17_01",
+      "name": "迷楼异变",
+      "location": "迷楼",
+      "chapter": "第161回",
+      "description": "迷楼上异象迭生，大地震颤、迷雾弥漫、电光闪掠，宫苑位置发生变化，禁卫总领项炯指挥设卡布防",
+      "characters": [
+        "项炯",
+        "辛荣"
+      ]
+    },
+    {
+      "id": "s17_02",
+      "name": "邪宗众煞赶赴炼心殿",
+      "location": "迷楼",
+      "chapter": "第161回",
+      "description": "邪宗众煞收到召集秘令赶往炼心殿，千臂邪佛以九魅连环感应少主方位，途中遭遇机关鹤袭击",
+      "characters": [
+        "骨海将军",
+        "千臂邪佛",
+        "邪军师",
+        "魇夫人",
+        "花婉",
+        "月凝",
+        "韦登"
+      ]
+    },
+    {
+      "id": "s17_03",
+      "name": "炼心殿大战",
+      "location": "炼心殿",
+      "chapter": "第161回",
+      "description": "小玄与皇后被毒眼影煞围攻，皇后祭出碧海珊瑚灯护身，皇帝祭出炼魂幢释放魔潮，武翩跹戴七绝覆赶到以落宝金钱破炼魂幢",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "毒眼影煞",
+        "武翩跹"
+      ]
+    },
+    {
+      "id": "s17_04",
+      "name": "武翩跹与皇帝激战",
+      "location": "炼心殿",
+      "chapter": "第162回",
+      "description": "武翩跹以聚宝剑与皇帝激战，皇帝施展灭天鉴第五重天，武翩跹以七绝覆相助但仍无法重创皇帝",
+      "characters": [
+        "武翩跹",
+        "崔小玄",
+        "皇后"
+      ]
+    },
+    {
+      "id": "s17_05",
+      "name": "夺取圣皇锁",
+      "location": "炼心殿",
+      "chapter": "第162回",
+      "description": "小玄以八爪炎龙鞭缠住皇帝双臂，武翩跹趁机以聚宝剑挑离圣皇锁，重创皇帝",
+      "characters": [
+        "崔小玄",
+        "武翩跹",
+        "皇后"
+      ]
+    },
+    {
+      "id": "s17_06",
+      "name": "皇帝祭出混沌印",
+      "location": "炼心殿",
+      "chapter": "第163回",
+      "description": "皇帝祭出混沌印，万物皆止，趁机重创武翩跹并夺取七绝覆戴上，又欲羞辱武翩跹",
+      "characters": [
+        "武翩跹",
+        "崔小玄",
+        "皇后"
+      ]
+    },
+    {
+      "id": "s17_07",
+      "name": "小玄绝地反击",
+      "location": "炼心殿",
+      "chapter": "第163回",
+      "description": "小玄被皇帝以黑气卷起绞杀，七绝覆飞至小玄脸上，神秘真气通过接触击溃皇帝，小玄一剑刺穿皇帝胸膛，皇帝现出紫麒麟元形而亡",
+      "characters": [
+        "崔小玄"
+      ]
+    },
+    {
+      "id": "s17_08",
+      "name": "逍遥郎君遭遇烈火军",
+      "location": "玉京郊外",
+      "chapter": "第162回",
+      "description": "逍遥郎君化黑龙欲前往迷楼，遭遇唐凤山率烈火军阻拦，唐彦阳挑战黑龙",
+      "characters": [
+        "逍遥郎君",
+        "唐凤山",
+        "唐彦阳"
+      ]
+    },
+    {
+      "id": "s17_09",
+      "name": "机关相柳肆虐",
+      "location": "迷楼",
+      "chapter": "第162回",
+      "description": "黎姑姑与红叶操控巨型机关相柳，七首巨怪喷吐毒雨飞石烈火雷电，阻截邪宗众煞前往炼心殿",
+      "characters": [
+        "黎姑姑",
+        "红叶",
+        "骨海将军",
+        "千臂邪佛",
+        "邪军师",
+        "魇夫人"
+      ]
+    },
+    {
+      "id": "s17_10",
+      "name": "李不制服血尊",
+      "location": "云海之上",
+      "chapter": "第163回",
+      "description": "李不施展神秘力量，以非天地所有的力量制服血尊，将其带走",
+      "characters": [
+        "李不",
+        "血尊"
+      ]
+    },
+    {
+      "id": "s17_11",
+      "name": "龙九公主擒获凌婕妤",
+      "location": "迷楼外围",
+      "chapter": "第163回",
+      "description": "凌婕妤遭紫发丽姬与白裳女子追杀，逃至龙九公主处被擒，三人商议将其献与逍遥郎君做炉鼎",
+      "characters": [
+        "凌婕妤",
+        "龙九公主",
+        "紫发丽姬"
+      ]
+    },
+    {
+      "id": "s17_12",
+      "name": "皇后安排小玄假扮皇帝",
+      "location": "雍怡宫",
+      "chapter": "第164回",
+      "description": "小玄醒来发现被安排假扮皇帝，皇后告知其需戴七绝覆遮面，武翩跹重伤在仪真宫养伤",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "id": "s17_13",
+      "name": "小玄夜探仪真宫",
+      "location": "仪真宫",
+      "chapter": "第164回",
+      "description": "小玄深夜潜往仪真宫见武翩跹，武翩跹为其检查伤势，叮嘱提防皇后与宫中党羽，告知阎卓忠是自己人",
+      "characters": [
+        "崔小玄",
+        "武翩跹",
+        "黎姑姑"
+      ]
+    },
+    {
+      "id": "s17_14",
+      "name": "百羞秘卷",
+      "location": "雍怡宫",
+      "chapter": "第165-166回",
+      "description": "皇后取来百羞秘卷，向小玄展示宫中妃嫔画像及春宫图，介绍各妃嫔身份背景，包括汤贵妃、宋昭容、邵弄红、糖妃、唐淑妃等",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "id": "s17_15",
+      "name": "小玄与皇后初夜",
+      "location": "雍怡宫",
+      "chapter": "第166回",
+      "description": "小玄与皇后发生亲密关系，小玄展现玄阳盘龙杵，皇后施展拘龙锁等采补秘技",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "id": "s17_16",
+      "name": "秘器之乐",
+      "location": "雍怡宫",
+      "chapter": "第167回",
+      "description": "皇后展示橱中收藏的各种秘器，小玄以紫霓鞭鞭打皇后，二人纵情享乐",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "id": "s17_17",
+      "name": "水帘香榭接见妃嫔",
+      "location": "水帘香榭",
+      "chapter": "第167回",
+      "description": "小玄以皇帝身份在水帘香榭接见各宫妃嫔，袁充容试探皇帝，灵妃奶拉忽现身",
+      "characters": [
+        "崔小玄",
+        "皇后",
+        "袁充容",
+        "汤贵妃",
+        "唐淑妃",
+        "糖妃",
+        "灵妃奶拉忽",
+        "阎卓忠",
+        "邓斐"
+      ]
+    },
+    {
+      "id": "s17_18",
+      "name": "三臣奏报国事",
+      "location": "水帘香榭",
+      "chapter": "第168回",
+      "description": "汤国璋、唐凤山、李翰馥奏报向阳诸县地震灾情、方少麟反叛、府库空虚等紧急事务",
+      "characters": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "李翰馥",
+        "阎卓忠",
+        "邓斐"
+      ]
+    },
+    {
+      "id": "s17_19",
+      "name": "小玄与皇后争吵",
+      "location": "雍怡宫",
+      "chapter": "第168回",
+      "description": "小玄先斩后奏征调皇后堂叔扈鉴亭存粮赈灾，皇后大怒，二人激烈争吵后和好",
+      "characters": [
+        "崔小玄",
+        "皇后"
+      ]
+    },
+    {
+      "id": "s17_20",
+      "name": "小玄探望雪妃",
+      "location": "栖霞宫",
+      "chapter": "第169回",
+      "description": "小玄前往栖霞宫探望程雪若，见其种植灵物、照料患病宫娥，下令释放江应存、改善雪妃待遇",
+      "characters": [
+        "崔小玄",
+        "程雪若",
+        "阎卓忠",
+        "阿福",
+        "阿寿"
+      ]
+    },
+    {
+      "id": "s17_21",
+      "name": "夜议御驾亲征",
+      "location": "水帘香榭",
+      "chapter": "第170回",
+      "description": "汤国璋与唐凤山深夜奏报程兆琦被困坠星岭、冯晋东征讨方少麟失败等军情，小玄决意御驾亲征",
+      "characters": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "皇后",
+        "阎卓忠",
+        "邓斐"
+      ]
+    },
+    {
+      "id": "s17_22",
+      "name": "雪妃深夜求见",
+      "location": "水帘香榭",
+      "chapter": "第170回",
+      "description": "雪妃冒死深夜求见皇帝，请求发兵救援父亲程兆琦，遭皇后怒斥，小玄暗中承诺发兵",
+      "characters": [
+        "程雪若",
+        "崔小玄",
+        "皇后",
+        "阎卓忠"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "e17_01",
+      "scene": "s17_01",
+      "chapter": "第161回",
+      "type": "其他",
+      "description": "迷楼突发异象，地震、迷雾、电光、宫苑移位，禁卫总领项炯指挥布防",
+      "participants": [
+        "项炯"
+      ],
+      "impact": "迷楼陷入混乱，为后续大战埋下伏笔"
+    },
+    {
+      "id": "e17_02",
+      "scene": "s17_02",
+      "chapter": "第161回",
+      "type": "战斗",
+      "description": "邪宗众煞赶赴炼心殿途中遭遇机关鹤阵法袭击，韦登被电火击落",
+      "participants": [
+        "骨海将军",
+        "千臂邪佛",
+        "邪军师",
+        "韦登"
+      ],
+      "impact": "延误邪宗众煞救援时间"
+    },
+    {
+      "id": "e17_03",
+      "scene": "s17_03",
+      "chapter": "第161回",
+      "type": "战斗",
+      "description": "炼心殿大战爆发，皇帝祭出炼魂幢释放魔潮，武翩跹以落宝金钱破之",
+      "participants": [
+        "武翩跹",
+        "崔小玄",
+        "皇后",
+        "毒眼影煞"
+      ],
+      "impact": "炼魂幢被破，魔潮消散"
+    },
+    {
+      "id": "e17_04",
+      "scene": "s17_04",
+      "chapter": "第162回",
+      "type": "战斗",
+      "description": "武翩跹与皇帝激战，皇帝连祭万劫白骨塔、噬天轮皆被落宝金钱击落",
+      "participants": [
+        "武翩跹",
+        "崔小玄",
+        "皇后"
+      ],
+      "impact": "皇帝连失三件至宝"
+    },
+    {
+      "id": "e17_05",
+      "scene": "s17_05",
+      "chapter": "第162回",
+      "type": "战斗",
+      "description": "小玄以八爪炎龙鞭缠住皇帝双臂，武翩跹趁机挑离圣皇锁，重创皇帝面门与腹部",
+      "participants": [
+        "崔小玄",
+        "武翩跹"
+      ],
+      "impact": "皇帝失去不坏圣皇锁护体，被重创"
+    },
+    {
+      "id": "e17_06",
+      "scene": "s17_06",
+      "chapter": "第163回",
+      "type": "战斗",
+      "description": "皇帝祭出混沌印令万物皆止，趁机重创武翩跹并夺取七绝覆",
+      "participants": [
+        "武翩跹",
+        "崔小玄",
+        "皇后"
+      ],
+      "impact": "武翩跹失去战力，皇帝获得七绝覆"
+    },
+    {
+      "id": "e17_07",
+      "scene": "s17_07",
+      "chapter": "第163回",
+      "type": "战斗",
+      "description": "小玄绝地反击，七绝覆飞至其脸上，神秘真气击溃皇帝体内痼疾，小玄一剑刺穿皇帝胸膛，皇帝现紫麒麟元形而亡",
+      "participants": [
+        "崔小玄"
+      ],
+      "impact": "皇帝（晁紫阁）死亡，七绝覆归于小玄"
+    },
+    {
+      "id": "e17_08",
+      "scene": "s17_08",
+      "chapter": "第162回",
+      "type": "战斗",
+      "description": "逍遥郎君化黑龙欲往迷楼，遭唐凤山率烈火军拦截，唐彦阳挑战黑龙",
+      "participants": [
+        "逍遥郎君",
+        "唐凤山",
+        "唐彦阳"
+      ],
+      "impact": "烈火军被阻于迷楼之外"
+    },
+    {
+      "id": "e17_09",
+      "scene": "s17_09",
+      "chapter": "第162回",
+      "type": "战斗",
+      "description": "黎姑姑与红叶操控机关相柳肆虐迷楼，喷吐毒雨飞石烈火雷电，阻截邪宗众煞",
+      "participants": [
+        "黎姑姑",
+        "红叶",
+        "骨海将军",
+        "千臂邪佛"
+      ],
+      "impact": "邪宗众煞被阻，炼心殿外围封锁"
+    },
+    {
+      "id": "e17_10",
+      "scene": "s17_10",
+      "chapter": "第163回",
+      "type": "战斗",
+      "description": "李不施展非天地所有的神秘力量制服血尊",
+      "participants": [
+        "李不",
+        "血尊"
+      ],
+      "impact": "血尊被李不带走，凌婕妤一方失去强援"
+    },
+    {
+      "id": "e17_11",
+      "scene": "s17_11",
+      "chapter": "第163回",
+      "type": "战斗",
+      "description": "凌婕妤遭紫发丽姬与白裳女子追杀，被龙九公主以动海钟擒获",
+      "participants": [
+        "凌婕妤",
+        "龙九公主",
+        "紫发丽姬"
+      ],
+      "impact": "凌婕妤被擒，邪宗在迷楼的眼线被清除"
+    },
+    {
+      "id": "e17_12",
+      "scene": "s17_12",
+      "chapter": "第164回",
+      "type": "对话",
+      "description": "皇后安排小玄假扮皇帝，告知其戴七绝覆遮面、冒充天子以应对危局",
+      "participants": [
+        "崔小玄",
+        "皇后"
+      ],
+      "impact": "小玄开始假扮皇帝，局面暂时稳定"
+    },
+    {
+      "id": "e17_13",
+      "scene": "s17_13",
+      "chapter": "第164回",
+      "type": "对话",
+      "description": "小玄夜探仪真宫见武翩跹，武翩跹叮嘱提防皇后与宫中党羽，告知阎卓忠是自己人",
+      "participants": [
+        "崔小玄",
+        "武翩跹",
+        "黎姑姑"
+      ],
+      "impact": "小玄获知关键情报，建立与武翩跹的联络渠道"
+    },
+    {
+      "id": "e17_14",
+      "scene": "s17_18",
+      "chapter": "第168回",
+      "type": "对话",
+      "description": "三臣奏报向阳诸县地震、方少麟反叛、府库空虚，小玄下令赈灾征粮、派冯晋东平叛",
+      "participants": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "李翰馥"
+      ],
+      "impact": "小玄开始处理朝政，展现仁政"
+    },
+    {
+      "id": "e17_15",
+      "scene": "s17_19",
+      "chapter": "第168回",
+      "type": "对话",
+      "description": "小玄先斩后奏征调皇后堂叔存粮赈灾，引发皇后大怒，二人激烈争吵后和好",
+      "participants": [
+        "崔小玄",
+        "皇后"
+      ],
+      "impact": "小玄与皇后关系经受考验后更加亲密"
+    },
+    {
+      "id": "e17_16",
+      "scene": "s17_20",
+      "chapter": "第169回",
+      "type": "对话",
+      "description": "小玄前往栖霞宫探望程雪若，下令释放江应存、改善雪妃待遇",
+      "participants": [
+        "崔小玄",
+        "程雪若",
+        "阎卓忠"
+      ],
+      "impact": "雪妃对皇帝态度有所改观，江应存获释"
+    },
+    {
+      "id": "e17_17",
+      "scene": "s17_21",
+      "chapter": "第170回",
+      "type": "对话",
+      "description": "唐凤山奏报程兆琦被困坠星岭、冯晋东征讨方少麟失败，小玄决意御驾亲征",
+      "participants": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "皇后"
+      ],
+      "impact": "小玄决定御驾亲征，与皇后产生重大分歧"
+    },
+    {
+      "id": "e17_18",
+      "scene": "s17_22",
+      "chapter": "第170回",
+      "type": "对话",
+      "description": "雪妃深夜求见请求发兵救父，遭皇后怒斥，小玄暗中承诺",
+      "participants": [
+        "程雪若",
+        "崔小玄",
+        "皇后",
+        "阎卓忠"
+      ],
+      "impact": "雪妃得知皇帝有意亲征，皇后对小玄与雪妃关系生疑"
+    }
+  ],
+  "new_characters": [
+    {
+      "name": "骨海将军",
+      "aliases": [],
+      "gender": "未知",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪皇麾下七将军之一，全身披挂厚盔重甲，面无丝肉，空着两只漆黑眼洞，形同活骷髅，手持残缺如锯的巨剑",
+      "abilities": [
+        "武技",
+        "真气运用"
+      ],
+      "weapons": [
+        "残缺巨剑"
+      ]
+    },
+    {
+      "name": "千臂邪佛",
+      "aliases": [],
+      "gender": "男",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪宗百煞中排序第一，光头大肚，身着赤红如血的大袖袈裟，一脸凶色，颈悬九魅连环（人头骷髅珠链）",
+      "abilities": [
+        "武技",
+        "九魅连环感应术"
+      ],
+      "weapons": [
+        "九魅连环"
+      ]
+    },
+    {
+      "name": "邪军师",
+      "aliases": [],
+      "gender": "男",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪宗百煞中排序第四，骨瘦如柴面色惨白，身着云袍芒鞋，手捏白骨折扇，善于分析判断",
+      "abilities": [
+        "智谋",
+        "阵法辨识"
+      ],
+      "weapons": [
+        "白骨折扇"
+      ]
+    },
+    {
+      "name": "魇夫人",
+      "aliases": [
+        "袁媚"
+      ],
+      "gender": "女",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪皇麾下七将军之一，妃嫔衣饰，头绾凌云髻，两道细长蛾眉直飞鬓中，右眼角下贴蛛网状花钿，穿紫绡衣，擅采补魇惑之术，艳名直追碧怜怜，晁紫阁贴身心腹，册封充容兼尚宫之职",
+      "abilities": [
+        "采补魇惑之术",
+        "媚功"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "花婉",
+      "aliases": [
+        "摘命迷蝶"
+      ],
+      "gender": "女",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪宗百煞排序七十七，女官装束，绾灵蛇髻，容颜妖娆冶艳，在宫中任司闱之职",
+      "abilities": [
+        "媚功",
+        "迷术"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "月凝",
+      "aliases": [
+        "玉骨罗刹"
+      ],
+      "gender": "女",
+      "faction": "邪宗",
+      "first_appearance": "第161回",
+      "description": "邪宗百煞排序七十八，女官装束，绾回心髻，容颜妖娆冶艳，在宫中任掌闱之职",
+      "abilities": [
+        "媚功",
+        "迷术"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "唐凤山",
+      "aliases": [
+        "骠骑大将军"
+      ],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第162回",
+      "description": "皇朝四大梁柱之一，年近半百，坐镇玉京，师从太古异人（火圣祝融一脉传人），座下圣火犼，持烈焰巨剑，育有长子唐彦阳",
+      "abilities": [
+        "武技",
+        "火系法术",
+        "统兵"
+      ],
+      "weapons": [
+        "烈焰巨剑"
+      ]
+    },
+    {
+      "name": "唐彦阳",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第162回",
+      "description": "唐凤山长子，刀眉虎目，手执长戟（六炎神戟），胯下金睛火猊王",
+      "abilities": [
+        "武技"
+      ],
+      "weapons": [
+        "六炎神戟"
+      ]
+    },
+    {
+      "name": "汤国璋",
+      "aliases": [
+        "相国",
+        "宰相"
+      ],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第168回",
+      "description": "当朝宰相，汤贵妃之父，主持朝政，德高望重，品级爵位在唐凤山之上",
+      "abilities": [
+        "治国理政"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "李翰馥",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第168回",
+      "description": "户部尚书，负责朝廷财政",
+      "abilities": [
+        "理财"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "程雪若",
+      "aliases": [
+        "雪妃"
+      ],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "奉天候程兆琦之女，程水若之胞姐，肌肤奇白如雪，性情温婉聪慧，识药石医理，原册贤妃（雪妃），因劝阻晁紫阁杀江应存被贬为才人打入栖霞宫冷宫，种植甘华、洞冥草等灵物",
+      "abilities": [
+        "药石医理"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "灵妃奶拉忽",
+      "aliases": [
+        "奶拉忽",
+        "灵妃"
+      ],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第167回",
+      "description": "胡人女子，原为北方十五族首天狼王的宠妃，被晁紫阁掳回，双瞳水蓝，黑发，幼时遇异人传授海外占星术，擅西域天魔舞，身柔若无骨，独册为灵妃",
+      "abilities": [
+        "海外占星术",
+        "西域天魔舞"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "江应存",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "原为门下侍郎（正四品），性情耿直忠烈，因上疏阻挠晁紫阁采选美女、怒斥昏君被下天牢",
+      "abilities": [
+        "直言进谏"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "阿福",
+      "aliases": [],
+      "gender": "男",
+      "faction": "鬼王门",
+      "first_appearance": "第169回",
+      "description": "阎卓忠手下内相，阿寿之兄，哑巴，身材面貌平常，出自鬼王门，修炼五鬼搬运术，曾击败禁卫总领项炯",
+      "abilities": [
+        "五鬼搬运术",
+        "武技"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "阿寿",
+      "aliases": [],
+      "gender": "男",
+      "faction": "鬼王门",
+      "first_appearance": "第169回",
+      "description": "阎卓忠手下内相，阿福之弟，哑巴，身材面貌平常，出自鬼王门，修炼五鬼搬运术，曾击败禁卫总领项炯",
+      "abilities": [
+        "五鬼搬运术",
+        "武技"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "辛荣",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第161回",
+      "description": "备身郎将，率部护卫皇帝，炼心殿之夜被莫名移至天宝苑",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "邓斐",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第167回",
+      "description": "宫中内相（太监），负责传旨及宫中事务",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "周子衎",
+      "aliases": [],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "御用大画师，泽阳人，百年不遇的奇才，画技名满天下，被晁紫阁命人净身后绘制百羞秘卷",
+      "abilities": [
+        "绘画"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "宋昭容",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "居宝林苑，左光禄大夫宋彦明之女，知书达理娴慧",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "邵弄红",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "才人，殿中监邵纪芝之女，伶牙利齿能说会道，晁紫阁近来颇宠的嫔御",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "丹绮丝",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第166回",
+      "description": "居骀荡苑，原西域狐胡国公主，因惧晁紫阁灭国而和亲入宫，册美人，熟习龟兹舞蹈",
+      "abilities": [
+        "龟兹舞蹈"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "洛美人",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第166回",
+      "description": "居韶宁院，刑部尚书洛俨之女，其舅为忠武将军冯晋东",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "冯晋东",
+      "aliases": [
+        "忠武将军",
+        "冯夫子"
+      ],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第168回",
+      "description": "忠武将军，有万夫莫当之勇，擅奇门遁甲之术，麾下兵强马壮，统辖虎头军大部，坐镇定州，征讨方少麟时在赤龙关遭真武荡魔大帝显圣阻击而溃败",
+      "abilities": [
+        "武技",
+        "奇门遁甲",
+        "统兵"
+      ],
+      "weapons": []
+    },
+    {
+      "name": "扈鉴亭",
+      "aliases": [
+        "平宁候"
+      ],
+      "gender": "男",
+      "faction": "日月皇朝",
+      "first_appearance": "第168回",
+      "description": "平宁候，皇后堂叔，封邑万户，富可敌国，存粮如山，居承恩城",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "南宫修仪",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第165回",
+      "description": "南宫阳之女，受皇太后懿旨赐婚配与晁紫阁为妃，受册修仪，在禁苑宴上被晁紫阁活活撕碎",
+      "abilities": [],
+      "weapons": []
+    },
+    {
+      "name": "冰儿",
+      "aliases": [],
+      "gender": "女",
+      "faction": "日月皇朝",
+      "first_appearance": "第169回",
+      "description": "栖霞宫小宫娥，照顾雪妃及患病女眷",
+      "abilities": [],
+      "weapons": []
+    }
+  ],
+  "characters_update": [
+    {
+      "name": "崔小玄",
+      "new_aliases": [
+        "皇帝",
+        "陛下",
+        "万岁爷",
+        "皇上"
+      ],
+      "new_abilities": [
+        "七绝覆（魔君之覆）佩戴",
+        "帝王伪装"
+      ],
+      "description_update": "戴上七绝覆假扮日月皇朝皇帝，七绝覆能汲取天地七种气息自行提升修为与疗养，体内潜藏神秘力量可在危急时爆发",
+      "faction_update": "日月皇朝（假扮皇帝）"
+    },
+    {
+      "name": "皇后",
+      "new_aliases": [
+        "梓童"
+      ],
+      "new_abilities": [
+        "还形铸体水髓咒",
+        "拘龙锁（采补秘技）"
+      ],
+      "description_update": " revealed as disciple of 逍遥郎君 (东海逍遥门), skilled in body-restoration arts and bedroom techniques, has four loyal maids: 簪儿、珰儿、镯儿、璧儿",
+      "faction_update": "日月皇朝皇后 / 东海逍遥门弟子"
+    },
+    {
+      "name": "武翩跹",
+      "new_aliases": [
+        "迷妃"
+      ],
+      "new_abilities": [
+        "七绝覆（魔君之覆）使用",
+        "落宝金钱操控",
+        "破甲诀"
+      ],
+      "description_update": "被皇帝重创后在仪真宫养伤，暗中通过红叶与小玄联络，阎卓忠为其内应",
+      "faction_update": ""
+    },
+    {
+      "name": "阎卓忠",
+      "new_aliases": [],
+      "new_abilities": [],
+      "description_update": " revealed as loyal to 武翩跹, serves as secret ally inside the palace",
+      "faction_update": "日月皇朝 / 武翩跹阵营"
+    },
+    {
+      "name": "项炯",
+      "new_aliases": [
+        "禁卫总领"
+      ],
+      "new_abilities": [],
+      "description_update": "禁卫总领，锦袍明甲阔面戟须，腰悬暗金竹节鞭（刻满符印），龙牙卫与凤翎卫中武技前三高手",
+      "faction_update": ""
+    },
+    {
+      "name": "黎姑姑",
+      "new_aliases": [],
+      "new_abilities": [
+        "机关相柳操控"
+      ],
+      "description_update": "与红叶共同操控巨型机关相柳（七首巨怪），在炼心殿之战中封锁外围",
+      "faction_update": ""
+    },
+    {
+      "name": "红叶",
+      "new_aliases": [],
+      "new_abilities": [
+        "机关相柳操控"
+      ],
+      "description_update": "与黎姑姑共同操控巨型机关相柳，担任武翩跹与小玄之间的联络人",
+      "faction_update": ""
+    },
+    {
+      "name": "逍遥郎君",
+      "new_aliases": [],
+      "new_abilities": [],
+      "description_update": "化黑龙形态可长达百丈以上，龙吟清越悠扬威势如渊",
+      "faction_update": ""
+    },
+    {
+      "name": "李不",
+      "new_aliases": [],
+      "new_abilities": [
+        "非天地所有的神秘力量",
+        "万物禁制"
+      ],
+      "description_update": "展现出超越天地的境界，自称大劫将至须有所改变，制服血尊并将其带走",
+      "faction_update": ""
+    },
+    {
+      "name": "龙九公主",
+      "new_aliases": [],
+      "new_abilities": [
+        "动海钟操控"
+      ],
+      "description_update": "持有妖祖玄龙遗宝动海钟（内藏玄龙一魄），持青蓝钟状法器与蓝色绫带",
+      "faction_update": ""
+    },
+    {
+      "name": "方少麟",
+      "new_aliases": [
+        "大泽令"
+      ],
+      "new_abilities": [
+        "统兵"
+      ],
+      "description_update": "已反叛朝廷，占据大泽（皇朝最大粮仓），广发讨檄列皇帝十罪，获玄教高人及真武荡魔大帝显圣相助",
+      "faction_update": "反叛势力"
+    },
+    {
+      "name": "程兆琦",
+      "new_aliases": [
+        "奉天候"
+      ],
+      "new_abilities": [],
+      "description_update": "率疾雷军征讨云州，遭方少麟截断后路，又被南宫阳伏击，身受重伤，困于坠星岭",
+      "faction_update": ""
+    },
+    {
+      "name": "南宫阳",
+      "new_aliases": [
+        "南安候",
+        "镇西候"
+      ],
+      "new_abilities": [],
+      "description_update": "原为皇朝大将，因晁紫阁撕碎其女南宫修仪而反叛，屠戮晁家宗亲二百六十七口，现盘踞云州",
+      "faction_update": "反叛势力"
+    },
+    {
+      "name": "簪儿",
+      "new_aliases": [],
+      "new_abilities": [],
+      "description_update": "皇后四大心腹宫娥之一，负责照料小玄饮食起居，性格机灵",
+      "faction_update": ""
+    },
+    {
+      "name": "糖妃",
+      "new_aliases": [
+        "汤贵妃"
+      ],
+      "new_abilities": [],
+      "description_update": "当朝宰相汤国璋之女，地位超然，身子丰满肌肤白嫩如羊脂，言词风趣",
+      "faction_update": ""
+    },
+    {
+      "name": "凌婕妤",
+      "new_aliases": [
+        "凌姬"
+      ],
+      "new_abilities": [],
+      "description_update": "晁紫阁心腹，在炼心殿之战后逃逸，遭紫发丽姬追杀，被龙九公主以动海钟擒获",
+      "faction_update": ""
+    }
+  ],
+  "new_factions": [
+    {
+      "name": "鬼王门",
+      "type": "方外教派",
+      "leader": "未知",
+      "allies": [],
+      "enemies": [],
+      "importance": 2
+    },
+    {
+      "name": "烈火军",
+      "type": "军队",
+      "leader": "唐凤山",
+      "allies": [
+        "日月皇朝"
+      ],
+      "enemies": [],
+      "importance": 3
+    },
+    {
+      "name": "虎头军",
+      "type": "军队",
+      "leader": "冯晋东",
+      "allies": [
+        "日月皇朝"
+      ],
+      "enemies": [
+        "方少麟"
+      ],
+      "importance": 2
+    },
+    {
+      "name": "疾雷军",
+      "type": "军队",
+      "leader": "程兆琦",
+      "allies": [
+        "日月皇朝"
+      ],
+      "enemies": [
+        "南宫阳",
+        "方少麟"
+      ],
+      "importance": 3
+    }
+  ],
+  "timeline": [
+    {
+      "chapter": "第161回",
+      "event": "迷楼异变，炼心殿大战爆发，武翩跹以落宝金钱破炼魂幢",
+      "characters_involved": [
+        "武翩跹",
+        "崔小玄",
+        "皇后",
+        "毒眼影煞",
+        "项炯",
+        "骨海将军",
+        "千臂邪佛"
+      ]
+    },
+    {
+      "chapter": "第162回",
+      "event": "武翩跹与皇帝激战，连破万劫白骨塔、噬天轮，夺取圣皇锁重创皇帝；逍遥郎君遭烈火军拦截；机关相柳肆虐迷楼",
+      "characters_involved": [
+        "武翩跹",
+        "崔小玄",
+        "皇后",
+        "逍遥郎君",
+        "唐凤山",
+        "黎姑姑",
+        "红叶"
+      ]
+    },
+    {
+      "chapter": "第163回",
+      "event": "皇帝祭混沌印重创武翩跹夺七绝覆，小玄绝地反击击杀皇帝（紫麒麟现形）；李不制服血尊；龙九公主擒凌婕妤；皇后安排小玄假扮皇帝",
+      "characters_involved": [
+        "崔小玄",
+        "武翩跹",
+        "皇后",
+        "李不",
+        "血尊",
+        "龙九公主",
+        "凌婕妤"
+      ]
+    },
+    {
+      "chapter": "第164回",
+      "event": "小玄苏醒开始假扮皇帝，夜探仪真宫见武翩跹获知关键情报",
+      "characters_involved": [
+        "崔小玄",
+        "皇后",
+        "武翩跹",
+        "黎姑姑",
+        "簪儿"
+      ]
+    },
+    {
+      "chapter": "第165回",
+      "event": "皇后展示百羞秘卷介绍宫中妃嫔，小玄见画中程雪若心生痴迷",
+      "characters_involved": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "chapter": "第166回",
+      "event": "小玄与皇后发生亲密关系，小玄展现玄阳盘龙杵",
+      "characters_involved": [
+        "崔小玄",
+        "皇后",
+        "簪儿"
+      ]
+    },
+    {
+      "chapter": "第167回",
+      "event": "小玄与皇后纵情秘器之乐；水帘香榭接见各宫妃嫔，袁充容试探皇帝",
+      "characters_involved": [
+        "崔小玄",
+        "皇后",
+        "袁充容",
+        "汤国璋",
+        "唐凤山",
+        "糖妃",
+        "灵妃奶拉忽"
+      ]
+    },
+    {
+      "chapter": "第168回",
+      "event": "三臣奏报国事（灾情、方少麟反叛、府库空虚），小玄下令赈灾征粮、派冯晋东平叛；与皇后因征粮事争吵后和好",
+      "characters_involved": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "李翰馥",
+        "皇后"
+      ]
+    },
+    {
+      "chapter": "第169回",
+      "event": "小玄探望栖霞宫雪妃，下令释放江应存、改善雪妃待遇；获阿福阿寿为贴身护卫",
+      "characters_involved": [
+        "崔小玄",
+        "程雪若",
+        "阎卓忠",
+        "阿福",
+        "阿寿"
+      ]
+    },
+    {
+      "chapter": "第170回",
+      "event": "程兆琦被困坠星岭、冯晋东征讨失败，小玄决意御驾亲征遭皇后反对；雪妃深夜求见请求发兵救父",
+      "characters_involved": [
+        "崔小玄",
+        "汤国璋",
+        "唐凤山",
+        "皇后",
+        "程雪若",
+        "阎卓忠"
+      ]
+    }
+  ]
+}

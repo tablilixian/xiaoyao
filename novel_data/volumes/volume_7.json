@@ -1,0 +1,1327 @@
+{
+  "meta": {
+    "volume": 7
+  },
+  "locations": [
+    {
+      "id": "loc_091",
+      "name": "芦苇荡",
+      "type": "natural",
+      "parent": null,
+      "description": "飞萝与小玄躲避天兵追击的水域，芦花如雪飘舞，水面粼粼，隐蔽性极强",
+      "first_appearance": "第七卷第一回",
+      "importance": 2,
+      "connections": [
+        "loc_092"
+      ]
+    },
+    {
+      "id": "loc_092",
+      "name": "葫芦镇",
+      "type": "settlement",
+      "parent": null,
+      "description": "群山环抱中的隐秘大谷，河道纵横、房屋星罗棋布，乃诸界炼材师、炼器师等聚集的珍宝交易乐土，阐教门人、西天僧佛及天庭诸神不得进入，水晶潭位于镇中心",
+      "first_appearance": "第七卷第一回",
+      "importance": 5,
+      "connections": [
+        "loc_091",
+        "loc_093",
+        "loc_094",
+        "loc_095",
+        "loc_096",
+        "loc_097",
+        "loc_098"
+      ]
+    },
+    {
+      "id": "loc_093",
+      "name": "水晶潭",
+      "type": "landmark",
+      "parent": "loc_092",
+      "description": "地界一十九灵脉之一，位于葫芦镇中心，产出水晶淖（绝佳炼宝材料），能使性相冲突的材料融合稳定，由截教门人空空老仙守护",
+      "first_appearance": "第七卷第一回",
+      "importance": 4,
+      "connections": [
+        "loc_092"
+      ]
+    },
+    {
+      "id": "loc_094",
+      "name": "猪家客栈",
+      "type": "building",
+      "parent": "loc_092",
+      "description": "葫芦镇上的客栈，临河而筑架于桥头之上，老板为猪精猪哈哈，以猪家蹄子闻名，装潢富丽雅致",
+      "first_appearance": "第七卷第一回",
+      "importance": 3,
+      "connections": [
+        "loc_092"
+      ]
+    },
+    {
+      "id": "loc_095",
+      "name": "天地无宝",
+      "type": "building",
+      "parent": "loc_092",
+      "description": "葫芦镇上规模最大的珍宝店铺，十余层高塔，分七色铭牌等级，售卖各种珍稀材料、兵器法宝及奇禽异兽，属空空老仙产业",
+      "first_appearance": "第七卷第五回",
+      "importance": 4,
+      "connections": [
+        "loc_092"
+      ]
+    },
+    {
+      "id": "loc_096",
+      "name": "迷林",
+      "type": "natural",
+      "parent": null,
+      "description": "葫芦镇内隐藏的巨大森林秘境，无边无际，清者自清迷者自迷，内有猛禽恶兽，白眉翁隐居其中，实为某结界或秘境入口",
+      "first_appearance": "第七卷第六回",
+      "importance": 5,
+      "connections": [
+        "loc_092",
+        "loc_099"
+      ]
+    },
+    {
+      "id": "loc_097",
+      "name": "白眉翁居所",
+      "type": "building",
+      "parent": "loc_096",
+      "description": "迷林中的数间低矮房屋，后有竹篱菜园，白眉翁隐居于此，屋内简陋仅一桌四椅",
+      "first_appearance": "第七卷第八回",
+      "importance": 3,
+      "connections": [
+        "loc_096"
+      ]
+    },
+    {
+      "id": "loc_098",
+      "name": "废弃园子",
+      "type": "building",
+      "parent": "loc_092",
+      "description": "葫芦镇内一处被废弃的院落，有粉白围墙，小玄逃入其中后进入迷林",
+      "first_appearance": "第七卷第六回",
+      "importance": 2,
+      "connections": [
+        "loc_092",
+        "loc_096"
+      ]
+    },
+    {
+      "id": "loc_099",
+      "name": "迷林云层",
+      "type": "natural",
+      "parent": "loc_096",
+      "description": "迷林上空的云海层，天庭大军在此集结，妖界圣御军与圣灵兵团亦在此对峙天兵",
+      "first_appearance": "第七卷第十回",
+      "importance": 3,
+      "connections": [
+        "loc_096"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_086",
+      "location_id": "loc_091",
+      "location_name": "芦苇荡",
+      "chapters": [
+        "第一回"
+      ],
+      "characters": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "events": [
+        "evt_166",
+        "evt_167"
+      ]
+    },
+    {
+      "id": "scene_087",
+      "location_id": null,
+      "location_name": "空中/赶路途中",
+      "chapters": [
+        "第一回",
+        "第二回"
+      ],
+      "characters": [
+        "崔小玄",
+        "飞萝",
+        "哪吒"
+      ],
+      "events": [
+        "evt_168",
+        "evt_169",
+        "evt_170"
+      ]
+    },
+    {
+      "id": "scene_088",
+      "location_id": "loc_094",
+      "location_name": "猪家客栈",
+      "chapters": [
+        "第一回",
+        "第二回",
+        "第三回"
+      ],
+      "characters": [
+        "崔小玄",
+        "飞萝",
+        "猪哈哈",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "events": [
+        "evt_171",
+        "evt_172",
+        "evt_173",
+        "evt_174"
+      ]
+    },
+    {
+      "id": "scene_089",
+      "location_id": "loc_094",
+      "location_name": "猪家客栈客房",
+      "chapters": [
+        "第三回",
+        "第四回"
+      ],
+      "characters": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "events": [
+        "evt_175",
+        "evt_176"
+      ]
+    },
+    {
+      "id": "scene_090",
+      "location_id": "loc_094",
+      "location_name": "猪家客栈大堂",
+      "chapters": [
+        "第五回"
+      ],
+      "characters": [
+        "崔小玄",
+        "猪哈哈",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "events": [
+        "evt_177",
+        "evt_178"
+      ]
+    },
+    {
+      "id": "scene_091",
+      "location_id": "loc_095",
+      "location_name": "天地无宝",
+      "chapters": [
+        "第五回",
+        "第六回"
+      ],
+      "characters": [
+        "崔小玄",
+        "贺天鹏",
+        "青不留",
+        "问心观道人"
+      ],
+      "events": [
+        "evt_179",
+        "evt_180"
+      ]
+    },
+    {
+      "id": "scene_092",
+      "location_id": "loc_098",
+      "location_name": "废弃园子/葫芦镇街道",
+      "chapters": [
+        "第六回"
+      ],
+      "characters": [
+        "崔小玄",
+        "贺天鹏",
+        "青不留",
+        "问心观道人",
+        "胡紫儿",
+        "胡碧儿",
+        "小魔君"
+      ],
+      "events": [
+        "evt_181",
+        "evt_182",
+        "evt_183"
+      ]
+    },
+    {
+      "id": "scene_093",
+      "location_id": "loc_096",
+      "location_name": "迷林",
+      "chapters": [
+        "第六回",
+        "第七回",
+        "第八回",
+        "第九回",
+        "第十回"
+      ],
+      "characters": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "绝色女子（圣后）",
+        "白眉翁",
+        "巨熊"
+      ],
+      "events": [
+        "evt_184",
+        "evt_185",
+        "evt_186",
+        "evt_187",
+        "evt_188"
+      ]
+    },
+    {
+      "id": "scene_094",
+      "location_id": "loc_097",
+      "location_name": "白眉翁居所",
+      "chapters": [
+        "第八回",
+        "第九回"
+      ],
+      "characters": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "白眉翁",
+        "绝色女子（圣后）"
+      ],
+      "events": [
+        "evt_189",
+        "evt_190"
+      ]
+    },
+    {
+      "id": "scene_095",
+      "location_id": "loc_099",
+      "location_name": "迷林云层",
+      "chapters": [
+        "第十回"
+      ],
+      "characters": [
+        "托塔天王",
+        "哪吒",
+        "张天师",
+        "许天师",
+        "葛天师",
+        "万劫真君"
+      ],
+      "events": [
+        "evt_191"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_166",
+      "type": "escape",
+      "chapter": "第一回",
+      "location": "芦苇荡",
+      "participants": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "summary": "飞萝与小玄在芦苇荡中躲避天兵天将搜捕，小玄使用婀妍赠送的隐形符'空空如也'成功隐匿两人行踪，天兵盘旋搜索后离去",
+      "outcome": "成功躲避天兵搜捕",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "飞萝",
+          "change": 5,
+          "reason": "芦苇荡中相拥等待天兵离去，情感升温"
+        }
+      ]
+    },
+    {
+      "id": "evt_167",
+      "type": "revelation",
+      "chapter": "第一回",
+      "location": "芦苇荡",
+      "participants": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "summary": "飞萝带小玄前往葫芦镇避难，途中解释水晶潭、截教空空老仙及葫芦镇的来历，阐教、西天僧佛及天庭诸神不得进入葫芦镇",
+      "outcome": "小玄了解葫芦镇的特殊地位",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_168",
+      "type": "combat",
+      "chapter": "第一回",
+      "location": "空中",
+      "participants": [
+        "崔小玄",
+        "飞萝",
+        "天兵天将"
+      ],
+      "summary": "小玄驾鹿蜀车冲破天兵天将拦截，八爪炎龙鞭威力大增击退天将，飞萝发现小玄功力因七绝覆吸取邪力而急剧提升",
+      "outcome": "成功突破天兵拦截",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_169",
+      "type": "combat",
+      "chapter": "第二回",
+      "location": "空中",
+      "participants": [
+        "崔小玄",
+        "飞萝",
+        "哪吒"
+      ],
+      "summary": "哪吒追踪至，索要先天太玄。小玄以炎龙鞭与火尖枪激斗数十合不分胜负，飞萝暗发紫犀钗射伤哪吒肩膀，哪吒败退逃走，小玄缴获金霞风火轮",
+      "outcome": "击退哪吒，缴获风火轮",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_170",
+      "type": "revelation",
+      "chapter": "第一回",
+      "location": "赶路途中/葫芦镇",
+      "participants": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "summary": "飞萝发现小玄身上的焰浣罗加持了灵力遮蔽咒，揭示崔采婷赠巾的苦心——遮蔽先天太玄气息。小玄重新扎上焰浣罗，领悟师父深意",
+      "outcome": "小玄明白师父用心，重新佩戴焰浣罗",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "崔采婷",
+          "change": 10,
+          "reason": "领悟师父赠送焰浣罗遮蔽先天太玄的深意，悔恨交加"
+        }
+      ]
+    },
+    {
+      "id": "evt_171",
+      "type": "social",
+      "chapter": "第一回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄",
+        "飞萝",
+        "猪哈哈",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "summary": "小玄与飞萝入住猪家客栈，遇蝴蝶精姐妹胡紫儿、胡碧儿及一群精怪。猪哈哈透露天下大事：南宫阳反叛、七绝覆现世、玄狐后人消息传开",
+      "outcome": "小玄得知天下大势及自己身份已暴露",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_172",
+      "type": "information",
+      "chapter": "第一回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄",
+        "猪哈哈"
+      ],
+      "summary": "猪哈哈讲述三大消息：奉天侯程兆琦平剿南宫阳、百宝娘娘炼造仙兵破阵；七绝覆与小魔君重现世间；玄狐玄玄子后人以玄教弟子身份藏匿于白首仙娘门下",
+      "outcome": "小玄得知贺天鹏散布其身世消息",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_173",
+      "type": "social",
+      "chapter": "第一回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄",
+        "飞萝",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "summary": "小玄以无相之眼识破胡紫儿、胡碧儿为蝴蝶精所化，众精怪皆为豺狼熊豹等兽精。两女对小玄态度傲慢轻蔑",
+      "outcome": "小玄识破两女真身",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "胡紫儿",
+          "change": -3,
+          "reason": "两女态度傲慢轻蔑"
+        }
+      ]
+    },
+    {
+      "id": "evt_174",
+      "type": "trade",
+      "chapter": "第一回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄",
+        "猪哈哈"
+      ],
+      "summary": "小玄以青瑛抵付房费，猪哈哈见青瑛极大极纯大为震惊，免费提供上等大套间，承诺次日议价",
+      "outcome": "小玄获得住宿，青瑛价值引关注",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_175",
+      "type": "romance",
+      "chapter": "第三回",
+      "location": "猪家客栈客房",
+      "participants": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "summary": "晨起飞萝疗伤需小玄协助，两人窗前缠绵拥吻，飞萝引导小玄以双修之术助其化解体内雷力，期间小玄暗用绮姬所传九鼎还丹诀汲纳之术",
+      "outcome": "飞萝雷力化解大半，双修疗伤成功",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "飞萝",
+          "change": 20,
+          "reason": "双修疗伤，肌肤相亲，情感与信任大幅提升"
+        }
+      ]
+    },
+    {
+      "id": "evt_176",
+      "type": "conversation",
+      "chapter": "第四回",
+      "location": "猪家客栈客房",
+      "participants": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "summary": "飞萝解释双修之术可疗伤培元，小玄欲学被拒。飞萝透露必须离开去玉京破解武翩跹的先天无极阵，小玄挽留未果。飞萝发现小玄曾与精怪结拜",
+      "outcome": "小玄得知飞萝终将离去",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "飞萝",
+          "change": 5,
+          "reason": "飞萝坦诚告知离去原因，信任加深"
+        }
+      ]
+    },
+    {
+      "id": "evt_177",
+      "type": "trade",
+      "chapter": "第五回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄",
+        "猪哈哈"
+      ],
+      "summary": "猪哈哈以八千两起价收购青瑛，小玄故意抬价至两万两。正欲成交时胡紫儿、胡碧儿带精怪闯入，意图夺取青瑛",
+      "outcome": "交易中断，蝴蝶精姐妹介入",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_178",
+      "type": "mysterious",
+      "chapter": "第五回",
+      "location": "猪家客栈",
+      "participants": [
+        "崔小玄"
+      ],
+      "summary": "小玄吟诵'混沌未启已真玄'四句后，心中突然响起一个绝美声音说'果然是你'，并召唤他前往。小玄被声音吸引冲出客栈寻找",
+      "outcome": "小玄被神秘声音引离客栈",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_179",
+      "type": "discovery",
+      "chapter": "第五回",
+      "location": "天地无宝",
+      "participants": [
+        "崔小玄"
+      ],
+      "summary": "小玄在天地无宝一层发现水行宝刀'神术之后'，仿前秦符坚神术刀所造，标价一万九千两。小玄决意购之赠程水若",
+      "outcome": "小玄有意购买宝刀",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "程水若",
+          "change": 5,
+          "reason": "思念水若，想为其购刀替代贺天鹏所赠"
+        }
+      ]
+    },
+    {
+      "id": "evt_180",
+      "type": "combat",
+      "chapter": "第六回",
+      "location": "天地无宝门口",
+      "participants": [
+        "崔小玄",
+        "贺天鹏",
+        "青不留",
+        "问心观道人"
+      ],
+      "summary": "小玄在天地无宝门口撞见贺天鹏及问心观众人，身份暴露。贺天鹏撒金刚陷魔网，小玄以炎龙鞭反击，随后以一敌六加白虎仍不落下风",
+      "outcome": "小玄被天雷破魔咒所伤，逃离战场",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "贺天鹏",
+          "change": -20,
+          "reason": "贺天鹏带人追杀小玄"
+        }
+      ]
+    },
+    {
+      "id": "evt_181",
+      "type": "combat",
+      "chapter": "第六回",
+      "location": "葫芦镇街道/废弃园子",
+      "participants": [
+        "崔小玄",
+        "贺天鹏",
+        "青不留",
+        "问心观道人",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "summary": "小玄被追杀逃入废弃园子，胡紫儿、胡碧儿指挥精怪拦住追兵。小玄逃入迷林小树林后进入迷林秘境",
+      "outcome": "小玄进入迷林秘境，与追兵分离",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "胡紫儿",
+          "change": 5,
+          "reason": "紫儿碧儿主动拦住追兵相助"
+        }
+      ]
+    },
+    {
+      "id": "evt_182",
+      "type": "combat",
+      "chapter": "第六回",
+      "location": "废弃园子外",
+      "participants": [
+        "小魔君",
+        "贺天鹏",
+        "青不留",
+        "问心观道人"
+      ],
+      "summary": "小魔君率众现身，以七绝霹雳之拳法瞬间击杀青不留、持剑道人、持尺道人及多名精怪，仅凭枯瘦拳头便令敌人爆体而亡",
+      "outcome": "小魔君击杀多人，仅留贺天鹏活口",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_183",
+      "type": "encounter",
+      "chapter": "第七回",
+      "location": "废弃园子",
+      "participants": [
+        "小魔君",
+        "贺天鹏",
+        "卜长老"
+      ],
+      "summary": "小魔君饶贺天鹏一命以追踪小玄，卜长老发现迷林小树林隐藏大禁制，疑为结界或秘境入口",
+      "outcome": "小魔君带贺天鹏追踪，发现迷林入口",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_184",
+      "type": "exploration",
+      "chapter": "第六回",
+      "location": "迷林",
+      "participants": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "summary": "三人误入迷林秘境，发现无边无际的巨大林海，葫芦谷根本装不下如此森林，推测为天地裂缝或秘境",
+      "outcome": "三人迷失于迷林中",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_185",
+      "type": "encounter",
+      "chapter": "第七回",
+      "location": "迷林",
+      "participants": [
+        "崔小玄",
+        "绝色女子（圣后）",
+        "巨熊"
+      ],
+      "summary": "小玄遭巨熊袭击命悬一线，绝色女子现身喝退巨熊。女子认识小玄，称其'小玄玄'，为他摘下焰浣罗查看先天太玄，又重新系好",
+      "outcome": "小玄获救，获赠役妖令",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "绝色女子（圣后）",
+          "change": 15,
+          "reason": "绝色女子救其性命，态度亲密如旧识"
+        }
+      ]
+    },
+    {
+      "id": "evt_186",
+      "type": "gift",
+      "chapter": "第七回",
+      "location": "迷林",
+      "participants": [
+        "崔小玄",
+        "绝色女子（圣后）"
+      ],
+      "summary": "绝色女子赠小玄役妖令，内含十三名罪妖（含朱厌族名将马化），开启眉心禁制使其可见令上内容，并治愈小玄天雷破魔咒之伤",
+      "outcome": "小玄获得役妖令，伤势痊愈",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_187",
+      "type": "rescue",
+      "chapter": "第八回",
+      "location": "迷林",
+      "participants": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "巨熊"
+      ],
+      "summary": "小玄驾车寻路时发现巨熊追击紫碧姐妹，以炎龙鞭夺字诀撕下巨熊股上大片皮肉，巨熊认出小玄后逃走",
+      "outcome": "救出紫碧姐妹，巨熊畏惧小玄逃走",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "胡紫儿",
+          "change": 10,
+          "reason": "小玄英勇救姐妹俩"
+        },
+        {
+          "char1": "崔小玄",
+          "char2": "胡碧儿",
+          "change": 10,
+          "reason": "小玄英勇救姐妹俩"
+        }
+      ]
+    },
+    {
+      "id": "evt_188",
+      "type": "romance",
+      "chapter": "第九回",
+      "location": "迷林树洞",
+      "participants": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "summary": "三人在迷林树洞避雨，酒后情动，小玄先后与紫儿、碧儿交欢，碧儿联合紫儿以秘术反制小玄令其泄精",
+      "outcome": "三人关系急剧升温",
+      "intimacy_changes": [
+        {
+          "char1": "崔小玄",
+          "char2": "胡紫儿",
+          "change": 25,
+          "reason": "肌肤之亲"
+        },
+        {
+          "char1": "崔小玄",
+          "char2": "胡碧儿",
+          "change": 25,
+          "reason": "肌肤之亲"
+        }
+      ]
+    },
+    {
+      "id": "evt_189",
+      "type": "social",
+      "chapter": "第八回",
+      "location": "白眉翁居所",
+      "participants": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "白眉翁"
+      ],
+      "summary": "三人遇白眉翁，老翁以红玉草果酿酒远胜小玄的天仙三步软，并传授提炼之术。白眉翁答应帮忙提炼七焰灵鸾尸体材料",
+      "outcome": "小玄结识白眉翁，学习提炼之术",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_190",
+      "type": "revelation",
+      "chapter": "第九回",
+      "location": "白眉翁居所",
+      "participants": [
+        "绝色女子（圣后）",
+        "白眉翁"
+      ],
+      "summary": "绝色女子现身与白眉翁密谈，称'圣后'，白眉翁改换迷林禁制困住小玄。透露妖界近临万世大劫、重元子将下凤凰崖、先天太玄仍在等重大信息",
+      "outcome": "小玄被困迷林，圣后与白眉翁暗中保护",
+      "intimacy_changes": []
+    },
+    {
+      "id": "evt_191",
+      "type": "confrontation",
+      "chapter": "第十回",
+      "location": "迷林云层",
+      "participants": [
+        "托塔天王",
+        "哪吒",
+        "张天师",
+        "许天师",
+        "葛天师",
+        "万劫真君"
+      ],
+      "summary": "天庭大军集结于迷林上空，雷公电母等无法攻破结界。妖界圣御军（黑凤凰旗）三五万兵马合围天兵，圣灵兵团亦至，万劫真君下战书",
+      "outcome": "天庭与妖界大军对峙，大战一触即发",
+      "intimacy_changes": []
+    }
+  ],
+  "timeline": [
+    {
+      "id": "tl_132",
+      "chapter": "第一回",
+      "time": "白天至黄昏",
+      "event": "飞萝与小玄在芦苇荡以隐形符躲避天兵搜捕，成功脱身后驾鹿蜀车前往葫芦镇",
+      "characters": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "location": "芦苇荡"
+    },
+    {
+      "id": "tl_133",
+      "chapter": "第一回至第二回",
+      "time": "入夜",
+      "event": "哪吒追踪至，与飞萝、小玄激战。飞萝紫犀钗射伤哪吒，小玄缴获风火轮",
+      "characters": [
+        "崔小玄",
+        "飞萝",
+        "哪吒"
+      ],
+      "location": "空中/葫芦镇上空"
+    },
+    {
+      "id": "tl_134",
+      "chapter": "第一回",
+      "time": "夜晚",
+      "event": "小玄与飞萝入住猪家客栈，飞萝发现焰浣罗的秘密，揭示崔采婷苦心",
+      "characters": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "location": "猪家客栈"
+    },
+    {
+      "id": "tl_135",
+      "chapter": "第一回",
+      "time": "夜晚",
+      "event": "猪哈哈讲述天下大事：南宫阳反叛、七绝覆现世、玄狐后人消息泄露",
+      "characters": [
+        "崔小玄",
+        "飞萝",
+        "猪哈哈",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "location": "猪家客栈大堂"
+    },
+    {
+      "id": "tl_136",
+      "chapter": "第三回至第四回",
+      "time": "清晨",
+      "event": "飞萝以双修之术疗伤，小玄协助，成功化解体内雷力",
+      "characters": [
+        "崔小玄",
+        "飞萝"
+      ],
+      "location": "猪家客栈客房"
+    },
+    {
+      "id": "tl_137",
+      "chapter": "第五回",
+      "time": "上午",
+      "event": "飞萝外出找人，小玄在客栈与猪哈哈议价青瑛，被胡紫儿碧儿打断",
+      "characters": [
+        "崔小玄",
+        "猪哈哈",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "location": "猪家客栈"
+    },
+    {
+      "id": "tl_138",
+      "chapter": "第五回",
+      "time": "上午",
+      "event": "小玄被神秘声音吸引离开客栈，在天地无宝发现宝刀'神术之后'，撞见贺天鹏",
+      "characters": [
+        "崔小玄",
+        "贺天鹏"
+      ],
+      "location": "天地无宝"
+    },
+    {
+      "id": "tl_139",
+      "chapter": "第六回",
+      "time": "中午",
+      "event": "小玄与贺天鹏及问心观众人激战，被天雷破魔咒所伤后逃离，紫碧姐妹拦住追兵",
+      "characters": [
+        "崔小玄",
+        "贺天鹏",
+        "青不留",
+        "问心观道人",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "location": "天地无宝门口/葫芦镇街道"
+    },
+    {
+      "id": "tl_140",
+      "chapter": "第六回至第七回",
+      "time": "中午",
+      "event": "小魔君现身击杀青不留等人，仅留贺天鹏追踪小玄。三人误入迷林秘境",
+      "characters": [
+        "小魔君",
+        "贺天鹏",
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "location": "废弃园子/迷林"
+    },
+    {
+      "id": "tl_141",
+      "chapter": "第七回",
+      "time": "下午",
+      "event": "小玄遭巨熊袭击，绝色女子（圣后）现身相救，赠役妖令并治愈天雷破魔咒之伤",
+      "characters": [
+        "崔小玄",
+        "绝色女子（圣后）",
+        "巨熊"
+      ],
+      "location": "迷林"
+    },
+    {
+      "id": "tl_142",
+      "chapter": "第八回",
+      "time": "次日正午后",
+      "event": "小玄驾车寻路，救出被巨熊追击的紫碧姐妹，三人前往白眉翁居所",
+      "characters": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "巨熊"
+      ],
+      "location": "迷林"
+    },
+    {
+      "id": "tl_143",
+      "chapter": "第八回至第九回",
+      "time": "下午至傍晚",
+      "event": "三人在白眉翁居所做客，白眉翁展示提炼之术并答应提炼灵鸾。小玄驾车多次尝试离开皆转回原处",
+      "characters": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿",
+        "白眉翁"
+      ],
+      "location": "白眉翁居所/迷林"
+    },
+    {
+      "id": "tl_144",
+      "chapter": "第九回",
+      "time": "白眉翁与小玄相处期间",
+      "event": "圣后现身与白眉翁密谈，改换迷林禁制困住小玄，透露妖界大劫及重元子将出等消息",
+      "characters": [
+        "绝色女子（圣后）",
+        "白眉翁"
+      ],
+      "location": "白眉翁居所"
+    },
+    {
+      "id": "tl_145",
+      "chapter": "第九回至第十回",
+      "time": "夜晚",
+      "event": "三人在迷林树洞避雨，酒后情动，小玄与紫儿碧儿交欢",
+      "characters": [
+        "崔小玄",
+        "胡紫儿",
+        "胡碧儿"
+      ],
+      "location": "迷林树洞"
+    },
+    {
+      "id": "tl_146",
+      "chapter": "第十回",
+      "time": "同期（第七卷末）",
+      "event": "天庭大军集结迷林上空，雷公电母等无法攻破结界。妖界圣御军与圣灵兵团合围天兵，万劫真君下战书，大战一触即发",
+      "characters": [
+        "托塔天王",
+        "哪吒",
+        "张天师",
+        "许天师",
+        "葛天师",
+        "万劫真君"
+      ],
+      "location": "迷林云层"
+    }
+  ],
+  "new_characters": [
+    {
+      "name": "哪吒",
+      "aliases": [
+        "三坛海会大神",
+        "天王三太子"
+      ],
+      "gender": "male",
+      "identity": "上界天神",
+      "appearance": "小小身影，脚踏金霞风火轮，手持火尖枪，可现三首八臂法象",
+      "personality": "冷厉傲慢，战力强横，奉命行事",
+      "abilities": [
+        "火尖枪法",
+        "三首八臂法象",
+        "乾坤圈",
+        "混天绫",
+        "风火轮驾驭"
+      ],
+      "weapons": [
+        "火尖枪",
+        "乾坤圈",
+        "混天绫",
+        "金霞风火轮"
+      ],
+      "faction": "天庭",
+      "first_appearance": "第七卷第一回",
+      "description": "上界猛将，降伏过七十二洞妖魔，奉天庭之命追索先天太玄，被飞萝紫犀钗射伤败退"
+    },
+    {
+      "name": "猪哈哈",
+      "aliases": [
+        "猪家客栈老板"
+      ],
+      "gender": "male",
+      "identity": "猪精/客栈老板",
+      "appearance": "肥头大耳满脸生毛，拱着长嘴巴的猪头人，身着上好绫罗，肥得满身肉颤",
+      "personality": "贪财精明，见风使舵，但对经营极为执着，软硬不吃",
+      "abilities": [
+        "经营之道"
+      ],
+      "weapons": [],
+      "faction": "葫芦镇",
+      "first_appearance": "第七卷第一回",
+      "description": "猪家客栈老板，消息灵通，熟知天下大事与珍宝行情"
+    },
+    {
+      "name": "胡紫儿",
+      "aliases": [
+        "紫儿",
+        "蝴蝶精姐姐"
+      ],
+      "gender": "female",
+      "identity": "蝴蝶精",
+      "appearance": "紫裳靓妆丽服，娇艳夺人，真身为车轮大小的紫斑斓粉蝶",
+      "personality": "沉稳有心计，善于交际套话，对妹妹有保护欲",
+      "abilities": [
+        "飞行术",
+        "双环兵器",
+        "锁精秘术"
+      ],
+      "weapons": [
+        "一对流荡银芒的双环"
+      ],
+      "faction": "未知精怪群",
+      "first_appearance": "第七卷第一回",
+      "description": "蝴蝶精姐姐，与碧儿带领一群精怪出入葫芦镇，觊觎小玄的青瑛"
+    },
+    {
+      "name": "胡碧儿",
+      "aliases": [
+        "碧儿",
+        "蝴蝶精妹妹"
+      ],
+      "gender": "female",
+      "identity": "蝴蝶精",
+      "appearance": "绿裳靓妆丽服，娇艳夺人，真身为车轮大小的绿斑斓粉蝶",
+      "personality": "骄纵泼辣，直言快语，好胜心强，傲慢轻蔑",
+      "abilities": [
+        "飞行术",
+        "花状奇形兵器（瓣绽若刃）",
+        "锁精秘术",
+        "花径收缩吸力秘术"
+      ],
+      "weapons": [
+        "两团花状奇形兵器（花瓣锋刃泛幽蓝寒光）"
+      ],
+      "faction": "未知精怪群",
+      "first_appearance": "第七卷第一回",
+      "description": "蝴蝶精妹妹，性格骄纵，对小玄先蔑视后改观"
+    },
+    {
+      "name": "小魔君",
+      "aliases": [
+        "七绝界之主",
+        "少主"
+      ],
+      "gender": "male",
+      "identity": "七绝魔君之子/七绝界之主",
+      "appearance": "锦衣公子，凹眶陷颊身材瘦弱，皮肤白无血色，佝偻着腰，一副病怏怏模样",
+      "personality": "戾气深重，嗜杀成性，以他人痛苦为乐，但体力不济易疲惫",
+      "abilities": [
+        "七绝霹雳",
+        "极速拳法（令真气失控爆体）",
+        "虚影身法"
+      ],
+      "weapons": [],
+      "faction": "七绝界",
+      "first_appearance": "第七卷第六回",
+      "description": "七绝魔君之子，三年前被叛党伏击重伤成废人后复出，以枯瘦拳头瞬间击杀多名高手，实力恐怖"
+    },
+    {
+      "name": "青不留",
+      "aliases": [
+        "不留大师"
+      ],
+      "gender": "male",
+      "identity": "炼兽师/散修",
+      "appearance": "肥头阔膀的青袍大汉",
+      "personality": "暴躁粗鲁，仗势欺人",
+      "abilities": [
+        "御使白虎",
+        "气龙术"
+      ],
+      "weapons": [],
+      "faction": "问心观阵营（同行）",
+      "first_appearance": "第七卷第五回",
+      "description": "炼化白虎为灵兽的散修，追杀小玄时被小魔君一拳击杀"
+    },
+    {
+      "name": "白眉翁",
+      "aliases": [],
+      "gender": "male",
+      "identity": "隐世高人/炼材大师",
+      "appearance": "白发白眉白须，头发乱如草窝，腰悬灰青葫芦，一派仙风道骨",
+      "personality": "淡泊从容，高深莫测，对小玄有旧情",
+      "abilities": [
+        "提炼之术（化腐朽为神奇）",
+        "酿酒术",
+        "迷林禁制操控"
+      ],
+      "weapons": [
+        "灰青葫芦"
+      ],
+      "faction": "妖界（效忠圣后）",
+      "first_appearance": "第七卷第八回",
+      "description": "隐居迷林的神秘老翁，炼材大师，称小玄为'旧故重临'，暗中为圣后保护小玄"
+    },
+    {
+      "name": "绝色女子（圣后）",
+      "aliases": [
+        "圣后",
+        "姐姐"
+      ],
+      "gender": "female",
+      "identity": "妖界圣后",
+      "appearance": "云鬓松挽，水蓝抹额悬水滴碧坠，月白罗衣，美得旷绝天地，兼具少女天真与妇人韵致、天仙清丽与妖精妩媚",
+      "personality": "温柔神秘，对小玄有极深感情，言辞间透露与小玄前世渊源",
+      "abilities": [
+        "役妖令操控",
+        "禁制术",
+        "疗伤术",
+        "令兽臣服",
+        "御牢管理"
+      ],
+      "weapons": [
+        "役妖令"
+      ],
+      "faction": "妖界",
+      "first_appearance": "第七卷第七回",
+      "description": "妖界之尊，与天界西王母、玄教无上圣母齐名的先天真圣，认识前世的玄狐，称小玄为'小玄玄'，暗中保护并赠其役妖令"
+    },
+    {
+      "name": "万劫真君",
+      "aliases": [
+        "圣御军镇界总兵马大元帅"
+      ],
+      "gender": "male",
+      "identity": "妖界圣御军统帅",
+      "appearance": "声音雄浑，骑禽御兽的妖将",
+      "personality": "傲然霸气",
+      "abilities": [
+        "统兵之能"
+      ],
+      "weapons": [],
+      "faction": "妖界",
+      "first_appearance": "第七卷第十回",
+      "description": "妖界圣御军镇界总兵马大元帅，率三五万圣御军合围天庭大军"
+    },
+    {
+      "name": "卜长老",
+      "aliases": [],
+      "gender": "male",
+      "identity": "七绝界长老",
+      "appearance": "未详",
+      "personality": "观察敏锐",
+      "abilities": [
+        "禁制辨识"
+      ],
+      "weapons": [],
+      "faction": "七绝界",
+      "first_appearance": "第七卷第七回",
+      "description": "小魔君麾下长老，发现迷林隐藏大禁制，判断为结界或秘境入口"
+    },
+    {
+      "name": "空空老仙",
+      "aliases": [],
+      "gender": "male",
+      "identity": "截教门人/水晶潭守护者",
+      "appearance": "未直接出场",
+      "personality": "心性淡泊，好参玄悟妙，喜奇珍异宝",
+      "abilities": [
+        "修为不在通天教主之下"
+      ],
+      "weapons": [],
+      "faction": "截教",
+      "first_appearance": "第七卷第一回（提及）",
+      "description": "通天教主故友，封神劫中唯一幸存的截教门人，占据水晶潭建立葫芦镇，天上地下无人敢染指"
+    },
+    {
+      "name": "南宫阳",
+      "aliases": [
+        "南安侯"
+      ],
+      "gender": "male",
+      "identity": "反叛诸侯",
+      "appearance": "未出场",
+      "personality": "未详",
+      "abilities": [
+        "请高人布阵"
+      ],
+      "weapons": [],
+      "faction": "云州叛军",
+      "first_appearance": "第七卷第一回（提及）",
+      "description": "南安侯，起兵反叛日月皇朝，在云州与奉天侯程兆琦大战，请高人在双岭关布奇阵扼守钱粮腹地"
+    },
+    {
+      "name": "马化",
+      "aliases": [
+        "朱厌族名将"
+      ],
+      "gender": "male",
+      "identity": "上古异兽朱厌/罪妖",
+      "appearance": "白首赤足、形貌如猿",
+      "personality": "善战",
+      "abilities": [
+        "善战",
+        "统率族兵三百"
+      ],
+      "weapons": [],
+      "faction": "役妖令（效忠圣后赎罪）",
+      "first_appearance": "第七卷第七回（提及于役妖令）",
+      "description": "朱厌族名将，犯叛乱之罪惩狱五千九百年，被封于役妖令中，族兵三百，见则大兵"
+    }
+  ],
+  "characters_update": [
+    {
+      "name": "崔小玄",
+      "new_aliases": [
+        "崔小白"
+      ],
+      "new_abilities": [
+        "功力因七绝覆吸取邪力急剧提升",
+        "火牢术（威力增强数倍）",
+        "九鼎还丹诀（汲字诀）",
+        "离火玄功（运功烘热身体）",
+        "役妖令召唤术"
+      ],
+      "new_weapons": [
+        "金霞风火轮（缴获自哪吒）",
+        "役妖令（圣后所赠）"
+      ],
+      "new_description": "功力因七绝覆在泽阳战场吸取大量血腥杀戮之气而急剧提升，但飞萝担忧邪力会影响心智。被哪吒追击时展现惊人战力。在迷林获圣后赠役妖令，内含十三名罪妖。与胡紫儿、胡碧儿关系从敌对转为亲密"
+    },
+    {
+      "name": "飞萝",
+      "new_aliases": [],
+      "new_abilities": [
+        "双修疗伤术",
+        "哺精还丹术",
+        "暴风甲咒",
+        "电闪术"
+      ],
+      "new_weapons": [],
+      "new_description": "飞萝透露必须前往玉京破解武翩跹布的先天无极阵，这是教尊命她出凤凰崖的原因。与小玄双修疗伤化解雷力，功法未全部完成。对崔采婷赠焰浣罗遮蔽先天太玄的苦心深为赞叹"
+    },
+    {
+      "name": "贺天鹏",
+      "new_aliases": [],
+      "new_abilities": [],
+      "new_weapons": [],
+      "new_description": "额头包扎（被绮姬重伤所致），中气不足。散布小玄为玄狐后人的消息，带问心观众人追杀小玄。被小玄踹飞撞掉两颗门牙。在小魔君面前跪地求饶，出卖小玄行踪以保命"
+    },
+    {
+      "name": "程兆琦",
+      "new_aliases": [
+        "四大顶梁柱之一"
+      ],
+      "new_abilities": [],
+      "new_weapons": [],
+      "new_description": "奉天侯，手握十万重兵坐镇中州，当今皇朝四大顶梁柱之一。奉命平剿南宫阳叛乱，在云州大战。遣人大量采购水晶淖，由三夫人百宝娘娘炼造仙兵破双岭关奇阵"
+    },
+    {
+      "name": "百宝娘娘",
+      "new_aliases": [
+        "程兆琦三夫人"
+      ],
+      "new_abilities": [
+        "炼造仙兵"
+      ],
+      "new_weapons": [],
+      "new_description": "奉天侯程兆琦的第三位夫人，被请来炼造仙兵以破解南宫阳在双岭关布下的奇阵"
+    },
+    {
+      "name": "妖狐玄玄子",
+      "new_aliases": [
+        "大闹三界的玄狐"
+      ],
+      "new_abilities": [],
+      "new_weapons": [],
+      "new_description": "传说中比七绝魔君还要厉害的大魔头，曾大闹三界。其后人消息已传遍诸界，贺天鹏声称亲眼所见。圣后与白眉翁对话暗示小玄可能与前世玄狐有极深关联"
+    }
+  ],
+  "new_factions": [
+    {
+      "name": "截教",
+      "aliases": [
+        "空空老仙势力"
+      ],
+      "description": "封神劫后由空空老仙在水晶潭延续的截教势力，元气迅速恢复，建立葫芦镇作为诸界珍宝交易枢纽",
+      "leader": "空空老仙",
+      "base": "葫芦镇/水晶潭"
+    },
+    {
+      "name": "妖界圣御军",
+      "aliases": [
+        "黑凤凰旗"
+      ],
+      "description": "妖界圣后的御前护卫军，由万劫真君统领，兵力三五万以上，战力强横",
+      "leader": "万劫真君",
+      "base": "妖界"
+    },
+    {
+      "name": "妖界圣灵兵团",
+      "aliases": [],
+      "description": "妖界圣后麾下另一支精锐兵团，由巨禽怪兽组成，与圣御军一同出动",
+      "leader": "未知",
+      "base": "妖界"
+    },
+    {
+      "name": "云州叛军",
+      "aliases": [
+        "南宫阳势力"
+      ],
+      "description": "南安侯南宫阳起兵反叛日月皇朝的军队，在云州与奉天侯程兆琦对抗，请高人在双岭关布奇阵扼守",
+      "leader": "南宫阳",
+      "base": "云州/双岭关"
+    }
+  ]
+}

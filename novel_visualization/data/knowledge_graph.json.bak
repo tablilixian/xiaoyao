@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "逍遥小散仙知识图谱",
+    "version": "1.0",
+    "generated": "2024-01-01",
+    "stats": {
+      "total_relationships": 1055,
+      "total_characters": 394,
+      "total_items": 351,
+      "total_abilities": 351,
+      "total_worldview": 661
+    }
+  },
+  "core_characters": [
+    {"name": "崔小玄", "count": 325, "gender": "male", "faction": "主角/玄教", "aliases": ["少国师", "逍遥郎君", "小玄"]},
+    {"name": "武翩跹", "count": 60, "gender": "female", "faction": "日月皇朝/天妃娘娘", "aliases": ["天妃娘娘", "武三绝", "迷姬"]},
+    {"name": "婀妍", "count": 53, "gender": "female", "faction": "妖界少谷主", "aliases": ["少谷主", "堡主", "公主"]},
+    {"name": "方少麟", "count": 35, "gender": "male", "faction": "反叛势力", "aliases": ["小侯爷", "大泽令", "方小侯爷"]},
+    {"name": "飞萝", "count": 33, "gender": "female", "faction": "玄教", "aliases": ["师叔", "三十三师叔", "阿萝"]},
+    {"name": "程水若", "count": 32, "gender": "female", "faction": "玄教", "aliases": ["三师姐", "小恶婆", "水若"]},
+    {"name": "逍遥郎君", "count": 32, "gender": "male", "faction": "逍遥门", "aliases": ["三哥", "烛鼎玄"]},
+    {"name": "崔采婷", "count": 30, "gender": "female", "faction": "玄教", "aliases": ["九师伯", "如意师伯", "师父"]},
+    {"name": "碧怜怜", "count": 29, "gender": "female", "faction": "七绝界", "aliases": ["大司祭", "勾魂大司祭", "碧大司祭"]},
+    {"name": "皇后", "count": 29, "gender": "female", "faction": "日月皇朝", "aliases": ["皇后娘娘", "梓童", "扈云倾"]}
+  ],
+  "relation_types": {
+    "ally": {"label": "盟友", "color": "#5a9a8f", "category": "友好"},
+    "friend": {"label": "朋友", "color": "#5a9a8f", "category": "友好"},
+    "enemy": {"label": "敌对", "color": "#c75b5b", "category": "对立"},
+    "rival": {"label": "对手", "color": "#c75b5b", "category": "对立"},
+    "nemesis": {"label": "宿敌", "color": "#c75b5b", "category": "对立"},
+    "master": {"label": "师父", "color": "#d4a574", "category": "师门"},
+    "disciple": {"label": "徒弟", "color": "#d4a574", "category": "师门"},
+    "subordinate": {"label": "下属", "color": "#d4a574", "category": "社会"},
+    "superior": {"label": "上级", "color": "#d4a574", "category": "社会"},
+    "lover": {"label": "恋人", "color": "#e8a0bf", "category": "情感"},
+    "spouse": {"label": "配偶", "color": "#e8a0bf", "category": "情感"},
+    "parent": {"label": "长辈", "color": "#6b8cae", "category": "血缘"},
+    "child": {"label": "晚辈", "color": "#6b8cae", "category": "血缘"},
+    "sibling": {"label": "兄弟姐妹", "color": "#6b8cae", "category": "血缘"},
+    "senior": {"label": "前辈", "color": "#9b8aa5", "category": "师门"},
+    "junior": {"label": "后辈", "color": "#9b8aa5", "category": "师门"}
+  },
+  "factions": [
+    {"name": "玄教", "type": "正道", "color": "#5a9a8f", "description": "主角所属门派，重元子为教主"},
+    {"name": "日月皇朝", "type": "皇朝", "color": "#d4a574", "description": "人间王朝，崔小玄曾任少国师"},
+    {"name": "七绝界", "type": "魔道", "color": "#c75b5b", "description": "七大绝地组成的势力"},
+    {"name": "妖界", "type": "妖族", "color": "#6b8cae", "description": "妖族聚居之地，婀妍为少谷主"},
+    {"name": "逍遥门", "type": "隐世", "color": "#9b8aa5", "description": "东海隐世门派"},
+    {"name": "邪宗", "type": "邪道", "color": "#8b4513", "description": "邪皇渊乙领导的势力"},
+    {"name": "辟邪宫", "type": "正道", "color": "#5a9a8f", "description": "惊虹七仙子所属门派"}
+  ]
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色标注测试</title>
+    <style>
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background: #0a0a0f;
+            color: #e8e4dc;
+            padding: 50px;
+            line-height: 2;
+        }
+        .character {
+            color: #d4a574;
+            cursor: pointer;
+            border-bottom: 1px dashed #d4a574;
+            transition: all 0.2s ease;
+        }
+        .character:hover {
+            background: rgba(212, 165, 116, 0.15);
+            border-bottom-style: solid;
+        }
+        .character.female {
+            color: #c75b5b;
+            border-bottom-color: #c75b5b;
+        }
+        .character.female:hover {
+            background: rgba(199, 91, 91, 0.15);
+        }
+        .character.male {
+            color: #5a9a8f;
+            border-bottom-color: #5a9a8f;
+        }
+        .character.male:hover {
+            background: rgba(90, 154, 143, 0.15);
+        }
+        .test-result {
+            margin: 20px 0;
+            padding: 20px;
+            background: #1a1a25;
+            border-radius: 10px;
+        }
+        .success { color: #5a9a8f; }
+        .error { color: #c75b5b; }
+        #log {
+            background: #12121a;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>角色标注功能测试</h1>
+    <div id="log">正在加载...</div>
+    <div id="testContent" class="test-result"></div>
+
+    <script>
+        let charactersData = {};
+        let annotationEnabled = true;
+        const log = document.getElementById('log');
+        
+        function addLog(msg, type = 'info') {
+            const color = type === 'success' ? '#5a9a8f' : type === 'error' ? '#c75b5b' : '#e8e4dc';
+            log.innerHTML += `<span style="color: ${color}">${msg}</span>\n`;
+        }
+
+        // 加载角色数据
+        async function loadCharacters() {
+            try {
+                addLog('正在加载角色数据...');
+                const response = await fetch('characters_db.json');
+                charactersData = await response.json();
+                addLog(`✓ 成功加载 ${Object.keys(charactersData).length} 个角色`, 'success');
+                return true;
+            } catch (error) {
+                addLog(`✗ 加载失败: ${error.message}`, 'error');
+                return false;
+            }
+        }
+
+        // 标注角色名
+        function annotateCharacters(text) {
+            if (!annotationEnabled) {
+                addLog('标注已禁用', 'error');
+                return text;
+            }
+            
+            const charCount = Object.keys(charactersData).length;
+            if (charCount === 0) {
+                addLog('角色数据未加载', 'error');
+                return text;
+            }
+
+            addLog(`开始标注，角色数据: ${charCount} 个`);
+
+            // 构建角色名到主名的映射（包括别名）
+            const nameToMainMap = {};
+            for (const [mainName, data] of Object.entries(charactersData)) {
+                nameToMainMap[mainName] = { mainName, data };
+                if (data.aliases) {
+                    for (const alias of data.aliases) {
+                        nameToMainMap[alias] = { mainName, data };
+                    }
+                }
+            }
+            
+            addLog(`名字映射构建完成，共 ${Object.keys(nameToMainMap).length} 个名字`);
+            
+            // 按长度排序，优先匹配长名字
+            const sortedNames = Object.keys(nameToMainMap).sort((a, b) => b.length - a.length);
+            
+            // 转义所有名字用于正则表达式
+            const escapedNames = sortedNames.map(name => 
+                name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            );
+            
+            // 收集所有匹配位置
+            const matches = [];
+            const groupSize = 200;
+            
+            for (let i = 0; i < escapedNames.length; i += groupSize) {
+                const group = escapedNames.slice(i, i + groupSize);
+                try {
+                    const pattern = new RegExp(`(${group.join('|')})`, 'g');
+                    let match;
+                    while ((match = pattern.exec(text)) !== null) {
+                        matches.push({
+                            index: match.index,
+                            length: match[0].length,
+                            text: match[0]
+                        });
+                        if (match.index === pattern.lastIndex) {
+                            pattern.lastIndex++;
+                        }
+                    }
+                } catch (e) {
+                    addLog(`正则错误: ${e.message}`, 'error');
+                }
+            }
+            
+            addLog(`找到 ${matches.length} 个原始匹配`);
+            
+            // 按位置排序，并移除重叠的匹配
+            matches.sort((a, b) => a.index - b.index);
+            const filteredMatches = [];
+            let lastEnd = -1;
+            
+            for (const match of matches) {
+                if (match.index >= lastEnd) {
+                    filteredMatches.push(match);
+                    lastEnd = match.index + match.length;
+                }
+            }
+            
+            addLog(`过滤后 ${filteredMatches.length} 个匹配`);
+            
+            // 构建结果字符串
+            let result = '';
+            let lastIndex = 0;
+            
+            for (const match of filteredMatches) {
+                result += text.slice(lastIndex, match.index);
+                
+                const mapping = nameToMainMap[match.text];
+                if (mapping) {
+                    const { mainName, data } = mapping;
+                    const genderClass = data.gender === '女' ? 'female' : (data.gender === '男' ? 'male' : '');
+                    result += `<span class="character ${genderClass}" data-name="${mainName}" onclick="alert('角色: ${mainName}')">${match.text}</span>`;
+                } else {
+                    result += match.text;
+                }
+                
+                lastIndex = match.index + match.length;
+            }
+            
+            result += text.slice(lastIndex);
+            
+            return result;
+        }
+
+        // 运行测试
+        async function runTest() {
+            log.innerHTML = '';
+            addLog('=== 角色标注测试开始 ===');
+            
+            // 加载数据
+            const loaded = await loadCharacters();
+            if (!loaded) {
+                addLog('测试中止', 'error');
+                return;
+            }
+            
+            // 测试文本
+            const testText = '"什么？三师姐，你……你怎能说话不算数！"少年急道。程水若说道。崔小玄跑过来。';
+            addLog(`\n测试文本: ${testText}`);
+            
+            // 执行标注
+            const result = annotateCharacters(testText);
+            
+            // 显示结果
+            addLog(`\n标注结果:`, 'success');
+            addLog(result);
+            
+            // 检查是否包含span标签
+            const hasSpans = result.includes('<span class="character"');
+            if (hasSpans) {
+                addLog('\n✓ 标注成功！检测到角色高亮标签', 'success');
+            } else {
+                addLog('\n✗ 标注失败！未检测到角色高亮标签', 'error');
+            }
+            
+            // 显示在页面上
+            document.getElementById('testContent').innerHTML = `
+                <h3>可视化测试结果：</h3>
+                <p>${result}</p>
+                <p style="margin-top: 20px; color: #666;">点击角色名查看效果</p>
+            `;
+            
+            addLog('\n=== 测试完成 ===');
+        }
+
+        // 页面加载后运行测试
+        window.onload = runTest;
+    </script>
+</body>
+</html>

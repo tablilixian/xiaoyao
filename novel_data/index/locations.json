@@ -1,0 +1,1373 @@
+{
+  "千翠山": {
+    "type": "山脉",
+    "parent": null,
+    "importance": 5,
+    "volumes": [
+      1,
+      18
+    ]
+  },
+  "逍遥峰": {
+    "type": "山峰",
+    "parent": "千翠山",
+    "importance": 5,
+    "volumes": [
+      1,
+      18
+    ]
+  },
+  "迷踪岭": {
+    "type": "山岭",
+    "parent": "千翠山南",
+    "importance": 3,
+    "volumes": [
+      1
+    ]
+  },
+  "紫芝阁": {
+    "type": "宫殿",
+    "parent": "逍遥峰东南",
+    "importance": 4,
+    "volumes": [
+      1,
+      14
+    ]
+  },
+  "玉泉谷": {
+    "type": "山谷",
+    "parent": "千翠山南",
+    "importance": 3,
+    "volumes": [
+      1
+    ]
+  },
+  "华浓庄": {
+    "type": "庄园",
+    "parent": "玉泉谷",
+    "importance": 3,
+    "volumes": [
+      1
+    ]
+  },
+  "梦巢": {
+    "type": "秘境",
+    "parent": "逍遥峰",
+    "importance": 4,
+    "volumes": [
+      1,
+      14,
+      25
+    ]
+  },
+  "大泽平原": {
+    "type": "平原",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      1
+    ]
+  },
+  "堑丘": {
+    "type": "丘陵",
+    "parent": "大泽平原",
+    "importance": 3,
+    "volumes": [
+      1
+    ]
+  },
+  "聚怨拘灵阵血池": {
+    "type": "邪阵",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      1
+    ]
+  },
+  "湖心岛高台": {
+    "type": "遗迹",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      1
+    ]
+  },
+  "古兵营": {
+    "type": "遗迹",
+    "parent": "堑丘",
+    "importance": 4,
+    "volumes": [
+      1
+    ]
+  },
+  "玉京": {
+    "type": "都城",
+    "parent": "日月皇朝",
+    "importance": 5,
+    "volumes": [
+      1,
+      13,
+      15,
+      17,
+      18,
+      22,
+      23
+    ]
+  },
+  "凤凰崖": {
+    "type": "山峰",
+    "parent": "玄教圣宫",
+    "importance": 3,
+    "volumes": [
+      1,
+      18,
+      27
+    ]
+  },
+  "湖心小岛": {
+    "type": "岛屿",
+    "parent": "大泽平原",
+    "importance": 5,
+    "volumes": [
+      2
+    ]
+  },
+  "碧湖": {
+    "type": "湖泊",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "岛心阁楼": {
+    "type": "建筑",
+    "parent": "湖心小岛",
+    "importance": 5,
+    "volumes": [
+      2
+    ]
+  },
+  "芭蕉亭": {
+    "type": "建筑/阵法",
+    "parent": "湖心小岛",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "石廊": {
+    "type": "建筑/阵法",
+    "parent": "湖心小岛",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "北面空地（大地之缚禁制）": {
+    "type": "阵法/禁制",
+    "parent": "湖心小岛",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "小竹林潭子": {
+    "type": "水域",
+    "parent": "湖心小岛",
+    "importance": 3,
+    "volumes": [
+      2
+    ]
+  },
+  "湖底水洞": {
+    "type": "洞穴",
+    "parent": "碧湖",
+    "importance": 3,
+    "volumes": [
+      2
+    ]
+  },
+  "吊桥": {
+    "type": "建筑",
+    "parent": "湖心小岛",
+    "importance": 3,
+    "volumes": [
+      2
+    ]
+  },
+  "望泽城": {
+    "type": "城镇",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "忠靖侯府": {
+    "type": "建筑/府邸",
+    "parent": "泽阳城",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "翠华庐": {
+    "type": "建筑",
+    "parent": "忠靖侯府",
+    "importance": 3,
+    "volumes": [
+      2
+    ]
+  },
+  "地狱之渊": {
+    "type": "魔域",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      2
+    ]
+  },
+  "七绝界": {
+    "type": "魔域",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      2
+    ]
+  },
+  "后山腰密林空地": {
+    "type": "工坊",
+    "parent": "泽阳城",
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "巨竹谷": {
+    "type": "秘境",
+    "parent": "七绝界",
+    "importance": 5,
+    "volumes": [
+      3,
+      13,
+      15,
+      18
+    ]
+  },
+  "巨竹谷入口石碑": {
+    "type": "通道",
+    "parent": "巨竹谷",
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "高崖观景台": {
+    "type": "自然景观",
+    "parent": "巨竹谷",
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "玉带湾": {
+    "type": "自然奇观",
+    "parent": "巨竹谷",
+    "importance": 5,
+    "volumes": [
+      3
+    ]
+  },
+  "太碧巨巢": {
+    "type": "巢穴",
+    "parent": "玉带湾",
+    "importance": 5,
+    "volumes": [
+      3,
+      10
+    ]
+  },
+  "宝瓶竹林": {
+    "type": "资源区",
+    "parent": "巨竹谷",
+    "importance": 4,
+    "volumes": [
+      3
+    ]
+  },
+  "万蛛岭": {
+    "type": "禁地",
+    "parent": "巨竹谷",
+    "importance": 4,
+    "volumes": [
+      3
+    ]
+  },
+  "巨竹堡": {
+    "type": "建筑",
+    "parent": "巨竹谷",
+    "importance": 5,
+    "volumes": [
+      3,
+      10,
+      11,
+      13,
+      15
+    ]
+  },
+  "竹海深处法阵空地": {
+    "type": "战场",
+    "parent": "巨竹谷",
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "快活岛": {
+    "type": "秘境",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "小玄卧房": {
+    "type": "居室",
+    "parent": "翠华庐",
+    "importance": 3,
+    "volumes": [
+      3
+    ]
+  },
+  "小玄卧房（泽阳城翠华庐内）": {
+    "type": "室内",
+    "parent": "翠华庐",
+    "importance": 4,
+    "volumes": [
+      5
+    ]
+  },
+  "开山神弩试射场": {
+    "type": "室外",
+    "parent": "泽阳城",
+    "importance": 3,
+    "volumes": [
+      5
+    ]
+  },
+  "忠靖侯府后院绿瓦墙区": {
+    "type": "室外",
+    "parent": "忠靖侯府",
+    "importance": 3,
+    "volumes": [
+      5
+    ]
+  },
+  "清晖园": {
+    "type": "建筑",
+    "parent": "忠靖侯府",
+    "importance": 3,
+    "volumes": [
+      5
+    ]
+  },
+  "忠靖侯府后山林木": {
+    "type": "室外",
+    "parent": "忠靖侯府",
+    "importance": 3,
+    "volumes": [
+      5
+    ]
+  },
+  "方少麟书房": {
+    "type": "室内",
+    "parent": "忠靖侯府",
+    "importance": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "孤烟岛": {
+    "type": "岛屿",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      5
+    ]
+  },
+  "大泽崖边": {
+    "type": "室外",
+    "parent": "大泽平原",
+    "importance": 4,
+    "volumes": [
+      5
+    ]
+  },
+  "泽阳城城墙": {
+    "type": "军事设施",
+    "parent": "泽阳城",
+    "importance": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "泽阳城城头": {
+    "type": "军事要塞",
+    "parent": "泽阳城",
+    "importance": 5,
+    "volumes": [
+      6
+    ]
+  },
+  "骷髅老巢甬道": {
+    "type": "地下通道",
+    "parent": "地狱之渊",
+    "importance": 3,
+    "volumes": [
+      6
+    ]
+  },
+  "骷髅龙御巢穴": {
+    "type": "地下洞穴",
+    "parent": "地狱之渊",
+    "importance": 4,
+    "volumes": [
+      6
+    ]
+  },
+  "法术机关巨圆石所在洞厅": {
+    "type": "地下洞厅",
+    "parent": "地狱之渊",
+    "importance": 4,
+    "volumes": [
+      6
+    ]
+  },
+  "城北山岭": {
+    "type": "山岭",
+    "parent": "泽阳城",
+    "importance": 4,
+    "volumes": [
+      6
+    ]
+  },
+  "大泽芦苇湾": {
+    "type": "水域",
+    "parent": "大泽平原",
+    "importance": 3,
+    "volumes": [
+      6
+    ]
+  },
+  "神工井": {
+    "type": "密库/工坊",
+    "parent": "万蛛岭",
+    "importance": 5,
+    "volumes": [
+      4
+    ]
+  },
+  "万蛛岭岭峰法阵": {
+    "type": "法阵",
+    "parent": "万蛛岭",
+    "importance": 4,
+    "volumes": [
+      4
+    ]
+  },
+  "巨蛛坑洞": {
+    "type": "坑洞/巢穴",
+    "parent": "万蛛岭",
+    "importance": 3,
+    "volumes": [
+      4
+    ]
+  },
+  "葫芦镇": {
+    "type": "settlement",
+    "parent": null,
+    "importance": 5,
+    "volumes": [
+      7
+    ]
+  },
+  "水晶潭": {
+    "type": "landmark",
+    "parent": "loc_092",
+    "importance": 4,
+    "volumes": [
+      7
+    ]
+  },
+  "猪家客栈": {
+    "type": "building",
+    "parent": "loc_092",
+    "importance": 3,
+    "volumes": [
+      7
+    ]
+  },
+  "天地无宝": {
+    "type": "building",
+    "parent": "loc_092",
+    "importance": 4,
+    "volumes": [
+      7
+    ]
+  },
+  "迷林": {
+    "type": "natural",
+    "parent": null,
+    "importance": 5,
+    "volumes": [
+      7
+    ]
+  },
+  "白眉翁居所": {
+    "type": "building",
+    "parent": "loc_096",
+    "importance": 3,
+    "volumes": [
+      7,
+      11
+    ]
+  },
+  "迷林云层": {
+    "type": "natural",
+    "parent": "loc_096",
+    "importance": 3,
+    "volumes": [
+      7
+    ]
+  },
+  "迷津幽源": {
+    "type": "地下洞穴/灵泉",
+    "parent": "迷林",
+    "importance": 5,
+    "volumes": [
+      8,
+      11
+    ]
+  },
+  "聚龙鼎所在山洞": {
+    "type": "山腹洞穴",
+    "parent": "迷林",
+    "importance": 3,
+    "volumes": [
+      8
+    ]
+  },
+  "天机岛": {
+    "type": "岛屿/机关术圣地",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      8,
+      13
+    ]
+  },
+  "虚照境": {
+    "type": "秘境/异界",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      9,
+      26
+    ]
+  },
+  "无尽宫": {
+    "type": "宫殿/势力总部",
+    "parent": "虚照境",
+    "importance": 3,
+    "volumes": [
+      9
+    ]
+  },
+  "雨梦台": {
+    "type": "观景台/防御设施",
+    "parent": "巨竹堡",
+    "importance": 4,
+    "volumes": [
+      9,
+      11
+    ]
+  },
+  "卧碧台": {
+    "type": "居所/园林",
+    "parent": "巨竹堡",
+    "importance": 3,
+    "volumes": [
+      9,
+      12
+    ]
+  },
+  "太碧阴脉": {
+    "type": "灵脉/秘境入口",
+    "parent": "巨竹堡",
+    "importance": 5,
+    "volumes": [
+      9,
+      10,
+      12
+    ]
+  },
+  "无名小镇": {
+    "type": "城镇",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      9,
+      10
+    ]
+  },
+  "小镇客栈": {
+    "type": "建筑",
+    "parent": "无名小镇",
+    "importance": 4,
+    "volumes": [
+      10
+    ]
+  },
+  "七绝界黑云战阵": {
+    "type": "战场/空中",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      10
+    ]
+  },
+  "魇鸢车": {
+    "type": "载具/空中宫殿",
+    "parent": null,
+    "importance": 5,
+    "volumes": [
+      10
+    ]
+  },
+  "碧怜怜卧房": {
+    "type": "房间",
+    "parent": "魇鸢车",
+    "importance": 3,
+    "volumes": [
+      10
+    ]
+  },
+  "林中藏匿处": {
+    "type": "野外",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      10
+    ]
+  },
+  "巨竹谷上空": {
+    "type": "战场/空中",
+    "parent": "巨竹谷",
+    "importance": 5,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "玄冥塔": {
+    "type": "秘境/建筑",
+    "parent": "七绝界",
+    "importance": 3,
+    "volumes": [
+      10
+    ]
+  },
+  "星天殿": {
+    "type": "殿宇",
+    "parent": "巨竹堡",
+    "importance": 4,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "飞仙阁": {
+    "type": "楼阁",
+    "parent": "巨竹堡",
+    "importance": 4,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "跃虹桥": {
+    "type": "桥梁",
+    "parent": "巨竹堡",
+    "importance": 3,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "九天旋梯": {
+    "type": "通道",
+    "parent": "巨竹堡",
+    "importance": 3,
+    "volumes": [
+      11
+    ]
+  },
+  "迷林深处": {
+    "type": "密林",
+    "parent": "迷林",
+    "importance": 4,
+    "volumes": [
+      11
+    ]
+  },
+  "逍遥峰瀑布": {
+    "type": "自然景观",
+    "parent": "千翠山",
+    "importance": 3,
+    "volumes": [
+      11
+    ]
+  },
+  "小琳琅天": {
+    "type": "行宫",
+    "parent": "妖界",
+    "importance": 4,
+    "volumes": [
+      11,
+      19
+    ]
+  },
+  "黯然礁": {
+    "type": "海域",
+    "parent": "妖界",
+    "importance": 3,
+    "volumes": [
+      11
+    ]
+  },
+  "七绝界旗舰": {
+    "type": "战舰",
+    "parent": "巨竹谷上空",
+    "importance": 4,
+    "volumes": [
+      11
+    ]
+  },
+  "巨竹堡上空战场": {
+    "type": "战场",
+    "parent": "巨竹堡",
+    "importance": 5,
+    "volumes": [
+      12
+    ]
+  },
+  "冲霄飞舟舰群": {
+    "type": "军事设施",
+    "parent": "巨竹堡上空战场",
+    "importance": 4,
+    "volumes": [
+      12
+    ]
+  },
+  "怒天大将军旗舰": {
+    "type": "军事设施",
+    "parent": "冲霄飞舟舰群",
+    "importance": 4,
+    "volumes": [
+      12
+    ]
+  },
+  "醉碧楼": {
+    "type": "建筑",
+    "parent": "巨竹堡",
+    "importance": 3,
+    "volumes": [
+      12
+    ]
+  },
+  "工匠房": {
+    "type": "建筑",
+    "parent": "巨竹堡",
+    "importance": 3,
+    "volumes": [
+      12,
+      13
+    ]
+  },
+  "紫烟溪": {
+    "type": "自然景观",
+    "parent": "快活岛",
+    "importance": 3,
+    "volumes": [
+      12,
+      14,
+      20
+    ]
+  },
+  "辟邪宫": {
+    "type": "门派",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      12
+    ]
+  },
+  "迷楼": {
+    "type": "宫殿群",
+    "parent": "玉京",
+    "importance": 5,
+    "volumes": [
+      13,
+      17,
+      18,
+      22,
+      23,
+      27,
+      28
+    ]
+  },
+  "仪真宫": {
+    "type": "宫院",
+    "parent": "迷楼",
+    "importance": 4,
+    "volumes": [
+      13,
+      14,
+      15,
+      17,
+      22,
+      23
+    ]
+  },
+  "太华轩": {
+    "type": "园苑",
+    "parent": "迷楼",
+    "importance": 5,
+    "volumes": [
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "经海阁": {
+    "type": "藏书阁",
+    "parent": "太华轩",
+    "importance": 3,
+    "volumes": [
+      13
+    ]
+  },
+  "迎圣台": {
+    "type": "高台",
+    "parent": "迷楼",
+    "importance": 4,
+    "volumes": [
+      13,
+      14,
+      17
+    ]
+  },
+  "红雨苑": {
+    "type": "园苑",
+    "parent": "迷楼",
+    "importance": 3,
+    "volumes": [
+      13,
+      14,
+      15,
+      22
+    ]
+  },
+  "假山秘洞": {
+    "type": "秘境",
+    "parent": "红雨苑",
+    "importance": 4,
+    "volumes": [
+      13
+    ]
+  },
+  "天武殿": {
+    "type": "宫殿",
+    "parent": "迎圣台",
+    "importance": 5,
+    "volumes": [
+      13,
+      14,
+      24
+    ]
+  },
+  "浣晖湖": {
+    "type": "湖泊",
+    "parent": "迷楼",
+    "importance": 3,
+    "volumes": [
+      13,
+      14
+    ]
+  },
+  "演武场": {
+    "type": "竞技场",
+    "parent": "天武殿",
+    "importance": 4,
+    "volumes": [
+      14
+    ]
+  },
+  "枕水阁": {
+    "type": "府邸",
+    "parent": "迷楼",
+    "importance": 4,
+    "volumes": [
+      14,
+      27
+    ]
+  },
+  "水月亭": {
+    "type": "亭台",
+    "parent": "枕水阁",
+    "importance": 3,
+    "volumes": [
+      14
+    ]
+  },
+  "千翠山逍遥峰": {
+    "type": "山岭",
+    "parent": "千翠山",
+    "importance": 4,
+    "volumes": [
+      14
+    ]
+  },
+  "濯心轩": {
+    "type": "轩阁",
+    "parent": "紫芝阁",
+    "importance": 3,
+    "volumes": [
+      14
+    ]
+  },
+  "广莽古森林": {
+    "type": "森林",
+    "parent": "快活岛",
+    "importance": 3,
+    "volumes": [
+      14
+    ]
+  },
+  "雍怡宫": {
+    "type": "宫殿",
+    "parent": "迷楼",
+    "importance": 5,
+    "volumes": [
+      14,
+      16,
+      17,
+      22,
+      23,
+      24,
+      27
+    ]
+  },
+  "锦心殿": {
+    "type": "宫殿",
+    "parent": "迷楼",
+    "importance": 3,
+    "volumes": [
+      14,
+      17,
+      22
+    ]
+  },
+  "炼心殿": {
+    "type": "宫殿",
+    "parent": "迷楼",
+    "importance": 5,
+    "volumes": [
+      14,
+      16,
+      17
+    ]
+  },
+  "竹林石阵": {
+    "type": "秘境入口",
+    "parent": "太华轩附近",
+    "importance": 4,
+    "volumes": [
+      14
+    ]
+  },
+  "地下甬道": {
+    "type": "秘道",
+    "parent": "竹林石阵",
+    "importance": 4,
+    "volumes": [
+      14
+    ]
+  },
+  "迷楼密道": {
+    "type": "秘境",
+    "parent": "迷楼",
+    "importance": 5,
+    "volumes": [
+      15
+    ]
+  },
+  "壁画甬道": {
+    "type": "通道",
+    "parent": "迷楼密道",
+    "importance": 3,
+    "volumes": [
+      15
+    ]
+  },
+  "无极阵圆台": {
+    "type": "法阵",
+    "parent": "迷楼密道",
+    "importance": 4,
+    "volumes": [
+      15
+    ]
+  },
+  "百门巨厅": {
+    "type": "殿堂",
+    "parent": "迷楼密道",
+    "importance": 3,
+    "volumes": [
+      15
+    ]
+  },
+  "相柳藏匿处": {
+    "type": "密室",
+    "parent": "迷楼密道",
+    "importance": 3,
+    "volumes": [
+      15
+    ]
+  },
+  "冰火牢笼": {
+    "type": "牢狱",
+    "parent": "迷楼密道",
+    "importance": 4,
+    "volumes": [
+      15
+    ]
+  },
+  "玄洲": {
+    "type": "大洲",
+    "parent": "海外十洲（天外海）",
+    "importance": 4,
+    "volumes": [
+      15
+    ]
+  },
+  "虞渊谷": {
+    "type": "峡谷",
+    "parent": "玄洲",
+    "importance": 5,
+    "volumes": [
+      15
+    ]
+  },
+  "天柱寨": {
+    "type": "军事据点",
+    "parent": "虞渊谷",
+    "importance": 4,
+    "volumes": [
+      15
+    ]
+  },
+  "云州": {
+    "type": "地区",
+    "parent": null,
+    "importance": 5,
+    "volumes": [
+      15,
+      17,
+      18
+    ]
+  },
+  "仙萃阁": {
+    "type": "阁楼",
+    "parent": "迷楼-雍怡宫",
+    "importance": 4,
+    "volumes": [
+      16
+    ]
+  },
+  "水帘香榭": {
+    "type": "水榭",
+    "parent": "迷楼-雍怡宫",
+    "importance": 4,
+    "volumes": [
+      16,
+      17,
+      18,
+      22
+    ]
+  },
+  "少国师府": {
+    "type": "府邸",
+    "parent": "迷楼",
+    "importance": 4,
+    "volumes": [
+      16
+    ]
+  },
+  "花月渠": {
+    "type": "水渠园林",
+    "parent": "迷楼-少国师府",
+    "importance": 3,
+    "volumes": [
+      16,
+      27
+    ]
+  },
+  "玉锦架": {
+    "type": "树屋",
+    "parent": "迷楼-少国师府-花月渠",
+    "importance": 3,
+    "volumes": [
+      16,
+      27
+    ]
+  },
+  "地宫": {
+    "type": "地下宫殿",
+    "parent": "迷楼-太华轩",
+    "importance": 5,
+    "volumes": [
+      16
+    ]
+  },
+  "炼邪台": {
+    "type": "法阵平台",
+    "parent": "迷楼-地宫",
+    "importance": 4,
+    "volumes": [
+      16
+    ]
+  },
+  "蟢房": {
+    "type": "密室",
+    "parent": "迷楼-炼心殿",
+    "importance": 3,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "昆仑山-麒麟崖-玉虚宫": {
+    "type": "仙宫",
+    "parent": "昆仑山",
+    "importance": 4,
+    "volumes": [
+      16
+    ]
+  },
+  "凤麟洲": {
+    "type": "海外仙洲",
+    "parent": null,
+    "importance": 3,
+    "volumes": [
+      16,
+      22,
+      24
+    ]
+  },
+  "栖霞宫": {
+    "type": "宫殿",
+    "parent": "迷楼",
+    "importance": 4,
+    "volumes": [
+      17,
+      18,
+      23,
+      24,
+      27,
+      28
+    ]
+  },
+  "坠星岭": {
+    "type": "山岭",
+    "parent": "云州",
+    "importance": 5,
+    "volumes": [
+      17,
+      18,
+      19,
+      22
+    ]
+  },
+  "大泽": {
+    "type": "州府",
+    "parent": "日月皇朝",
+    "importance": 3,
+    "volumes": [
+      17,
+      18
+    ]
+  },
+  "中州": {
+    "type": "州府",
+    "parent": "日月皇朝",
+    "importance": 2,
+    "volumes": [
+      17,
+      22,
+      24
+    ]
+  },
+  "夜光镇": {
+    "type": "小镇",
+    "parent": "云州",
+    "importance": 4,
+    "volumes": [
+      18
+    ]
+  },
+  "夜光潭": {
+    "type": "湖泊",
+    "parent": "夜光镇",
+    "importance": 4,
+    "volumes": [
+      18
+    ]
+  },
+  "夜光酣": {
+    "type": "酒肆",
+    "parent": "夜光镇",
+    "importance": 3,
+    "volumes": [
+      18
+    ]
+  },
+  "铁峡关": {
+    "type": "关隘",
+    "parent": "云州",
+    "importance": 3,
+    "volumes": [
+      18,
+      22,
+      26,
+      27
+    ]
+  },
+  "云州兵大营": {
+    "type": "军营",
+    "parent": "云州",
+    "importance": 4,
+    "volumes": [
+      18
+    ]
+  },
+  "真珍洞": {
+    "type": "洞府",
+    "parent": "凤凰崖",
+    "importance": 3,
+    "volumes": [
+      18
+    ]
+  },
+  "云州军大营": {
+    "type": "军事营地",
+    "parent": "云州",
+    "importance": 5,
+    "volumes": [
+      19
+    ]
+  },
+  "南海": {
+    "type": "海域",
+    "parent": null,
+    "importance": 4,
+    "volumes": [
+      19
+    ]
+  },
+  "碧练岛": {
+    "type": "海岛",
+    "parent": "南海",
+    "importance": 3,
+    "volumes": [
+      19,
+      20
+    ]
+  },
+  "黑焰岛": {
+    "type": "海岛",
+    "parent": "南海深处",
+    "importance": 4,
+    "volumes": [
+      19,
+      20,
+      22
+    ]
+  },
+  "灵山雷音宝刹": {
+    "type": "佛门圣地",
+    "parent": "西天",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "八德池因果洞": {
+    "type": "禁地",
+    "parent": "灵山雷音宝刹",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "弥罗宫凌霄宝殿": {
+    "type": "天庭",
+    "parent": "九天之上",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "娲皇殿": {
+    "type": "宫殿",
+    "parent": "小琳琅天",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "建木": {
+    "type": "圣地",
+    "parent": "妖界",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "广莽极北": {
+    "type": "神秘区域",
+    "parent": "妖界版图",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "拘缨": {
+    "type": "圣地",
+    "parent": "天庭",
+    "importance": 3,
+    "volumes": [
+      19
+    ]
+  },
+  "雷域": {
+    "type": "神秘区域",
+    "parent": "三十三重天外",
+    "importance": 4,
+    "volumes": [
+      19,
+      22
+    ]
+  }
+}

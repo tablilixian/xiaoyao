@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逍遥小散仙 - 足迹</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; background: #0d0d15; color: #e8e4dc; min-height: 100vh; }
+        
+        header { background: linear-gradient(135deg, #1a1a25 0%, #0d0d15 100%); padding: 15px 30px; border-bottom: 1px solid #2a2a3a; }
+        .header-content { max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .back-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(212, 165, 116, 0.15); color: #d4a574; text-decoration: none; font-size: 18px; font-weight: bold; transition: all 0.3s ease; border: 1px solid rgba(212, 165, 116, 0.3); }
+        .back-btn:hover { background: rgba(212, 165, 116, 0.3); transform: scale(1.1); }
+        .page-title { font-size: 20px; font-weight: 600; color: #e8e4dc; }
+        
+        .progress-section { background: linear-gradient(135deg, rgba(26, 26, 37, 0.9), rgba(13, 13, 21, 0.95)); padding: 15px 30px; border-bottom: 1px solid #2a2a3a; }
+        .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .progress-title { font-size: 14px; color: #888; }
+        .progress-current { font-size: 16px; font-weight: 600; color: #d4a574; }
+        
+        .progress-slider-container { position: relative; padding: 8px 0; }
+        .progress-slider { -webkit-appearance: none; width: 100%; height: 8px; border-radius: 4px; background: linear-gradient(to right, #d4a574 0%, #5a9a8f 50%, #2a2a3a 50%); outline: none; cursor: pointer; }
+        .progress-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #d4a574; cursor: pointer; box-shadow: 0 0 10px rgba(212, 165, 116, 0.5); border: 2px solid #fff; }
+        .progress-slider::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: #d4a574; cursor: pointer; box-shadow: 0 0 10px rgba(212, 165, 116, 0.5); border: 2px solid #fff; }
+        
+        .progress-labels { display: flex; justify-content: space-between; margin-top: 8px; font-size: 11px; color: #666; }
+        
+        .main-content { display: grid; grid-template-columns: 1fr 380px; gap: 20px; padding: 20px 30px; max-width: 1600px; margin: 0 auto; height: calc(100vh - 160px); }
+        
+        .map-container { background: linear-gradient(135deg, rgba(26, 26, 37, 0.8), rgba(13, 13, 21, 0.9)); border: 1px solid #2a2a3a; border-radius: 12px; overflow: hidden; position: relative; }
+        .map-header { position: absolute; top: 15px; left: 15px; right: 15px; z-index: 10; display: flex; justify-content: space-between; align-items: center; }
+        .map-title { font-size: 16px; font-weight: 600; color: #e8e4dc; }
+        .map-controls { display: flex; gap: 8px; }
+        .control-btn { padding: 6px 12px; background: rgba(212, 165, 116, 0.1); border: 1px solid rgba(212, 165, 116, 0.3); border-radius: 6px; color: #d4a574; cursor: pointer; font-size: 12px; transition: all 0.3s; }
+        .control-btn:hover { background: rgba(212, 165, 116, 0.2); }
+        
+        .cluster-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+        .cluster-tag { padding: 4px 10px; background: rgba(255, 255, 255, 0.05); border: 1px solid #2a2a3a; border-radius: 15px; font-size: 11px; color: #888; cursor: pointer; transition: all 0.3s; }
+        .cluster-tag:hover, .cluster-tag.active { background: rgba(212, 165, 116, 0.15); border-color: #d4a574; color: #d4a574; }
+        
+        #map-svg { width: 100%; height: 100%; }
+        
+        .legend { position: absolute; bottom: 15px; left: 15px; background: rgba(26, 26, 37, 0.95); border: 1px solid #2a2a3a; border-radius: 8px; padding: 12px; font-size: 11px; }
+        .legend-title { font-weight: 600; margin-bottom: 8px; color: #e8e4dc; }
+        .legend-item { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; color: #888; }
+        .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+        
+        .detail-panel { background: linear-gradient(135deg, rgba(26, 26, 37, 0.8), rgba(13, 13, 21, 0.9)); border: 1px solid #2a2a3a; border-radius: 12px; overflow-y: auto; padding: 20px; }
+        
+        .detail-section { margin-bottom: 18px; }
+        .detail-section-title { font-size: 13px; font-weight: 600; color: #d4a574; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; gap: 6px; }
+        
+        .location-card { background: rgba(255, 255, 255, 0.03); border-radius: 8px; padding: 12px; }
+        .location-name { font-size: 17px; font-weight: 600; color: #e8e4dc; margin-bottom: 6px; }
+        .location-meta { display: flex; gap: 12px; font-size: 11px; color: #888; margin-bottom: 8px; }
+        .location-meta span { display: flex; align-items: center; gap: 3px; }
+        .location-desc { font-size: 12px; color: #a09888; line-height: 1.5; }
+        
+        .event-list { display: flex; flex-direction: column; gap: 8px; }
+        .event-item { background: rgba(255, 255, 255, 0.03); border-radius: 6px; padding: 10px; border-left: 3px solid #5a9a8f; }
+        .event-item.battle { border-left-color: #c75b5b; }
+        .event-item.daily { border-left-color: #d4a574; }
+        .event-item.emotion { border-left-color: #5a9a8f; }
+        .event-item.conspiracy { border-left-color: #9a6ad4; }
+        .event-item.rescue { border-left-color: #6b8cae; }
+        
+        .event-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .event-type { font-size: 10px; padding: 2px 6px; border-radius: 8px; background: rgba(255,255,255,0.1); color: #888; }
+        .event-summary { font-size: 12px; color: #a09888; line-height: 1.4; }
+        .event-participants { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+        .participant-tag { font-size: 10px; padding: 2px 6px; background: rgba(212, 165, 116, 0.15); color: #d4a574; border-radius: 8px; }
+        
+        .character-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+        .character-tag { display: flex; align-items: center; gap: 4px; padding: 4px 10px; background: rgba(255, 255, 255, 0.05); border: 1px solid #2a2a3a; border-radius: 15px; font-size: 12px; }
+        .character-avatar { width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #d4a574, #5a9a8f); display: flex; align-items: center; justify-content: center; font-size: 9px; color: #1a1a25; font-weight: 600; }
+        
+        .empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 150px; color: #666; font-size: 13px; }
+        
+        .loading { display: flex; align-items: center; justify-content: center; height: 100%; }
+        .loading-spinner { width: 30px; height: 30px; border: 3px solid #2a2a3a; border-top-color: #d4a574; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .tooltip { position: fixed; background: rgba(26, 26, 37, 0.95); border: 1px solid #2a2a3a; border-radius: 8px; padding: 10px 14px; max-width: 280px; z-index: 1000; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; font-size: 12px; }
+        .tooltip.visible { opacity: 1; }
+        .tooltip-title { font-weight: 600; color: #d4a574; margin-bottom: 6px; }
+        .tooltip-content { color: #a09888; line-height: 1.4; }
+        
+        @media (max-width: 1200px) { .main-content { grid-template-columns: 1fr; height: auto; } .map-container { height: 500px; } .detail-panel { max-height: 500px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-btn" title="返回主页">←</a>
+            <div class="page-title">👣 足迹 - 剧情发展路线图</div>
+            <div style="width: 36px;"></div>
+        </div>
+    </header>
+    
+    <div class="progress-section">
+        <div class="progress-header">
+            <span class="progress-title">剧情进度</span>
+            <span class="progress-current" id="current-chapter">第一卷 楔子</span>
+        </div>
+        <div class="progress-slider-container">
+            <input type="range" class="progress-slider" id="chapter-slider" min="0" max="240" value="0">
+            <div class="progress-labels">
+                <span>楔子</span>
+                <span>第一卷</span>
+                <span>第十卷</span>
+                <span>第二十卷</span>
+                <span>第二十八卷</span>
+            </div>
+        </div>
+    </div>
+    
+    <main class="main-content">
+        <div class="map-container">
+            <div class="map-header">
+                <div>
+                    <span class="map-title">🗺️ 剧情地图</span>
+                    <div class="cluster-filter" id="cluster-filters"></div>
+                </div>
+                <div class="map-controls">
+                    <button class="control-btn" onclick="resetZoom()">重置视图</button>
+                    <button class="control-btn" onclick="toggleAnimation()">暂停动画</button>
+                </div>
+            </div>
+            <div id="map-svg"></div>
+            <div class="legend">
+                <div class="legend-title">图例</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#5a9a8f;"></span> 普通地点</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#d4a574;"></span> 当前地点</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#6b8cae;"></span> 已访问</div>
+            </div>
+        </div>
+        
+        <div class="detail-panel" id="detail-panel">
+            <div class="loading"><div class="loading-spinner"></div></div>
+        </div>
+    </main>
+    
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-content"></div>
+    </div>
+
+    <script>
+        let footprintData = null;
+        let simulation, svg, g, zoom;
+        let nodes = [], links = [];
+        let currentChapterIndex = 0;
+        let allNodes = [], allLinks = [];
+        
+        const COLORS = {
+            normal: '#5a9a8f',
+            active: '#d4a574',
+            visited: '#6b8cae',
+            link: '#3a3a5a'
+        };
+        
+        const VOLUME_COLORS = [
+            '#c75b5b', '#d4a574', '#5a9a8f', '#9a6ad4', '#6b8cae',
+            '#7cb87c', '#d4878a', '#8eb5d0', '#b8a3d4', '#d4b87c',
+            '#6a9a8a', '#a87a6a', '#7a6a9a', '#9a7a6a', '#6a7a8a',
+            '#8a6a7a', '#6a8a7a', '#7a8a6a', '#9a6a8a', '#6a9a6a',
+            '#8a7a6a', '#6a7a8a', '#7a6a8a', '#8a6a7a', '#6a8a6a',
+            '#7a7a7a', '#6a6a7a', '#7a6a6a'
+        ];
+        
+        async function init() {
+            try {
+                const response = await fetch('../novel_data/footprint_map.json');
+                footprintData = await response.json();
+                console.log('数据加载完成:', footprintData);
+                
+                initData();
+                initSlider();
+                initClusterFilters();
+                initMap();
+                updateChapter(0);
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                document.getElementById('detail-panel').innerHTML = '<div class="empty-state">⚠️ 数据加载失败</div>';
+            }
+        }
+        
+        function initData() {
+            const locations = footprintData.locations;
+            const routes = footprintData.routes;
+            
+            const nodeMap = new Map();
+            Object.entries(locations).forEach(([name, data]) => {
+                const appearances = data.appearances || [];
+                const volumes = [...new Set(appearances.map(a => a.volume))];
+                nodeMap.set(name, {
+                    id: name,
+                    name: name,
+                    type: data.type,
+                    importance: data.importance,
+                    description: data.description,
+                    volumes: volumes,
+                    radius: Math.max(8, data.importance * 4),
+                    x: null,
+                    y: null,
+                    fx: null,
+                    fy: null
+                });
+            });
+            
+            allNodes = Array.from(nodeMap.values());
+            
+            const routeVolumeMap = new Map();
+            routes.forEach(route => {
+                const key = `${route.from}->${route.to}`;
+                if (!routeVolumeMap.has(key)) {
+                    routeVolumeMap.set(key, { ...route });
+                }
+            });
+            
+            allLinks = Array.from(routeVolumeMap.values()).filter(r => 
+                nodeMap.has(r.from) && nodeMap.has(r.to)
+            ).map(r => ({
+                source: r.from,
+                target: r.to,
+                volume: r.volume,
+                chapter: r.chapter
+            }));
+        }
+        
+        function initSlider() {
+            const slider = document.getElementById('chapter-slider');
+            const chapters = footprintData.chapters;
+            slider.max = chapters.length - 1;
+            
+            slider.addEventListener('input', function() {
+                updateChapter(parseInt(this.value));
+            });
+            
+            updateSliderBackground(slider, 0, chapters.length - 1);
+        }
+        
+        function updateSliderBackground(slider, min, max) {
+            const value = parseInt(slider.value);
+            const percentage = ((value - min) / (max - min)) * 100;
+            slider.style.background = `linear-gradient(to right, #d4a574 0%, #d4a574 ${percentage}%, #2a2a3a ${percentage}%, #2a2a3a 100%)`;
+        }
+        
+        function initClusterFilters() {
+            const container = document.getElementById('cluster-filters');
+            const volumes = [...new Set(allNodes.flatMap(n => (n.volumes || []).filter(v => v)))].sort((a, b) => {
+                const aNum = parseInt(String(a).replace(/[^0-9]/g, '')) || 0;
+                const bNum = parseInt(String(b).replace(/[^0-9]/g, '')) || 0;
+                return aNum - bNum;
+            });
+            
+            const displayVolumes = ['all', ...volumes.slice(0, 10)];
+            
+            container.innerHTML = displayVolumes.map(v => {
+                const label = v === 'all' ? '全部' : v;
+                return `<span class="cluster-tag ${v === 'all' ? 'active' : ''}" data-volume="${v}">${label}</span>`;
+            }).join('');
+            
+            container.querySelectorAll('.cluster-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    container.querySelectorAll('.cluster-tag').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    filterByVolume(this.dataset.volume);
+                });
+            });
+        }
+        
+        function filterByVolume(volume) {
+            if (volume === 'all') {
+                nodes = allNodes.map(n => ({ ...n }));
+                links = allLinks.map(l => ({ ...l }));
+            } else {
+                const visibleNodes = new Set(allNodes.filter(n => (n.volumes || []).includes(volume)).map(n => n.id));
+                nodes = allNodes.filter(n => (n.volumes || []).includes(volume)).map(n => ({ ...n }));
+                links = allLinks.filter(l => visibleNodes.has(l.source) && visibleNodes.has(l.target)).map(l => ({ ...l }));
+            }
+            
+            updateMapData();
+        }
+        
+        function initMap() {
+            nodes = allNodes.map(n => ({ ...n }));
+            links = allLinks.map(l => ({ ...l }));
+            
+            const container = document.getElementById('map-svg');
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            
+            svg = d3.select('#map-svg').append('svg')
+                .attr('width', width)
+                .attr('height', height);
+            
+            zoom = d3.zoom().scaleExtent([0.1, 5]).on('zoom', e => g.attr('transform', e.transform));
+            svg.call(zoom);
+            
+            g = svg.append('g');
+            
+            simulation = d3.forceSimulation(nodes)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(80).strength(0.2))
+                .force('charge', d3.forceManyBody().strength(-100))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(d => d.radius + 5))
+                .force('cluster', forceCluster());
+            
+            updateMapData();
+            
+            window.addEventListener('resize', () => {
+                const w = container.clientWidth;
+                const h = container.clientHeight;
+                svg.attr('width', w).attr('height', h);
+                simulation.force('center', d3.forceCenter(w / 2, h / 2));
+                simulation.alpha(0.3).restart();
+            });
+        }
+        
+        function forceCluster() {
+            const strength = 0.3;
+            return function() {
+                nodes.forEach(node => {
+                    const clusterForce = 0.1 * strength;
+                    if (node.volumes && node.volumes.length > 0 && node.volumes[0]) {
+                        const volNum = parseInt(String(node.volumes[0]).replace(/[^0-9]/g, '')) || 1;
+                        const angle = (volNum / 28) * Math.PI * 2;
+                        const radius = 200 + volNum * 10;
+                        const targetX = 400 + Math.cos(angle) * radius;
+                        const targetY = 300 + Math.sin(angle) * radius;
+                        node.vx = (node.vx || 0) + (targetX - (node.x || 0)) * clusterForce * 0.01;
+                        node.vy = (node.vy || 0) + (targetY - (node.y || 0)) * clusterForce * 0.01;
+                    }
+                });
+            };
+        }
+        
+        function updateMapData() {
+            const chapter = footprintData.chapters[currentChapterIndex];
+            const currentLocation = chapter.location_name;
+            const visitedLocations = new Set(
+                footprintData.chapters.slice(0, currentChapterIndex + 1).map(c => c.location_name)
+            );
+            
+            const link = g.selectAll('.link').data(links).join('line')
+                .attr('class', 'link')
+                .attr('stroke', COLORS.link)
+                .attr('stroke-width', 1.5)
+                .attr('stroke-opacity', 0.4);
+            
+            const node = g.selectAll('.node').data(nodes, d => d.id).join('g')
+                .attr('class', 'node')
+                .call(d3.drag()
+                    .on('start', e => { if (!e.active) simulation.alphaTarget(0.3).restart(); e.subject.fx = e.subject.x; e.subject.fy = e.subject.y; })
+                    .on('drag', e => { e.subject.fx = e.x; e.subject.fy = e.y; })
+                    .on('end', e => { if (!e.active) simulation.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }));
+            
+            node.selectAll('circle').remove();
+            node.selectAll('text').remove();
+            
+            node.append('circle')
+                .attr('r', d => d.radius)
+                .attr('fill', d => {
+                    if (d.id === currentLocation) return COLORS.active;
+                    if (visitedLocations.has(d.id)) return COLORS.visited;
+                    return COLORS.normal;
+                })
+                .attr('fill-opacity', d => d.id === currentLocation ? 1 : 0.7)
+                .attr('stroke', d => d.id === currentLocation ? '#fff' : 'transparent')
+                .attr('stroke-width', d => d.id === currentLocation ? 2 : 0)
+                .style('cursor', 'pointer')
+                .style('filter', d => d.id === currentLocation ? 'drop-shadow(0 0 8px rgba(212,165,116,0.6))' : 'none');
+            
+            node.filter(d => d.importance >= 3)
+                .append('text')
+                .text(d => d.name.length > 4 ? d.name.substring(0, 4) + '…' : d.name)
+                .attr('x', d => d.radius + 3)
+                .attr('y', 3)
+                .attr('font-size', 9)
+                .attr('fill', '#a09888')
+                .style('pointer-events', 'none');
+            
+            node.on('mouseover', showTooltip).on('mouseout', hideTooltip).on('click', (e, d) => {
+                showLocationDetail(d);
+            });
+            
+            simulation.nodes(nodes).on('tick', () => {
+                link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+                node.attr('transform', d => `translate(${d.x},${d.y})`);
+            });
+            
+            simulation.force('link').links(links);
+            simulation.alpha(0.5).restart();
+        }
+        
+        function showTooltip(event, d) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.querySelector('.tooltip-title').textContent = d.name;
+            tooltip.querySelector('.tooltip-content').innerHTML = `
+                类型: ${d.type || '未知'}<br>
+                重要度: ${'★'.repeat(d.importance)}<br>
+                出现卷: ${d.volumes?.slice(0, 3).join(', ')}${d.volumes?.length > 3 ? '...' : ''}
+            `;
+            tooltip.style.left = (event.pageX + 15) + 'px';
+            tooltip.style.top = (event.pageY + 15) + 'px';
+            tooltip.classList.add('visible');
+        }
+        
+        function hideTooltip() {
+            document.getElementById('tooltip').classList.remove('visible');
+        }
+        
+        function updateChapter(index) {
+            currentChapterIndex = index;
+            const chapter = footprintData.chapters[index];
+            const slider = document.getElementById('chapter-slider');
+            
+            updateSliderBackground(slider, 0, footprintData.chapters.length - 1);
+            document.getElementById('current-chapter').textContent = chapter.full_name;
+            
+            updateMapData();
+            renderDetail(chapter);
+        }
+        
+        function renderDetail(chapter) {
+            const panel = document.getElementById('detail-panel');
+            const location = footprintData.locations[chapter.location_name];
+            
+            let html = '';
+            
+            html += `
+                <div class="detail-section">
+                    <div class="detail-section-title">📍 当前地点</div>
+                    <div class="location-card">
+                        <div class="location-name">${chapter.location_name}</div>
+                        <div class="location-meta">
+                            <span>🏷️ ${location?.type || '未知'}</span>
+                            <span>⭐ ${'★'.repeat(location?.importance || 0)}</span>
+                        </div>
+                        <div class="location-desc">${location?.description || '暂无描述'}</div>
+                    </div>
+                </div>
+            `;
+            
+            html += `
+                <div class="detail-section">
+                    <div class="detail-section-title">🎭 事件 (${chapter.events.length})</div>
+                    <div class="event-list">
+            `;
+            
+            if (chapter.events.length === 0) {
+                html += '<div class="empty-state">暂无事件</div>';
+            } else {
+                chapter.events.slice(0, 5).forEach(evt => {
+                    html += `
+                        <div class="event-item ${evt.type}">
+                            <div class="event-header">
+                                <span class="event-type">${evt.type}</span>
+                            </div>
+                            <div class="event-summary">${evt.summary}</div>
+                            <div class="event-participants">
+                                ${(evt.participants || []).slice(0, 4).map(p => `<span class="participant-tag">${p}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            
+            html += '</div></div>';
+            
+            html += `
+                <div class="detail-section">
+                    <div class="detail-section-title">👥 登场角色 (${chapter.characters.length})</div>
+                    <div class="character-grid">
+            `;
+            
+            if (chapter.characters.length === 0) {
+                html += '<div class="empty-state">暂无角色</div>';
+            } else {
+                chapter.characters.slice(0, 12).forEach(char => {
+                    const initial = char.charAt(0);
+                    html += `
+                        <div class="character-tag">
+                            <span class="character-avatar">${initial}</span>
+                            <span>${char}</span>
+                        </div>
+                    `;
+                });
+            }
+            
+            html += '</div></div>';
+            
+            panel.innerHTML = html;
+        }
+        
+        function showLocationDetail(d) {
+            const panel = document.getElementById('detail-panel');
+            panel.innerHTML = `
+                <div class="detail-section">
+                    <div class="detail-section-title">📍 地点详情</div>
+                    <div class="location-card">
+                        <div class="location-name">${d.name}</div>
+                        <div class="location-meta">
+                            <span>🏷️ ${d.type || '未知'}</span>
+                            <span>⭐ ${'★'.repeat(d.importance)}</span>
+                        </div>
+                        <div class="location-desc">${d.description || '暂无描述'}</div>
+                    </div>
+                </div>
+                <div class="detail-section">
+                    <div class="detail-section-title">📖 出现卷数</div>
+                    <div class="character-grid">
+                        ${d.volumes?.map(v => `<span class="cluster-tag active">${v}</span>`).join('') || '无'}
+                    </div>
+                </div>
+            `;
+        }
+        
+        function resetZoom() {
+            svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+        }
+        
+        function toggleAnimation() {
+            simulation.stop();
+        }
+        
+        init();
+    </script>
+</body>
+</html>

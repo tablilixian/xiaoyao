@@ -1,0 +1,3349 @@
+{
+  "摘星子": {
+    "aliases": [
+      "十一师叔",
+      "摘星真人",
+      "摘星师兄"
+    ],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 2,
+    "volumes": [
+      1,
+      26
+    ]
+  },
+  "赤甲将军": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "骷髅老祖麾下",
+    "first_volume": 2,
+    "volumes": [
+      1
+    ]
+  },
+  "觅鼎子": {
+    "aliases": [],
+    "gender": "男",
+    "faction": null,
+    "first_volume": 2,
+    "volumes": [
+      1
+    ]
+  },
+  "昆仑奴": {
+    "aliases": [
+      "古勒普普"
+    ],
+    "gender": "男",
+    "faction": "飞萝麾下",
+    "first_volume": 2,
+    "volumes": [
+      1,
+      3
+    ]
+  },
+  "冰麒麟": {
+    "aliases": [
+      "宝贝"
+    ],
+    "gender": null,
+    "faction": "程水若麾下",
+    "first_volume": 2,
+    "volumes": [
+      1,
+      3
+    ]
+  },
+  "血骨巨龙": {
+    "aliases": [
+      "骷髅骊龙",
+      "骷髅龙"
+    ],
+    "gender": null,
+    "faction": "骷髅老祖麾下",
+    "first_volume": 2,
+    "volumes": [
+      1
+    ]
+  },
+  "骷髅巨怪": {
+    "aliases": [
+      "巨型骷髅像"
+    ],
+    "gender": null,
+    "faction": "骷髅老祖麾下",
+    "first_volume": 2,
+    "volumes": [
+      1
+    ]
+  },
+  "玄玄子": {
+    "aliases": [],
+    "gender": "男",
+    "faction": null,
+    "first_volume": 2,
+    "volumes": [
+      1,
+      2
+    ]
+  },
+  "七邪魔君": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 2,
+    "volumes": [
+      1,
+      2
+    ]
+  },
+  "焚虚": {
+    "aliases": [
+      "焚虚散人"
+    ],
+    "gender": "男",
+    "faction": null,
+    "first_volume": 2,
+    "volumes": [
+      1
+    ]
+  },
+  "七焰碧鸾": {
+    "aliases": [
+      "神鸟",
+      "巨鸾",
+      "大鸟"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 3,
+    "volumes": [
+      1,
+      3
+    ]
+  },
+  "绿衣女孩": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "巨竹谷",
+    "first_volume": 3,
+    "volumes": [
+      1,
+      3
+    ]
+  },
+  "无敌大将军": {
+    "aliases": [
+      "火石巨人"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "刑飞": {
+    "aliases": [
+      "诛魔大帅"
+    ],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "少轩辕": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "飞天将军": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "千翠山/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "黑白公子": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "千翠山/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "黑无霸": {
+    "aliases": [
+      "黑大哥",
+      "无霸"
+    ],
+    "gender": "男",
+    "faction": "千翠山大风岭/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "闹海大帅": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "千翠山/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "玉桃娘娘": {
+    "aliases": [
+      "桃花大姐",
+      "大姐"
+    ],
+    "gender": "女",
+    "faction": "千翠山玉泉谷华浓庄/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "袁自在": {
+    "aliases": [
+      "袁大哥"
+    ],
+    "gender": "男",
+    "faction": "千翠山/千翠山八圣",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "虬髯汉子": {
+    "aliases": [
+      "二当家"
+    ],
+    "gender": "男",
+    "faction": "猎魔团队",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "方柏钧": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "方尚绍": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "焚虚散人": {
+    "aliases": [
+      "焚虚"
+    ],
+    "gender": null,
+    "faction": "聚窟洲",
+    "first_volume": 1,
+    "volumes": [
+      1,
+      2
+    ]
+  },
+  "赤甲将军（骷髅将军）": {
+    "aliases": [
+      "骷髅将军"
+    ],
+    "gender": null,
+    "faction": "骷髅妖邪势力",
+    "first_volume": 1,
+    "volumes": [
+      1
+    ]
+  },
+  "邪皇渊乙": {
+    "aliases": [
+      "邪皇"
+    ],
+    "gender": "未知",
+    "faction": "未知",
+    "first_volume": 2,
+    "volumes": [
+      2,
+      26
+    ]
+  },
+  "圣皇": {
+    "aliases": [
+      "他老人家"
+    ],
+    "gender": "未知",
+    "faction": "骷髅老祖势力",
+    "first_volume": 2,
+    "volumes": [
+      2
+    ]
+  },
+  "少主": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "骷髅老祖势力",
+    "first_volume": 2,
+    "volumes": [
+      2
+    ]
+  },
+  "三十三师叔": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "玄教",
+    "first_volume": 2,
+    "volumes": [
+      2
+    ]
+  },
+  "毛总管": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "巨竹谷",
+    "first_volume": 3,
+    "volumes": [
+      3,
+      4
+    ]
+  },
+  "易寻烟": {
+    "aliases": [
+      "孤烟岛散人",
+      "天外孤烟",
+      "六师伯"
+    ],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 5,
+    "volumes": [
+      5,
+      10
+    ]
+  },
+  "季将军": {
+    "aliases": [
+      "季老将军"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "孟统领": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "李奶奶": {
+    "aliases": [],
+    "gender": "女",
+    "faction": null,
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "二虎": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "雷将（紫甲怪神）": {
+    "aliases": [
+      "上界雷将",
+      "社令院雷将",
+      "毛神"
+    ],
+    "gender": "未知",
+    "faction": "上界雷府",
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "少轩辕（当今天子）": {
+    "aliases": [
+      "今上",
+      "昏君"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 5,
+    "volumes": [
+      5
+    ]
+  },
+  "妖狐玄玄子": {
+    "aliases": [
+      "先天太玄",
+      "玄狐",
+      "大闹三界的玄狐"
+    ],
+    "gender": "男",
+    "faction": "妖界",
+    "first_volume": 5,
+    "volumes": [
+      5,
+      7
+    ]
+  },
+  "血刃大将军": {
+    "aliases": [
+      "血刃将军"
+    ],
+    "gender": "男",
+    "faction": "骷髅老祖势力",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "猛狰": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "方少麟",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "石精之王": {
+    "aliases": [
+      "天然石精之王",
+      "护守者"
+    ],
+    "gender": "未知",
+    "faction": "骷髅老祖势力",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "青耳灰": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天庭雷府",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "青不留": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "陷云谷",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "水云道长": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "问心观",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "哪吒三太子": {
+    "aliases": [
+      "天王三太子",
+      "三坛海会大神"
+    ],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "五虎上将": {
+    "aliases": [
+      "七绝界五虎上将"
+    ],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 6,
+    "volumes": [
+      6
+    ]
+  },
+  "黄姖": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "刑天氏魔军",
+    "first_volume": 4,
+    "volumes": [
+      4
+    ]
+  },
+  "灵竹族大祭司": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "灵竹族",
+    "first_volume": 4,
+    "volumes": [
+      4
+    ]
+  },
+  "哪吒": {
+    "aliases": [
+      "三坛海会大神",
+      "天王三太子"
+    ],
+    "gender": "male",
+    "faction": "天庭",
+    "first_volume": 7,
+    "volumes": [
+      7,
+      23
+    ]
+  },
+  "猪哈哈": {
+    "aliases": [
+      "猪家客栈老板"
+    ],
+    "gender": "male",
+    "faction": "葫芦镇",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "胡紫儿": {
+    "aliases": [
+      "紫儿",
+      "蝴蝶精姐姐"
+    ],
+    "gender": "female",
+    "faction": "未知精怪群",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "胡碧儿": {
+    "aliases": [
+      "碧儿",
+      "蝴蝶精妹妹"
+    ],
+    "gender": "female",
+    "faction": "未知精怪群",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "小魔君": {
+    "aliases": [
+      "七绝界之主",
+      "圣君",
+      "少主"
+    ],
+    "gender": "male",
+    "faction": "七绝界",
+    "first_volume": 7,
+    "volumes": [
+      7,
+      10
+    ]
+  },
+  "白眉翁": {
+    "aliases": [
+      "白眉大哥（飞萝、武翩跹称）"
+    ],
+    "gender": "male",
+    "faction": "妖界",
+    "first_volume": 7,
+    "volumes": [
+      7,
+      8
+    ]
+  },
+  "绝色女子（圣后）": {
+    "aliases": [
+      "圣后",
+      "姐姐"
+    ],
+    "gender": "female",
+    "faction": "妖界",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "万劫真君": {
+    "aliases": [
+      "圣御军镇界总兵马大元帅"
+    ],
+    "gender": "male",
+    "faction": "妖界",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "卜长老": {
+    "aliases": [],
+    "gender": "male",
+    "faction": "七绝界",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "空空老仙": {
+    "aliases": [],
+    "gender": "male",
+    "faction": "截教",
+    "first_volume": 7,
+    "volumes": [
+      7
+    ]
+  },
+  "沐长老": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "赤目将军": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "牛魔王": {
+    "aliases": [
+      "大力将军"
+    ],
+    "gender": "男",
+    "faction": "妖界圣御军",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "清泉": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "白石": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "万毒老君": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界七大长老",
+    "first_volume": 8,
+    "volumes": [
+      8,
+      10
+    ]
+  },
+  "碧大司祭": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 8,
+    "volumes": [
+      8
+    ]
+  },
+  "元一太子": {
+    "aliases": [
+      "殿下",
+      "玉轩仙君"
+    ],
+    "gender": "男",
+    "faction": "未知",
+    "first_volume": 8,
+    "volumes": [
+      8,
+      28
+    ]
+  },
+  "金甲大帅": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "绝影大王": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "拔山大王": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "啄日大王": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "离九命": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9,
+      11
+    ]
+  },
+  "藏千刺": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "虚照境无尽宫",
+    "first_volume": 9,
+    "volumes": [
+      9,
+      11
+    ]
+  },
+  "乔三": {
+    "aliases": [
+      "谷中土地"
+    ],
+    "gender": "男",
+    "faction": "巨竹谷",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "千臂元圣": {
+    "aliases": [
+      "千臂老魔",
+      "千木元圣",
+      "千臂元圣"
+    ],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "阿绣": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "灵竹族/巨竹谷",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "千幻娘娘": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "缤纷谷",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "毛苦": {
+    "aliases": [
+      "毛总管"
+    ],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 9,
+    "volumes": [
+      9
+    ]
+  },
+  "午十": {
+    "aliases": [
+      "长恨琴魔",
+      "午大司祭"
+    ],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10
+    ]
+  },
+  "吞天大将军": {
+    "aliases": [
+      "吞天"
+    ],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10
+    ]
+  },
+  "卜木司": {
+    "aliases": [
+      "大长老",
+      "卜长老"
+    ],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      15
+    ]
+  },
+  "天残地缺": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "两袖清风": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "没脸见人": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "目中无人": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "沆瀣一气": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "充耳不闻": {
+    "aliases": [
+      "充耳不闲"
+    ],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "哑口无言": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10
+    ]
+  },
+  "黛小媚": {
+    "aliases": [
+      "小贱人",
+      "狐狸精"
+    ],
+    "gender": "女",
+    "faction": "七绝界",
+    "first_volume": 10,
+    "volumes": [
+      10
+    ]
+  },
+  "布喜": {
+    "aliases": [
+      "犼族之王"
+    ],
+    "gender": "未知",
+    "faction": "妖界",
+    "first_volume": 10,
+    "volumes": [
+      10,
+      11
+    ]
+  },
+  "水元尊者": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "玄教",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "乙鹤道人": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "千翠山散仙",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "晏明": {
+    "aliases": [
+      "双日天师",
+      "双日天师（与朱晃合称）"
+    ],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      18
+    ]
+  },
+  "朱晃": {
+    "aliases": [
+      "双日天师",
+      "双日天师（与晏明合称）"
+    ],
+    "gender": "男",
+    "faction": "玄教",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      18
+    ]
+  },
+  "芷晴": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "辟邪宫",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "宝儿": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "辟邪宫",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "小依": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "辟邪宫",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "黄泉九异": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "火尉": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "云谷子": {
+    "aliases": [
+      "云叟大人",
+      "云叟"
+    ],
+    "gender": "男",
+    "faction": "妖界",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      28
+    ]
+  },
+  "夜影": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "妖界",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "化多": {
+    "aliases": [
+      "令奴"
+    ],
+    "gender": "男",
+    "faction": "役妖令",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "骄烈": {
+    "aliases": [
+      "鸣蛇"
+    ],
+    "gender": "男",
+    "faction": "役妖令罪妖",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "邪邪": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "役妖令罪妖",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "雷尉": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "翠雨": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "巨竹谷",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "水枝": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "巨竹谷",
+    "first_volume": 11,
+    "volumes": [
+      11
+    ]
+  },
+  "祖灵婆婆": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "巨竹谷",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "楚静妤": {
+    "aliases": [
+      "四宫主",
+      "雪羽仙",
+      "雪羽娘娘"
+    ],
+    "gender": "女",
+    "faction": "辟邪宫",
+    "first_volume": 11,
+    "volumes": [
+      11,
+      12
+    ]
+  },
+  "风尉": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 12,
+    "volumes": [
+      12
+    ]
+  },
+  "电尉": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "七绝界",
+    "first_volume": 12,
+    "volumes": [
+      12
+    ]
+  },
+  "金睛卧雪兽": {
+    "aliases": [
+      "卧雪兽"
+    ],
+    "gender": "未知",
+    "faction": "七绝界",
+    "first_volume": 12,
+    "volumes": [
+      12
+    ]
+  },
+  "苗小见": {
+    "aliases": [
+      "苗小见",
+      "小见"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 13,
+    "volumes": [
+      13
+    ]
+  },
+  "晁紫阁": {
+    "aliases": [
+      "日月皇朝当今天子",
+      "晁紫阁"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝/邪宗圣宗",
+    "first_volume": 13,
+    "volumes": [
+      13
+    ]
+  },
+  "罗才人": {
+    "aliases": [
+      "可儿",
+      "罗才人"
+    ],
+    "gender": "女",
+    "faction": "日月皇朝",
+    "first_volume": 13,
+    "volumes": [
+      13,
+      14
+    ]
+  },
+  "龚才人": {
+    "aliases": [
+      "真真",
+      "龚才人"
+    ],
+    "gender": "女",
+    "faction": "日月皇朝",
+    "first_volume": 13,
+    "volumes": [
+      13,
+      14
+    ]
+  },
+  "韦登": {
+    "aliases": [
+      "韦登",
+      "索魂邪煞"
+    ],
+    "gender": "男",
+    "faction": "邪宗",
+    "first_volume": 13,
+    "volumes": [
+      13
+    ]
+  },
+  "大宝": {
+    "aliases": [
+      "符力士",
+      "大宝",
+      "炼符玄机"
+    ],
+    "gender": "未知",
+    "faction": null,
+    "first_volume": 13,
+    "volumes": [
+      13,
+      14
+    ]
+  },
+  "卜轩司": {
+    "aliases": [
+      "国师",
+      "卜轩司",
+      "护国真人"
+    ],
+    "gender": "男",
+    "faction": "天机岛",
+    "first_volume": 13,
+    "volumes": [
+      13,
+      16
+    ]
+  },
+  "扈星飞": {
+    "aliases": [
+      "国舅爷"
+    ],
+    "gender": "男",
+    "faction": "截教空空老仙一脉/卫国公扈家",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "大耳和尚梦癫": {
+    "aliases": [
+      "梦癫"
+    ],
+    "gender": "男",
+    "faction": "慧根峰无尘寺",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "陆安清": {
+    "aliases": [
+      "云岭独秀"
+    ],
+    "gender": "男",
+    "faction": "灵宝宫",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "钟晋": {
+    "aliases": [
+      "点金圣手"
+    ],
+    "gender": "男",
+    "faction": "天相宗",
+    "first_volume": 14,
+    "volumes": [
+      14,
+      23
+    ]
+  },
+  "祝仲": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天相宗",
+    "first_volume": 14,
+    "volumes": [
+      14,
+      23
+    ]
+  },
+  "嬉云叟": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "华山散人",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "马长安": {
+    "aliases": [
+      "马公公"
+    ],
+    "gender": "男",
+    "faction": "内侍省",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "甜儿": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "宫婢",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "扈鉴堂": {
+    "aliases": [
+      "卫国公"
+    ],
+    "gender": "男",
+    "faction": "皇朝四大梁柱/扈家",
+    "first_volume": 14,
+    "volumes": [
+      14,
+      26
+    ]
+  },
+  "秦湛": {
+    "aliases": [
+      "大将军秦湛"
+    ],
+    "gender": "男",
+    "faction": "朝廷",
+    "first_volume": 14,
+    "volumes": [
+      14,
+      26
+    ]
+  },
+  "德妃": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "后宫",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "杳杳真人": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "截教空空老仙一脉",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "弄红": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "后宫",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "由吾璟": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "琅邪由吾世家",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "由吾珏": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "琅邪由吾世家",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "周景元": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天相宗",
+    "first_volume": 14,
+    "volumes": [
+      14
+    ]
+  },
+  "紫发丽姬": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "逍遥门",
+    "first_volume": 14,
+    "volumes": [
+      14,
+      16
+    ]
+  },
+  "罗可儿": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "太幽宫",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "薄野烈": {
+    "aliases": [
+      "薄野将军"
+    ],
+    "gender": "男",
+    "faction": "武翩跹势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "巴甘雄": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "武翩跹势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "碧绮绮": {
+    "aliases": [
+      "五姐姐（小玄称）"
+    ],
+    "gender": "女",
+    "faction": "七绝界",
+    "first_volume": 15,
+    "volumes": [
+      15,
+      16
+    ]
+  },
+  "墨袍鸟头人": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "未知神秘势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "双角老妇": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "未知神秘势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "八首怪鸟将军": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "未知神秘势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "狄帅": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "武翩跹势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "祝将军": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "武翩跹势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "易楼": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "武翩跹势力",
+    "first_volume": 15,
+    "volumes": [
+      15
+    ]
+  },
+  "雨儿": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "少国师府",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "露儿": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "少国师府",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "汤贵妃": {
+    "aliases": [
+      "汤国璋之女"
+    ],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "楚昭仪": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "宋昭容": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "林婕妤": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "洛美人": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "邵弄红": {
+    "aliases": [
+      "邵弄红才人"
+    ],
+    "gender": "女",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "凌婕妤": {
+    "aliases": [
+      "凌姬",
+      "凌妃"
+    ],
+    "gender": "女",
+    "faction": "邪皇势力",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "毒眼影煞": {
+    "aliases": [
+      "顾隼"
+    ],
+    "gender": "男",
+    "faction": "邪皇势力-百煞",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "南极仙翁": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "元始门",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "白鹤童子": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "元始门",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "元始天尊": {
+    "aliases": [
+      "大天尊"
+    ],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "太上老君": {
+    "aliases": [
+      "道祖",
+      "道德天尊"
+    ],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "九天玄女": {
+    "aliases": [
+      "圣姆天尊",
+      "九天玄姆"
+    ],
+    "gender": "女",
+    "faction": "天庭",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "真武玄天上帝": {
+    "aliases": [
+      "佑圣真君",
+      "荡魔天尊",
+      "佑圣玄武灵应真君"
+    ],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 16,
+    "volumes": [
+      16
+    ]
+  },
+  "暨公公": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "皇朝-炼心殿",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      27
+    ]
+  },
+  "项炯": {
+    "aliases": [
+      "禁卫总领"
+    ],
+    "gender": "男",
+    "faction": "皇朝",
+    "first_volume": 16,
+    "volumes": [
+      16,
+      17
+    ]
+  },
+  "骨海将军": {
+    "aliases": [],
+    "gender": "未知",
+    "faction": "邪宗",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "魇夫人": {
+    "aliases": [
+      "袁媚"
+    ],
+    "gender": "女",
+    "faction": "邪宗",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "花婉": {
+    "aliases": [
+      "摘命迷蝶"
+    ],
+    "gender": "女",
+    "faction": "邪宗",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      25
+    ]
+  },
+  "月凝": {
+    "aliases": [
+      "玉骨罗刹"
+    ],
+    "gender": "女",
+    "faction": "邪宗",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      25
+    ]
+  },
+  "唐凤山": {
+    "aliases": [
+      "骠骑大将军"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      26
+    ]
+  },
+  "唐彦阳": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "汤国璋": {
+    "aliases": [
+      "宰相",
+      "相国"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      26
+    ]
+  },
+  "李翰馥": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      26
+    ]
+  },
+  "灵妃奶拉忽": {
+    "aliases": [
+      "奶拉忽",
+      "灵妃"
+    ],
+    "gender": "女",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      27
+    ]
+  },
+  "江应存": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "阿福": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "鬼王门",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "阿寿": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "鬼王门",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "辛荣": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "周子衎": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "丹绮丝": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17,
+      27
+    ]
+  },
+  "冯晋东": {
+    "aliases": [
+      "忠武将军",
+      "冯夫子"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "扈鉴亭": {
+    "aliases": [
+      "平宁候"
+    ],
+    "gender": "男",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "南宫修仪": {
+    "aliases": [],
+    "gender": "女",
+    "faction": "日月皇朝",
+    "first_volume": 17,
+    "volumes": [
+      17
+    ]
+  },
+  "未空": {
+    "aliases": [
+      "大巫祭"
+    ],
+    "gender": "男",
+    "faction": "巫后麾下/云州叛军",
+    "first_volume": 18,
+    "volumes": [
+      18,
+      19
+    ]
+  },
+  "不成": {
+    "aliases": [
+      "大巫祭"
+    ],
+    "gender": "男",
+    "faction": "巫后麾下/云州叛军",
+    "first_volume": 18,
+    "volumes": [
+      18,
+      19
+    ]
+  },
+  "度尽": {
+    "aliases": [
+      "大巫祭"
+    ],
+    "gender": "男",
+    "faction": "巫后麾下/云州叛军",
+    "first_volume": 18,
+    "volumes": [
+      18,
+      19
+    ]
+  },
+  "方证": {
+    "aliases": [
+      "大巫祭"
+    ],
+    "gender": "男",
+    "faction": "巫后麾下/云州叛军",
+    "first_volume": 18,
+    "volumes": [
+      18,
+      19
+    ]
+  },
+  "奚舜卿": {
+    "aliases": [
+      "功曹参军"
+    ],
+    "gender": "男",
+    "faction": "皇朝/程兆琦麾下",
+    "first_volume": 18,
+    "volumes": [
+      18,
+      19
+    ]
+  },
+  "世尊大人": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "云州叛军",
+    "first_volume": 18,
+    "volumes": [
+      18
+    ]
+  },
+  "安老板": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "夜光镇",
+    "first_volume": 18,
+    "volumes": [
+      18
+    ]
+  },
+  "陆压": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天外海散仙",
+    "first_volume": 18,
+    "volumes": [
+      18
+    ]
+  },
+  "恶军": {
+    "aliases": [
+      "呲铁族力士"
+    ],
+    "gender": "男",
+    "faction": "妖界御牢罪妖",
+    "first_volume": 19,
+    "volumes": [
+      19,
+      23
+    ]
+  },
+  "玉矶": {
+    "aliases": [
+      "石之精灵"
+    ],
+    "gender": "女",
+    "faction": "妖界御牢罪妖",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "战奴": {
+    "aliases": [
+      "大地战魔"
+    ],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19,
+      21
+    ]
+  },
+  "韩胄": {
+    "aliases": [
+      "铁塔将军"
+    ],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "马祚": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "卫泰": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "岳刚": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "褚弘": {
+    "aliases": [
+      "噬魂将军"
+    ],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "秦歆": {
+    "aliases": [
+      "鬼影将军"
+    ],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "胡恩": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "程兆琦麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "范嶷": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "程兆琦麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "谢衡": {
+    "aliases": [
+      "阎罗账簿"
+    ],
+    "gender": "男",
+    "faction": "南宫阳麾下",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "冥殿龙犀": {
+    "aliases": [
+      "圣兽"
+    ],
+    "gender": "未知",
+    "faction": "巫帝旧部",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "龙逄": {
+    "aliases": [
+      "镇界大将军"
+    ],
+    "gender": "男",
+    "faction": "妖界",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "释迦牟尼": {
+    "aliases": [
+      "佛祖"
+    ],
+    "gender": "男",
+    "faction": "佛界",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "迦叶尊者": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "佛界",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "玉帝": {
+    "aliases": [
+      "昊天金阙无上至尊自然妙有弥罗至真玉皇上帝"
+    ],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "托塔天王李靖": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "太白金星": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "翊圣真君": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "天庭",
+    "first_volume": 19,
+    "volumes": [
+      19
+    ]
+  },
+  "钓龙仙君": {
+    "aliases": [],
+    "gender": "男",
+    "faction": "太古真人门下",
+    "first_volume": 19,
+    "volumes": [
+      19,
+      20
+    ]
+  },
+  "红孩儿": {
+    "aliases": [
+      "圣婴大王",
+      "善财童子"
+    ],
+    "gender": null,
+    "faction": "观音菩萨门下",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "木吒": {
+    "aliases": [
+      "惠岸行者"
+    ],
+    "gender": null,
+    "faction": "观音菩萨门下",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "观音菩萨": {
+    "aliases": [
+      "南无观世音菩萨"
+    ],
+    "gender": null,
+    "faction": "西方",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "金须龙鳌": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古遗族",
+    "first_volume": 20,
+    "volumes": [
+      20,
+      21
+    ]
+  },
+  "冥咒世尊": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20,
+      21
+    ]
+  },
+  "青面蝎魔": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20,
+      21
+    ]
+  },
+  "阿呆": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "巫帝顼冕": {
+    "aliases": [
+      "巫帝"
+    ],
+    "gender": null,
+    "faction": "太古冥族",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "巫后绛夕": {
+    "aliases": [
+      "巫后"
+    ],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "巫即": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "练无梦": {
+    "aliases": [
+      "辟邪宫第一代宫主"
+    ],
+    "gender": null,
+    "faction": "辟邪宫",
+    "first_volume": 20,
+    "volumes": [
+      20,
+      23
+    ]
+  },
+  "冥蛛之母": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太古冥族遗脉",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "焚虚真人": {
+    "aliases": [
+      "焚虚"
+    ],
+    "gender": null,
+    "faction": "太古真人",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "南海龙王敖钦": {
+    "aliases": [],
+    "gender": null,
+    "faction": "龙族",
+    "first_volume": 20,
+    "volumes": [
+      20
+    ]
+  },
+  "变异陆吾": {
+    "aliases": [
+      "魔化陆吾"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "炼狱世尊": {
+    "aliases": [],
+    "gender": null,
+    "faction": "冥界",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "摩珈女王": {
+    "aliases": [
+      "酸与女王",
+      "酸与"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21,
+      28
+    ]
+  },
+  "泰逢": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "玉露娘娘": {
+    "aliases": [
+      "玉还真"
+    ],
+    "gender": null,
+    "faction": "逍遥门",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "无瑕仙子": {
+    "aliases": [
+      "五宫主",
+      "吕嫣莹"
+    ],
+    "gender": null,
+    "faction": "逍遥门",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "宝珈婆婆": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太幽宫",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "洒扫小娥": {
+    "aliases": [],
+    "gender": null,
+    "faction": "太幽宫",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "苏晚归": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "元晨": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "玉轩仙君": {
+    "aliases": [
+      "慕寄尘",
+      "玉轩魔头"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21,
+      23
+    ]
+  },
+  "太兆": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "龙陵宇侯": {
+    "aliases": [],
+    "gender": null,
+    "faction": "龙伯国",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "巫支祁": {
+    "aliases": [
+      "淮水之君"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "暗曜魔君": {
+    "aliases": [],
+    "gender": null,
+    "faction": "魔界",
+    "first_volume": 21,
+    "volumes": [
+      21
+    ]
+  },
+  "扈云倾": {
+    "aliases": [
+      "皇后"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "浔河龙神敖辛": {
+    "aliases": [
+      "敖辛"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "戚万韬": {
+    "aliases": [
+      "碧血盟盟主"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "丁惊雷": {
+    "aliases": [
+      "丁岛主"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "晏腾": {
+    "aliases": [
+      "翻海蛟龙"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "董惜玉": {
+    "aliases": [
+      "青鸾公子"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "虿嬛娘娘": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "越于安": {
+    "aliases": [
+      "天残老君"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "穆宝儿": {
+    "aliases": [
+      "橙虹仙子"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "薛小依": {
+    "aliases": [
+      "蓝虹仙子"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "传俪": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "吕婆婆": {
+    "aliases": [
+      "辟邪宫护法长老"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "沈秀衣": {
+    "aliases": [
+      "辟邪宫掌宫",
+      "大宫主",
+      "天虹仙姝"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "何晏": {
+    "aliases": [
+      "晋安侯"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "费白云": {
+    "aliases": [
+      "长丘令"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "宣应": {
+    "aliases": [
+      "断魂太岁"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      28
+    ]
+  },
+  "水犹怜": {
+    "aliases": [
+      "水涟漪",
+      "董琳琳"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "许清槐": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "龙绣霓": {
+    "aliases": [
+      "三宫主",
+      "霞霓仙娘",
+      "霞霓仙子"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      23
+    ]
+  },
+  "袁婆婆": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "管诩": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22
+    ]
+  },
+  "王俊胜": {
+    "aliases": [
+      "宣威将军"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "曾立": {
+    "aliases": [
+      "潮城太守"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "游浈武": {
+    "aliases": [
+      "怀仁校尉"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "米南": {
+    "aliases": [
+      "云骑都尉"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "谢洲峰": {
+    "aliases": [
+      "右骁卫大将"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "李宏概": {
+    "aliases": [
+      "神武军统领"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "蔡建鹏": {
+    "aliases": [
+      "安南大都护"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 22,
+    "volumes": [
+      22,
+      24
+    ]
+  },
+  "房立": {
+    "aliases": [
+      "碾骨槌"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "付翔": {
+    "aliases": [
+      "碎尸镋"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "蒲元": {
+    "aliases": [
+      "截腰锯"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "钟鸿": {
+    "aliases": [
+      "绞心戟"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "常耀": {
+    "aliases": [
+      "锁喉钺"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "邹宝亭": {
+    "aliases": [
+      "丧魄牙"
+    ],
+    "gender": null,
+    "faction": "碧血盟",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "阿并": {
+    "aliases": [],
+    "gender": null,
+    "faction": "散修",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "郄景": {
+    "aliases": [
+      "长痴公"
+    ],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "蒲鹿然": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23,
+      27
+    ]
+  },
+  "邓巽": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23,
+      27
+    ]
+  },
+  "朱珪": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23,
+      27
+    ]
+  },
+  "嵇稷": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23,
+      27
+    ]
+  },
+  "乐羊燮": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 23,
+    "volumes": [
+      23,
+      27
+    ]
+  },
+  "凤翎统领": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇宫",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "崇恩帝君": {
+    "aliases": [],
+    "gender": null,
+    "faction": "仙界",
+    "first_volume": 23,
+    "volumes": [
+      23
+    ]
+  },
+  "阿并（虚耗小鬼）": {
+    "aliases": [
+      "虚耗小鬼"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "楚琮泉": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "蔡渊涣": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "阚勋": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24,
+      26
+    ]
+  },
+  "阁洛俨": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "朱仁俭": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "宋彦明": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "林寿柏": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "何晏在": {
+    "aliases": [],
+    "gender": null,
+    "faction": "叛军",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "袁媚": {
+    "aliases": [
+      "魇夫人"
+    ],
+    "gender": null,
+    "faction": "邪宗",
+    "first_volume": 24,
+    "volumes": [
+      24
+    ]
+  },
+  "毒龙": {
+    "aliases": [
+      "怪角老叟"
+    ],
+    "gender": null,
+    "faction": null,
+    "first_volume": 25,
+    "volumes": [
+      25
+    ]
+  },
+  "兵尊": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 25,
+    "volumes": [
+      25
+    ]
+  },
+  "狂尊": {
+    "aliases": [],
+    "gender": null,
+    "faction": null,
+    "first_volume": 25,
+    "volumes": [
+      25,
+      26
+    ]
+  },
+  "兵尊（阿米巴）": {
+    "aliases": [
+      "阿米巴"
+    ],
+    "gender": null,
+    "faction": "邪宗",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "皇后的师尊（天地无宝塔主人）": {
+    "aliases": [],
+    "gender": null,
+    "faction": "未知",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "九尾狐（白裳少女/卿卿）": {
+    "aliases": [
+      "卿卿",
+      "本王",
+      "白裳少女"
+    ],
+    "gender": null,
+    "faction": "快活岛",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "紫喵喵": {
+    "aliases": [],
+    "gender": null,
+    "faction": "快活岛",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "歪头猫": {
+    "aliases": [],
+    "gender": null,
+    "faction": "快活岛",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "廖长先": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝",
+    "first_volume": 26,
+    "volumes": [
+      26,
+      27
+    ]
+  },
+  "皇甫原": {
+    "aliases": [],
+    "gender": null,
+    "faction": "皇朝军",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "香雪": {
+    "aliases": [],
+    "gender": null,
+    "faction": "迷楼",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "大牛": {
+    "aliases": [],
+    "gender": null,
+    "faction": "平民",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "商贩头子": {
+    "aliases": [],
+    "gender": null,
+    "faction": "平民",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "张士": {
+    "aliases": [],
+    "gender": null,
+    "faction": "铁峡关",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "紫衫男子": {
+    "aliases": [],
+    "gender": null,
+    "faction": "未知",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "魔宗天外领地巨魔": {
+    "aliases": [],
+    "gender": null,
+    "faction": "魔宗",
+    "first_volume": 26,
+    "volumes": [
+      26
+    ]
+  },
+  "丘定真": {
+    "aliases": [
+      "五师伯",
+      "云须仙"
+    ],
+    "gender": null,
+    "faction": "玄教",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "赵彦": {
+    "aliases": [
+      "赵师兄"
+    ],
+    "gender": null,
+    "faction": "玄教",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "翁莫忿": {
+    "aliases": [
+      "大笑仙公"
+    ],
+    "gender": null,
+    "faction": "蜀山",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "郤景": {
+    "aliases": [
+      "长痴公"
+    ],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "姬洵": {
+    "aliases": [
+      "长青子"
+    ],
+    "gender": null,
+    "faction": "玄教",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "洛俨": {
+    "aliases": [],
+    "gender": null,
+    "faction": "朝廷",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "卿卿": {
+    "aliases": [
+      "白裳少女"
+    ],
+    "gender": null,
+    "faction": "妖界",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "天羽大圣老": {
+    "aliases": [],
+    "gender": null,
+    "faction": "妖界",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "长痴大师": {
+    "aliases": [],
+    "gender": null,
+    "faction": "天道阁",
+    "first_volume": 27,
+    "volumes": [
+      27
+    ]
+  },
+  "严弘": {
+    "aliases": [
+      "噬龙蛟"
+    ],
+    "gender": null,
+    "faction": "邪宗",
+    "first_volume": 28,
+    "volumes": [
+      28
+    ]
+  }
+}

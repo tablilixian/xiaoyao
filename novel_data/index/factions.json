@@ -1,0 +1,509 @@
+{
+  "玄教": {
+    "type": "门派",
+    "leader": "教主（重元子）",
+    "allies": [],
+    "enemies": [
+      "骷髅老祖势力",
+      "根本教"
+    ],
+    "importance": 5
+  },
+  "骷髅老祖势力": {
+    "type": "魔族",
+    "leader": "骷髅老祖",
+    "allies": [],
+    "enemies": [
+      "玄教",
+      "焚虚"
+    ],
+    "importance": 5
+  },
+  "根本教": {
+    "type": "魔族",
+    "leader": "教主（未具名）",
+    "allies": [
+      "骷髅老祖势力"
+    ],
+    "enemies": [
+      "玄教"
+    ],
+    "importance": 4
+  },
+  "日月皇朝": {
+    "type": "朝廷",
+    "leader": "少轩辕（皇帝）",
+    "allies": [],
+    "enemies": [],
+    "importance": 4
+  },
+  "千翠山散仙群": {
+    "type": "散仙/妖族",
+    "leader": "无固定首领（千翠山八圣）",
+    "allies": [
+      "玄教（崔小玄个人关系）"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "猎魔者联盟": {
+    "type": "民间势力",
+    "leader": "无固定首领",
+    "allies": [],
+    "enemies": [
+      "骷髅老祖势力"
+    ],
+    "importance": 2
+  },
+  "七绝界": {
+    "type": "魔道势力",
+    "leader": "七邪魔君（已灭亡）",
+    "allies": [],
+    "enemies": [
+      "天庭",
+      "玄玄子"
+    ],
+    "importance": "high"
+  },
+  "荡魔堡": {
+    "type": "武林/伏魔势力",
+    "leader": "堡主（未提及姓名）",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [
+      "骷髅老祖势力"
+    ],
+    "importance": "medium"
+  },
+  "骷髅老祖麾下魔军": {
+    "type": "魔道势力（骷髅老祖势力分支）",
+    "leader": "骷髅老祖",
+    "allies": [],
+    "enemies": [
+      "玄教",
+      "日月皇朝",
+      "七绝界"
+    ],
+    "importance": "high"
+  },
+  "巨竹谷": {
+    "name": "巨竹谷",
+    "type": "秘境势力",
+    "leader": "柳长青(少主)",
+    "allies": [],
+    "enemies": [],
+    "importance": 4
+  },
+  "妖界": {
+    "name": "妖界",
+    "type": "妖族",
+    "leader": "小妖后",
+    "allies": [],
+    "enemies": [],
+    "importance": 4
+  },
+  "七邪军": {
+    "type": "军队",
+    "leader": "怒天大元帅",
+    "allies": [
+      "七绝界"
+    ],
+    "enemies": [
+      "玄教",
+      "天道阁"
+    ],
+    "importance": 5
+  },
+  "七残邪煞": {
+    "type": "小团体",
+    "leader": "无明确首领",
+    "allies": [
+      "七绝界"
+    ],
+    "enemies": [
+      "天道阁",
+      "辟邪宫"
+    ],
+    "importance": 3
+  },
+  "碧怜怜阵营": {
+    "type": "政治派系",
+    "leader": "碧怜怜",
+    "allies": [
+      "卜木司",
+      "申长老",
+      "鲍长老",
+      "怒天大将军",
+      "碧绮绮"
+    ],
+    "enemies": [
+      "黛小媚阵营"
+    ],
+    "importance": 4
+  },
+  "黛小媚阵营": {
+    "type": "政治派系",
+    "leader": "黛小媚",
+    "allies": [
+      "殷长老",
+      "慕长老",
+      "小魔君（被迷惑）"
+    ],
+    "enemies": [
+      "碧怜怜阵营"
+    ],
+    "importance": 3
+  },
+  "辟邪宫": {
+    "type": "修真门派",
+    "leader": "未知（大宫主）",
+    "allies": [],
+    "enemies": [
+      "妖邪"
+    ],
+    "importance": 4
+  },
+  "天道阁": {
+    "type": "修真门派",
+    "leader": "未知",
+    "allies": [],
+    "enemies": [
+      "妖邪"
+    ],
+    "importance": 3
+  },
+  "七绝界怒部": {
+    "type": "军事部",
+    "leader": "怒天大将军",
+    "allies": [
+      "七绝界其他六部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 5
+  },
+  "七绝界傲部": {
+    "type": "军事部",
+    "leader": "凌傲天",
+    "allies": [
+      "七绝界其他六部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 4
+  },
+  "七绝界虐部": {
+    "type": "军事部",
+    "leader": "未知",
+    "allies": [
+      "七绝界其他六部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 3
+  },
+  "七绝界妒部": {
+    "type": "军事部",
+    "leader": "三首邪姬",
+    "allies": [
+      "七绝界其他六部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 4
+  },
+  "七绝界四大司祭": {
+    "type": "邪术组织",
+    "leader": "碧怜怜（首席）",
+    "allies": [
+      "七绝界七部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 5
+  },
+  "魇鸢岛": {
+    "type": "势力据点",
+    "leader": "碧怜怜",
+    "allies": [],
+    "enemies": [],
+    "importance": 2
+  },
+  "灵虹轩": {
+    "type": "修炼场所",
+    "leader": "未知",
+    "allies": [],
+    "enemies": [],
+    "importance": 2
+  },
+  "磐石卫": {
+    "type": "精锐部队",
+    "leader": "怒天大将军",
+    "allies": [
+      "七绝界怒部"
+    ],
+    "enemies": [
+      "巨竹谷"
+    ],
+    "importance": 3
+  },
+  "迷渊宫派": {
+    "type": "门派",
+    "leader": "武翩跹（少主）",
+    "allies": [],
+    "enemies": [],
+    "importance": 4
+  },
+  "天机岛": {
+    "type": "岛屿势力",
+    "leader": "卜轩司（大长老）",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [],
+    "importance": 4
+  },
+  "邪宗圣宗": {
+    "type": "邪宗",
+    "leader": "圣皇",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [
+      "南宫阳"
+    ],
+    "importance": 4
+  },
+  "逍遥门": {
+    "type": "门派",
+    "leader": "逍遥郎君",
+    "allies": [],
+    "enemies": [],
+    "importance": 3
+  },
+  "龙牙卫": {
+    "type": "禁卫",
+    "leader": "韦登（备身郎将）",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "凤翎卫": {
+    "type": "空中禁卫",
+    "leader": null,
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "将作监": {
+    "type": "朝廷机构",
+    "leader": "龚世弘",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "截教空空老仙一脉": {
+    "type": "修真门派（截教遗脉）",
+    "leader": "空空老仙",
+    "allies": [],
+    "enemies": [],
+    "importance": 3
+  },
+  "天相宗": {
+    "type": "修真门派",
+    "leader": "周景元",
+    "allies": [],
+    "enemies": [
+      "逍遥门"
+    ],
+    "importance": 2
+  },
+  "琅邪由吾世家": {
+    "type": "修真世家",
+    "leader": "未知",
+    "allies": [],
+    "enemies": [],
+    "importance": 1
+  },
+  "慧根峰无尘寺": {
+    "type": "佛门",
+    "leader": "未知",
+    "allies": [],
+    "enemies": [],
+    "importance": 1
+  },
+  "卫国公扈家": {
+    "type": "朝廷勋贵",
+    "leader": "扈鉴堂",
+    "allies": [
+      "雍怡宫（皇后）"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "太幽宫": {
+    "type": "神秘势力",
+    "leader": "绝色女子（圣后）",
+    "allies": [],
+    "enemies": [],
+    "importance": 5
+  },
+  "盗木神秘势力": {
+    "type": "未知势力",
+    "leader": "墨袍鸟头人",
+    "allies": [],
+    "enemies": [
+      "武翩跹势力"
+    ],
+    "importance": 4
+  },
+  "猎魔卫": {
+    "type": "军事组织",
+    "leader": "薄野烈",
+    "allies": [
+      "武翩跹势力"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "邪皇势力": {
+    "type": "邪教势力",
+    "leader": "圣皇（邪皇渊乙）/少主（皇帝）",
+    "allies": [
+      "七将军",
+      "百煞"
+    ],
+    "enemies": [
+      "玄教",
+      "武翩跹"
+    ],
+    "importance": 5
+  },
+  "百煞": {
+    "type": "邪皇下属",
+    "leader": "未知",
+    "allies": [
+      "邪皇势力"
+    ],
+    "enemies": [
+      "武翩跹"
+    ],
+    "importance": 3
+  },
+  "天庭诸圣": {
+    "type": "天界势力",
+    "leader": "昊天上帝",
+    "allies": [
+      "玄教",
+      "昆仑山"
+    ],
+    "enemies": [
+      "邪皇势力"
+    ],
+    "importance": 4
+  },
+  "鬼王门": {
+    "type": "方外教派",
+    "leader": "未知",
+    "allies": [],
+    "enemies": [],
+    "importance": 2
+  },
+  "烈火军": {
+    "type": "军队",
+    "leader": "唐凤山",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [],
+    "importance": 3
+  },
+  "虎头军": {
+    "type": "军队",
+    "leader": "冯晋东",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [
+      "方少麟"
+    ],
+    "importance": 2
+  },
+  "疾雷军": {
+    "type": "军队",
+    "leader": "程兆琦",
+    "allies": [
+      "日月皇朝"
+    ],
+    "enemies": [
+      "南宫阳",
+      "方少麟"
+    ],
+    "importance": 3
+  },
+  "四癫": {
+    "type": "结义兄弟",
+    "leader": "无（兄弟平等）",
+    "allies": [],
+    "enemies": [],
+    "importance": 4
+  },
+  "巫后麾下": {
+    "type": "魔道势力",
+    "leader": "巫后",
+    "allies": [
+      "云州叛军"
+    ],
+    "enemies": [
+      "皇朝",
+      "程兆琦麾下"
+    ],
+    "importance": 4
+  },
+  "驳骑兵": {
+    "type": "特殊骑兵",
+    "leader": "未知",
+    "allies": [
+      "云州叛军"
+    ],
+    "enemies": [
+      "皇朝"
+    ],
+    "importance": 3
+  },
+  "巫祭司": {
+    "type": "巫术组织",
+    "leader": "未知",
+    "allies": [
+      "南宫阳",
+      "大宫主"
+    ],
+    "enemies": [
+      "皇朝军"
+    ],
+    "importance": 4
+  },
+  "南天六邪": {
+    "type": "军事团体",
+    "leader": "韩胄（铁塔将军）",
+    "allies": [
+      "南宫阳"
+    ],
+    "enemies": [
+      "皇朝军"
+    ],
+    "importance": 3
+  }
+}
