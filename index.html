@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逍遥小散仙 - 数字图书馆</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Serif SC', serif; background: #0d0d15; color: #e8e4dc; min-height: 100vh; }
+        
+        header { background: linear-gradient(135deg, #1a1a25 0%, #0d0d15 100%); padding: 24px 40px; border-bottom: 1px solid #2a2a3a; }
+        .header-content { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 20px; }
+        .logo-icon { width: 56px; height: 56px; background: linear-gradient(135deg, #d4a574, #5a9a8f); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+        .logo-text h1 { font-size: 26px; font-weight: 700; background: linear-gradient(135deg, #e8e4dc, #d4a574); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .logo-text p { font-size: 14px; color: #888; margin-top: 4px; }
+        
+        main { max-width: 1400px; margin: 0 auto; padding: 40px; }
+        
+        .section-title { font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #e8e4dc; display: flex; align-items: center; gap: 10px; }
+        .section-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, #2a2a3a, transparent); }
+        
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        
+        .card { background: linear-gradient(135deg, rgba(26, 26, 37, 0.9), rgba(13, 13, 21, 0.95)); border: 1px solid #2a2a3a; border-radius: 16px; padding: 24px; transition: all 0.3s ease; text-decoration: none; display: block; }
+        .card:hover { transform: translateY(-4px); border-color: #d4a574; box-shadow: 0 8px 30px rgba(212, 165, 116, 0.15); }
+        
+        .card-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+        .card-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; }
+        .card-icon.reader { background: linear-gradient(135deg, #5a9a8f, #3d7a73); }
+        .card-icon.viz { background: linear-gradient(135deg, #d4a574, #b8895a); }
+        .card-icon.timeline { background: linear-gradient(135deg, #6b8cae, #4a6a8a); }
+        .card-icon.footprint { background: linear-gradient(135deg, #9a6ad4, #7a4ab4); }
+        
+        .card-title { font-size: 20px; font-weight: 600; color: #e8e4dc; margin-bottom: 4px; }
+        .card-subtitle { font-size: 13px; color: #888; }
+        
+        .card-desc { font-size: 14px; color: #a09888; line-height: 1.6; margin-bottom: 16px; }
+        
+        .card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .card-tag { padding: 4px 10px; background: rgba(255,255,255,0.05); border: 1px solid #2a2a3a; border-radius: 6px; font-size: 12px; color: #888; }
+        
+        .stats-row { display: flex; gap: 30px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #2a2a3a; }
+        .stat-item { text-align: center; }
+        .stat-value { font-size: 28px; font-weight: 700; color: #d4a574; }
+        .stat-label { font-size: 12px; color: #888; margin-top: 4px; }
+        
+        footer { text-align: center; padding: 30px; color: #555; font-size: 13px; border-top: 1px solid #2a2a3a; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-icon">📖</div>
+            <div class="logo-text">
+                <h1>逍遥小散仙</h1>
+                <p>迷男著 · 数字图书馆</p>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2 class="section-title">阅读与探索</h2>
+        
+        <div class="card-grid">
+            <a href="novel_reader_site/reader_v2.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon reader">📚</div>
+                    <div>
+                        <div class="card-title">小说阅读器</div>
+                        <div class="card-subtitle">阅读完整28卷内容</div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    舒适的在线阅读体验，支持章节导航、人物检索、背景查看等功能，带给你沉浸式的阅读享受。
+                </div>
+                <div class="card-tags">
+                    <span class="card-tag">在线阅读</span>
+                    <span class="card-tag">28卷</span>
+                    <span class="card-tag">图文并茂</span>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">28</div>
+                        <div class="stat-label">卷</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">章</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100+</div>
+                        <div class="stat-label">人物</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="novel_visualization/index.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon viz">🔗</div>
+                    <div>
+                        <div class="card-title">知识图谱</div>
+                        <div class="card-subtitle">人物关系与势力网络</div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    可视化展示小说中的人物关系、势力分布、门派网络，帮助你理清复杂的人物脉络。
+                </div>
+                <div class="card-tags">
+                    <span class="card-tag">关系图谱</span>
+                    <span class="card-tag">势力分布</span>
+                    <span class="card-tag">交互探索</span>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">人物</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">10+</div>
+                        <div class="stat-label">势力</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">关系</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="novel_visualization/index.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon timeline">📅</div>
+                    <div>
+                        <div class="card-title">可视化中心</div>
+                        <div class="card-subtitle">知识图谱 · 时间线 · 足迹</div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    整合知识图谱、时间线、足迹地图等可视化功能，全方位探索小说世界。
+                </div>
+                <div class="card-tags">
+                    <span class="card-tag">关系图谱</span>
+                    <span class="card-tag">时间线</span>
+                    <span class="card-tag">足迹地图</span>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">325</div>
+                        <div class="stat-label">地点</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">105</div>
+                        <div class="stat-label">路线</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">200+</div>
+                        <div class="stat-label">人物</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="novel_visualization/footprint_v2.html" class="card">
+                <div class="card-header">
+                    <div class="card-icon footprint">🗺️</div>
+                    <div>
+                        <div class="card-title">足迹地图</div>
+                        <div class="card-subtitle">跟随主角游历世界</div>
+                    </div>
+                </div>
+                <div class="card-desc">
+                    互动地图展示主角在各章节到访的地点，记录他的修仙足迹，浏览每个地点发生的故事。
+                </div>
+                <div class="card-tags">
+                    <span class="card-tag">互动地图</span>
+                    <span class="card-tag">剧情进度</span>
+                    <span class="card-tag">地点探索</span>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">325</div>
+                        <div class="stat-label">地点</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">105</div>
+                        <div class="stat-label">路线</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">156</div>
+                        <div class="stat-label">章节</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>逍遥小散仙 · 迷男著 · 数字图书馆 · © 2024</p>
+    </footer>
+</body>
+</html>
