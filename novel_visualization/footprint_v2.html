@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>逍遥小散仙 - 足迹地图 V2</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; background: #0d0d15; color: #e8e4dc; min-height: 100vh; overflow: hidden; }
+
+header { background: linear-gradient(135deg, #1a1a25 0%, #0d0d15 100%); padding: 10px 24px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; justify-content: space-between; }
+.back-btn { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(212,165,116,.15); color: #d4a574; text-decoration: none; font-size: 16px; transition: all .3s; border: 1px solid rgba(212,165,116,.3); }
+.back-btn:hover { background: rgba(212,165,116,.3); transform: scale(1.1); }
+.page-title { font-size: 18px; font-weight: 600; }
+
+.progress-section { background: linear-gradient(135deg, rgba(26,26,37,.9), rgba(13,13,21,.95)); padding: 10px 24px; border-bottom: 1px solid #2a2a3a; }
+.progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.progress-title { font-size: 13px; color: #888; }
+.progress-current { font-size: 15px; font-weight: 600; color: #d4a574; }
+.slider-container { position: relative; padding: 6px 0; }
+.slider { -webkit-appearance: none; width: 100%; height: 6px; border-radius: 3px; background: #2a2a3a; outline: none; cursor: pointer; }
+.slider::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #d4a574; cursor: pointer; box-shadow: 0 0 10px rgba(212,165,116,.5); border: 2px solid #fff; }
+.slider-labels { display: flex; justify-content: space-between; margin-top: 6px; font-size: 10px; color: #555; }
+
+.main-layout { display: flex; height: calc(100vh - 110px); }
+.map-area { flex: 1; position: relative; overflow: hidden; }
+#map-svg { width: 100%; height: 100%; display: block; }
+
+.region-label { font-size: 13px; font-weight: 700; fill: rgba(255,255,255,.12); pointer-events: none; user-select: none; }
+.location-circle { cursor: pointer; transition: fill-opacity .3s; }
+.location-circle:hover { filter: brightness(1.3); }
+.location-label { font-size: 9px; fill: #a09888; pointer-events: none; user-select: none; }
+.location-label.important { font-size: 10px; font-weight: 600; }
+
+.path-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.path-line.visited { stroke: rgba(212,165,116,.6); }
+.path-line.current { stroke: #d4a574; stroke-width: 3; filter: drop-shadow(0 0 4px rgba(212,165,116,.4)); }
+
+.map-controls { position: absolute; top: 12px; right: 12px; display: flex; gap: 6px; z-index: 10; }
+.control-btn { padding: 5px 12px; background: rgba(26,26,37,.9); border: 1px solid #2a2a3a; border-radius: 6px; color: #d4a574; cursor: pointer; font-size: 11px; transition: all .3s; }
+.control-btn:hover { background: rgba(212,165,116,.2); border-color: #d4a574; }
+.speed-select { padding: 5px 6px; background: rgba(26,26,37,.9); border: 1px solid #2a2a3a; border-radius: 6px; color: #d4a574; cursor: pointer; font-size: 11px; outline: none; }
+.speed-select:hover { border-color: #d4a574; }
+#play-btn.playing { color: #5a9a8f; border-color: #5a9a8f; }
+
+.map-legend { position: absolute; bottom: 12px; left: 12px; background: rgba(26,26,37,.95); border: 1px solid #2a2a3a; border-radius: 8px; padding: 10px 14px; font-size: 11px; z-index: 10; }
+.legend-title { font-weight: 600; margin-bottom: 6px; color: #e8e4dc; font-size: 12px; }
+.legend-item { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; color: #888; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+.region-labels-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+
+.detail-panel { width: 340px; background: linear-gradient(135deg, rgba(26,26,37,.95), rgba(13,13,21,.98)); border-left: 1px solid #2a2a3a; overflow-y: auto; padding: 16px; flex-shrink: 0; }
+
+.section { margin-bottom: 16px; }
+.section-title { font-size: 12px; font-weight: 600; color: #d4a574; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; gap: 5px; }
+
+.loc-card { background: rgba(255,255,255,.03); border-radius: 8px; padding: 12px; }
+.loc-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.loc-meta { display: flex; gap: 10px; font-size: 11px; color: #888; margin-bottom: 6px; }
+.loc-desc { font-size: 12px; color: #a09888; line-height: 1.5; max-height: 80px; overflow-y: auto; }
+
+.event-list { display: flex; flex-direction: column; gap: 6px; }
+.event-item { background: rgba(255,255,255,.03); border-radius: 6px; padding: 8px 10px; border-left: 3px solid #5a9a8f; font-size: 12px; }
+.event-item.battle { border-left-color: #c75b5b; }
+.event-item.conspiracy { border-left-color: #9a6ad4; }
+.event-item.emotion { border-left-color: #5a9a8f; }
+.event-summary { color: #a09888; line-height: 1.4; }
+.event-meta { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.participant-tag { font-size: 10px; padding: 1px 6px; background: rgba(212,165,116,.15); color: #d4a574; border-radius: 8px; }
+
+.char-grid { display: flex; flex-wrap: wrap; gap: 4px; }
+.char-tag { padding: 3px 8px; background: rgba(255,255,255,.05); border: 1px solid #2a2a3a; border-radius: 12px; font-size: 11px; }
+
+.verify-box { background: rgba(255,255,255,.03); border-radius: 6px; padding: 8px 10px; font-size: 11px; }
+.verify-item { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; color: #888; }
+.verify-item .icon { font-size: 13px; }
+.verify-item .icon.pass { color: #5a9a8f; }
+.verify-item .icon.fail { color: #c75b5b; }
+
+.empty-state { display: flex; align-items: center; justify-content: center; height: 100px; color: #555; font-size: 13px; }
+
+.stat-bar { display: flex; gap: 8px; margin-top: 8px; }
+.stat-item { flex: 1; text-align: center; background: rgba(255,255,255,.03); border-radius: 6px; padding: 6px; }
+.stat-num { font-size: 18px; font-weight: 700; color: #d4a574; }
+.stat-label { font-size: 10px; color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="back-btn">&#8592;</a>
+  <span class="page-title">&#128099; 足迹地图 V2</span>
+  <div style="width:32px"></div>
+</header>
+
+<div class="progress-section">
+  <div class="progress-header">
+    <span class="progress-title">剧情进度</span>
+    <span class="progress-current" id="current-chapter">加载中...</span>
+  </div>
+  <div class="slider-container">
+    <input type="range" class="slider" id="chapter-slider" min="0" max="155" value="0">
+    <div class="slider-labels">
+      <span>楔子</span><span>Vol5</span><span>Vol10</span><span>Vol20</span><span>Vol28</span>
+    </div>
+  </div>
+</div>
+
+<div class="main-layout">
+  <div class="map-area" id="map-area">
+    <div class="map-controls">
+      <button class="control-btn" onclick="resetView()">重置</button>
+      <button class="control-btn" id="play-btn" onclick="toggleAutoPlay()">▶ 自动</button>
+      <select class="speed-select" id="speed-select" onchange="setPlaySpeed(this.value)">
+        <option value="3000">0.5×</option>
+        <option value="1500" selected>1×</option>
+        <option value="750">2×</option>
+        <option value="375">4×</option>
+      </select>
+    </div>
+    <div class="map-legend">
+      <div class="legend-title">图例</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#d4a574;box-shadow:0 0 8px rgba(212,165,116,.6)"></span> 当前位置</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#5a9a8f"></span> 已访问</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#2a2a3a"></span> 未访问</div>
+      <div class="legend-item"><span style="width:20px;height:2px;background:rgba(212,165,116,.5);flex-shrink:0"></span> 路线</div>
+    </div>
+    <svg id="map-svg"></svg>
+    <div id="tooltip" style="position:fixed;background:rgba(26,26,37,.95);border:1px solid #2a2a3a;border-radius:8px;padding:10px 14px;max-width:280px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .2s;font-size:12px;display:none">
+      <div id="tooltip-title" style="font-weight:600;color:#d4a574;margin-bottom:4px"></div>
+      <div id="tooltip-content" style="color:#a09888;line-height:1.4"></div>
+    </div>
+  </div>
+  <div class="detail-panel" id="detail-panel">
+    <div class="empty-state">&#128214; 拖动滑块浏览剧情足迹</div>
+  </div>
+</div>
+
+<script>
+const DATA_URL = '../novel_data/footprint_v2.json';
+const VERIFY_URL = '../novel_data/footprint_v2_verification.json';
+
+let mapData, verifyData;
+let curChapterIndex = 0;
+let allChapters = [];
+let allLocations = {};
+let locationCoords = {};
+let regions = [];
+let routes = [];
+let autoPlayTimer = null;
+
+let svg, mainGroup, zoom;
+
+const NODE_COLORS = {
+  unvisited: '#2a2a3a',
+  visited: '#5a9a8f',
+  active: '#d4a574'
+};
+
+async function loadJSON(url) {
+  const resp = await fetch(url);
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${url}`);
+  return resp.json();
+}
+
+async function init() {
+  try {
+    // Detect direct file open (file://) — fetch will fail w/ CORS
+    if (window.location.protocol === 'file:') {
+      document.getElementById('detail-panel').innerHTML =
+        '<div class="section" style="text-align:center;padding:32px">' +
+        '<div style="font-size:40px;margin-bottom:16px">&#9888;&#65039;</div>' +
+        '<div style="font-size:16px;font-weight:600;margin-bottom:12px;color:#c75b5b">无法直接打开文件</div>' +
+        '<div style="font-size:13px;color:#a09888;line-height:1.6;text-align:left;max-width:320px;margin:0 auto">' +
+        '浏览器禁止 <code>file://</code> 协议下使用 fetch 加载本地数据。<br><br>' +
+        '<b>解决方法：</b><br>' +
+        '1. 打开终端，进入项目目录：<br>' +
+        '<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">cd /Users/lilixian/jobs/AI/xiaoyao</code><br>' +
+        '2. 启动 HTTP 服务器：<br>' +
+        '<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">python3 -m http.server 9999</code><br>' +
+        '3. 浏览器访问：<br>' +
+        '<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">http://localhost:9999/novel_visualization/footprint_v2.html</code>' +
+        '</div></div>';
+      return;
+    }
+
+    const [md, vd] = await Promise.all([
+      loadJSON(DATA_URL),
+      loadJSON(VERIFY_URL)
+    ]);
+    mapData = md;
+    verifyData = vd;
+    console.log('Data loaded', mapData.meta);
+
+    allChapters = mapData.chapters;
+    allLocations = mapData.locations;
+    locationCoords = mapData.location_coords;
+    regions = mapData.regions;
+    routes = mapData.routes;
+
+    const slider = document.getElementById('chapter-slider');
+    slider.max = allChapters.length - 1;
+
+    initMap();
+    updateChapter(0);
+    initSlider();
+
+  } catch(e) {
+    console.error('Load failed', e);
+    const panel = document.getElementById('detail-panel');
+    panel.innerHTML =
+      '<div class="section" style="text-align:center;padding:32px">' +
+      '<div style="font-size:40px;margin-bottom:16px">&#9888;&#65039;</div>' +
+      '<div style="font-size:16px;font-weight:600;margin-bottom:12px;color:#c75b5b">数据加载失败</div>' +
+      '<div style="font-size:13px;color:#a09888;line-height:1.6;text-align:left;max-width:320px;margin:0 auto">' +
+      '无法加载数据文件：<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">' + e.message + '</code><br><br>' +
+      '<b>排查步骤：</b><br>' +
+      '1. 确认 HTTP 服务器运行在项目<b>根目录</b><br>' +
+      '<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">cd /Users/lilixian/jobs/AI/xiaoyao && python3 -m http.server 9999</code><br>' +
+      '2. 确认文件存在：<br>' +
+      '<code style="background:#1a1a25;padding:2px 6px;border-radius:4px;font-size:11px">ls -la novel_data/footprint_v2.json</code><br>' +
+      '3. 刷新页面重试 (Cmd+Shift+R)' +
+      '</div></div>';
+  }
+}
+
+function initSlider() {
+  const slider = document.getElementById('chapter-slider');
+  slider.addEventListener('input', function() {
+    updateChapter(parseInt(this.value));
+  });
+}
+
+function initMap() {
+  const container = document.getElementById('map-svg');
+  const rect = document.getElementById('map-area').getBoundingClientRect();
+  const W = rect.width || 1200;
+  const H = rect.height || 800;
+
+  svg = d3.select('#map-svg')
+    .attr('width', W)
+    .attr('height', H)
+    .style('background', '#0d0d15');
+
+  zoom = d3.zoom()
+    .scaleExtent([0.3, 5])
+    .on('zoom', (e) => mainGroup.attr('transform', e.transform));
+
+  svg.call(zoom);
+  mainGroup = svg.append('g');
+
+  const MW = mapData.meta.map_width || 1200;
+  const MH = mapData.meta.map_height || 800;
+
+  regions.forEach(r => {
+    const group = mainGroup.append('g').attr('class', 'region-group');
+    const locsInRegion = r.locations || [];
+    if (locsInRegion.length > 0) {
+      const pts = locsInRegion.map(n => locationCoords[n]).filter(Boolean);
+      if (pts.length > 0) {
+        const cx = d3.mean(pts, p => p.x);
+        const cy = d3.mean(pts, p => p.y);
+        const maxDist = Math.max(100, pts.reduce((m, p) => Math.max(m, Math.hypot(p.x - cx, p.y - cy)), 0) + 60);
+        group.append('circle')
+          .attr('cx', cx).attr('cy', cy)
+          .attr('r', maxDist)
+          .attr('fill', r.color || '#444')
+          .attr('fill-opacity', 0.04)
+          .attr('stroke', r.color || '#444')
+          .attr('stroke-width', 1)
+          .attr('stroke-opacity', 0.1)
+          .attr('stroke-dasharray', '4,4');
+        group.append('text')
+          .attr('class', 'region-label')
+          .attr('x', cx).attr('y', cy)
+          .attr('text-anchor', 'middle')
+          .attr('dominant-baseline', 'middle')
+          .attr('font-size', Math.min(14, 10 + maxDist * 0.02))
+          .text(r.name.split('/')[0]);
+      }
+    }
+  });
+
+  fixRegionLabels();
+  autoFitMap();
+}
+
+function fixRegionLabels() {
+  const labelData = [];
+  mainGroup.selectAll('.region-group').each(function() {
+    const text = d3.select(this).select('text.region-label');
+    const circle = d3.select(this).select('circle');
+    if (text.empty() || circle.empty()) return;
+    const name = text.text();
+    const cx = +circle.attr('cx');
+    const cy = +circle.attr('cy');
+    const fontSize = parseFloat(text.attr('font-size')) || 13;
+    // Estimate label width: CJK chars ~fontSize px wide, ASCII half-width
+    let totalW = 0;
+    for (const ch of name) {
+      totalW += (ch.charCodeAt(0) > 0x7f) ? fontSize : fontSize * 0.55;
+    }
+    const labelW = totalW + 4;
+    const labelH = fontSize * 1.4;
+    labelData.push({
+      el: text, x: cx, y: cy, cx: cx, cy: cy,
+      w: labelW, h: labelH, name
+    });
+  });
+
+  for (let iter = 0; iter < 20; iter++) {
+    let moved = false;
+    for (let i = 0; i < labelData.length; i++) {
+      for (let j = i + 1; j < labelData.length; j++) {
+        const a = labelData[i], b = labelData[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const minDist = (a.w + b.w) / 2 + 6;
+        if (dist < minDist && dist > 0.1) {
+          const push = (minDist - dist) / 2 * 0.6;
+          const nx = dx / dist, ny = dy / dist;
+          a.x += nx * push; a.y += ny * push;
+          b.x -= nx * push; b.y -= ny * push;
+          moved = true;
+        }
+      }
+    }
+    // Clamp drift
+    for (const ld of labelData) {
+      const dx = ld.x - ld.cx, dy = ld.y - ld.cy;
+      const d = Math.sqrt(dx * dx + dy * dy);
+      const maxDrift = 70;
+      if (d > maxDrift) {
+        ld.x = ld.cx + (dx / d) * maxDrift;
+        ld.y = ld.cy + (dy / d) * maxDrift;
+      }
+    }
+    if (!moved) break;
+  }
+
+  labelData.forEach(ld => {
+    ld.el.attr('x', ld.x).attr('y', ld.y);
+  });
+}
+
+function autoFitMap() {
+  const pts = Object.values(locationCoords);
+  if (pts.length === 0) return;
+  const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const pad = 60;
+  const rect = document.getElementById('map-area').getBoundingClientRect();
+  const scaleX = (rect.width - pad * 2) / (maxX - minX || 1);
+  const scaleY = (rect.height - pad * 2) / (maxY - minY || 1);
+  const scale = Math.min(scaleX, scaleY, 1.5);
+  const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+  const tx = rect.width / 2 - cx * scale;
+  const ty = rect.height / 2 - cy * scale;
+  svg.call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+}
+
+function sliderUpdate(chapterIdx) {
+  const visitedLocs = new Set();
+  const activeLoc = chapterIdx !== null && allChapters[chapterIdx]
+    ? allChapters[chapterIdx].location_name : null;
+
+  if (chapterIdx !== null) {
+    for (let i = 0; i <= chapterIdx; i++) {
+      const loc = allChapters[i] && allChapters[i].location_name;
+      if (loc) visitedLocs.add(loc);
+    }
+  }
+
+  const visitedArray = [...visitedLocs];
+  const nodeRadius = 5;
+
+  const nodes = mainGroup.selectAll('.location-node')
+    .data(Object.keys(locationCoords), d => d);
+
+  const nodeEnter = nodes.enter().append('g')
+    .attr('class', 'location-node')
+    .attr('transform', d => {
+      const c = locationCoords[d];
+      return `translate(${c.x},${c.y})`;
+    });
+
+  nodeEnter.append('circle')
+    .attr('class', 'location-circle')
+    .attr('r', nodeRadius);
+
+  nodeEnter.append('text')
+    .attr('class', d => {
+      const loc = allLocations[d];
+      return `location-label${loc && loc.importance >= 4 ? ' important' : ''}`;
+    })
+    .attr('x', nodeRadius + 3)
+    .attr('y', 3);
+
+  const nodeMerge = nodeEnter.merge(nodes);
+
+  nodeMerge.select('circle')
+    .transition().duration(300)
+    .attr('r', d => {
+      const loc = allLocations[d];
+      return Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8);
+    })
+    .attr('fill', d => {
+      if (d === activeLoc) return NODE_COLORS.active;
+      if (visitedLocs.has(d)) return NODE_COLORS.visited;
+      return NODE_COLORS.unvisited;
+    })
+    .attr('fill-opacity', d => d === activeLoc ? 1 : (visitedLocs.has(d) ? 0.8 : 0.3))
+    .attr('stroke', d => d === activeLoc ? '#fff' : 'transparent')
+    .attr('stroke-width', d => d === activeLoc ? 2 : 0)
+    .style('filter', d => d === activeLoc ? 'drop-shadow(0 0 8px rgba(212,165,116,.8))' : 'none');
+
+  nodeMerge.select('text')
+    .text(d => {
+      const loc = allLocations[d];
+      if (!loc || loc.importance < 3) return '';
+      const name = d;
+      return name.length > 5 ? name.substring(0, 5) + '…' : name;
+    })
+    .attr('fill', d => {
+      if (d === activeLoc) return '#e8e4dc';
+      if (visitedLocs.has(d)) return '#a09888';
+      return '#555';
+    });
+
+  nodeMerge.on('mouseover', (e, d) => {
+    const loc = allLocations[d];
+    if (!loc) return;
+    const tip = document.getElementById('tooltip');
+    if (tip) {
+      document.getElementById('tooltip-title').textContent = d;
+      document.getElementById('tooltip-content').innerHTML =
+        `类型: ${loc.type || '未知'} | 重要度: ${'★'.repeat(loc.importance || 0)}`;
+      const rect = document.getElementById('map-area').getBoundingClientRect();
+      const clientX = e.sourceEvent ? e.sourceEvent.clientX : e.clientX;
+      const clientY = e.sourceEvent ? e.sourceEvent.clientY : e.clientY;
+      tip.style.left = (clientX + 15) + 'px';
+      tip.style.top = (clientY + 15) + 'px';
+      tip.style.display = 'block';
+      tip.style.opacity = 1;
+    }
+  });
+  nodeMerge.on('mouseout', () => {
+    const tip = document.getElementById('tooltip');
+    if (tip) { tip.style.display = 'none'; tip.style.opacity = 0; }
+  });
+  nodeMerge.on('click', (e, d) => showLocationDetail(d));
+
+  nodes.exit().remove();
+
+  updatePaths(chapterIdx, visitedArray, activeLoc);
+}
+
+function updatePaths(chapterIdx, visitedArray, activeLoc) {
+  mainGroup.selectAll('.path-line').remove();
+
+  if (chapterIdx === null || chapterIdx < 1) return;
+
+  const pathSegments = [];
+  for (let i = 1; i <= chapterIdx; i++) {
+    const prevLoc = allChapters[i - 1] && allChapters[i - 1].location_name;
+    const curLoc = allChapters[i] && allChapters[i].location_name;
+    if (prevLoc && curLoc && prevLoc !== curLoc) {
+      const p1 = locationCoords[prevLoc];
+      const p2 = locationCoords[curLoc];
+      if (p1 && p2) {
+        pathSegments.push({
+          from: prevLoc,
+          to: curLoc,
+          x1: p1.x, y1: p1.y,
+          x2: p2.x, y2: p2.y,
+          isCurrent: curLoc === activeLoc
+        });
+      }
+    }
+  }
+
+  const deduped = [];
+  const seen = new Set();
+  for (const seg of pathSegments) {
+    const key = `${seg.from}-${seg.to}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      deduped.push(seg);
+    }
+  }
+
+  mainGroup.selectAll('.path-line')
+    .data(deduped)
+    .enter().append('line')
+    .attr('class', d => `path-line ${d.isCurrent ? 'current' : 'visited'}`)
+    .attr('x1', d => d.x1).attr('y1', d => d.y1)
+    .attr('x2', d => d.x2).attr('y2', d => d.y2)
+    .attr('stroke-width', d => d.isCurrent ? 3 : 1.5)
+    .attr('stroke-opacity', d => d.isCurrent ? 0.9 : 0.35)
+    .attr('stroke', d => d.isCurrent ? '#d4a574' : '#5a9a8f');
+}
+
+function updateChapter(index) {
+  curChapterIndex = index;
+  const ch = allChapters[index];
+  if (!ch) return;
+
+  document.getElementById('current-chapter').textContent = ch.full_name || `第${ch.volume}卷 ${ch.chapter}`;
+  const slider = document.getElementById('chapter-slider');
+  slider.value = index;
+
+  const pct = allChapters.length > 1 ? (index / (allChapters.length - 1)) * 100 : 0;
+  slider.style.background = `linear-gradient(to right, #d4a574 0%, #d4a574 ${pct}%, #2a2a3a ${pct}%, #2a2a3a 100%)`;
+
+  sliderUpdate(index);
+  renderDetail(index);
+}
+
+function renderDetail(index) {
+  const ch = allChapters[index];
+  if (!ch) return;
+  const panel = document.getElementById('detail-panel');
+  const loc = allLocations[ch.location_name];
+  const verItem = verifyData && verifyData.results
+    ? verifyData.results.find(r => r.location === ch.location_name && r.chapter === ch.chapter)
+    : null;
+
+  let html = '';
+
+  html += `<div class="section"><div class="section-title">&#128205; 当前地点</div>
+    <div class="loc-card">
+      <div class="loc-name">${ch.location_name}</div>
+      <div class="loc-meta">
+        <span>&#127991; ${loc ? loc.type || '未知' : '未知'}</span>
+        <span>&#11088; ${'★'.repeat(loc ? loc.importance || 0 : 0)}</span>
+        <span>&#128197; ${ch.full_name || ''}</span>
+      </div>
+      <div class="loc-desc">${loc ? loc.description || '暂无描述' : '暂无描述'}</div>
+    </div></div>`;
+
+  const events = ch.events || [];
+  html += `<div class="section"><div class="section-title">&#127915; 事件 (${events.length})</div>
+    <div class="event-list">`;
+  if (events.length === 0) {
+    html += '<div class="empty-state">暂无事件</div>';
+  } else {
+    events.slice(0, 4).forEach(evt => {
+      html += `<div class="event-item ${evt.type || ''}">
+        <div class="event-summary">${evt.summary || ''}</div>
+        <div class="event-meta">${(evt.participants || []).slice(0, 4).map(p => `<span class="participant-tag">${p}</span>`).join('')}</div>
+      </div>`;
+    });
+  }
+  html += '</div></div>';
+
+  const chars = ch.characters || [];
+  html += `<div class="section"><div class="section-title">&#128101; 登场角色 (${chars.length})</div>
+    <div class="char-grid">`;
+  if (chars.length === 0) {
+    html += '<span style="color:#555;font-size:12px">暂无角色</span>';
+  } else {
+    chars.slice(0, 15).forEach(c => {
+      html += `<span class="char-tag">${c}</span>`;
+    });
+  }
+  html += '</div></div>';
+
+  if (verItem) {
+    html += `<div class="section"><div class="section-title">&#128220; 数据验证</div>
+      <div class="verify-box">`;
+    const details = (verItem.details || '').split(';');
+    details.forEach(d => {
+      const passed = d.includes('✓');
+      html += `<div class="verify-item"><span class="icon ${passed ? 'pass' : 'fail'}">${passed ? '✅' : '❌'}</span><span>${d.trim()}</span></div>`;
+    });
+    html += `<div style="margin-top:6px;display:flex;gap:8px;align-items:center">
+      <span style="font-size:12px;color:#888">可信度: </span>
+      <span style="font-size:14px;font-weight:700;color:${verItem.score > 80 ? '#5a9a8f' : verItem.score > 40 ? '#d4a574' : '#c75b5b'}">${verItem.score}%</span>
+      <span style="font-size:10px;color:#555">(与原文对照)</span>
+    </div></div></div>`;
+  }
+
+  html += `<div class="section"><div class="section-title">&#128200; 进度概况</div>
+    <div class="stat-bar">
+      <div class="stat-item"><div class="stat-num">${index + 1}</div><div class="stat-label">已到章节</div></div>
+      <div class="stat-item"><div class="stat-num">${allChapters.length}</div><div class="stat-label">总章节</div></div>
+      <div class="stat-item"><div class="stat-num">${Math.round((index + 1) / allChapters.length * 100)}%</div><div class="stat-label">进度</div></div>
+    </div></div>`;
+
+  panel.innerHTML = html;
+}
+
+function showLocationDetail(name) {
+  const loc = allLocations[name];
+  if (!loc) return;
+  const panel = document.getElementById('detail-panel');
+  const chsInLoc = allChapters.filter(c => c.location_name === name);
+  const coords = locationCoords[name];
+  let html = '';
+  html += `<div class="section"><div class="section-title">&#128205; 地点详情</div>
+    <div class="loc-card">
+      <div class="loc-name">${name}</div>
+      <div class="loc-meta">
+        <span>&#127991; ${loc.type || '未知'}</span>
+        <span>&#11088; ${'★'.repeat(loc.importance || 0)}</span>
+        <span>&#128205; (${Math.round(coords.x)}, ${Math.round(coords.y)})</span>
+      </div>
+      <div class="loc-desc">${loc.description || '暂无描述'}</div>
+    </div></div>`;
+
+  html += `<div class="section"><div class="section-title">&#128214; 出现的章节 (${chsInLoc.length})</div>`;
+  chsInLoc.slice(0, 8).forEach(ch => {
+    html += `<div style="font-size:11px;color:#888;padding:3px 0;cursor:pointer" onclick="updateChapter(${allChapters.indexOf(ch)})">
+      &#9679; ${ch.full_name || `${ch.volume} ${ch.chapter}`}</div>`;
+  });
+  if (chsInLoc.length > 8) {
+    html += `<div style="font-size:11px;color:#555">...还有${chsInLoc.length - 8}章</div>`;
+  }
+  html += '</div></div>';
+
+  panel.innerHTML = html;
+}
+
+let autoPlaying = false;
+let playSpeed = 1500;
+
+function setPlaySpeed(ms) {
+  playSpeed = parseInt(ms);
+  if (autoPlaying) {
+    clearInterval(autoPlayTimer);
+    autoPlayTimer = setInterval(playStep, playSpeed);
+  }
+}
+
+function playStep() {
+  const next = curChapterIndex + 1;
+  if (next >= allChapters.length) {
+    clearInterval(autoPlayTimer);
+    autoPlaying = false;
+    document.getElementById('play-btn').textContent = '▶ 自动';
+    document.getElementById('play-btn').classList.remove('playing');
+    return;
+  }
+  updateChapter(next);
+}
+
+function toggleAutoPlay() {
+  const btn = document.getElementById('play-btn');
+  if (autoPlaying) {
+    clearInterval(autoPlayTimer);
+    autoPlaying = false;
+    btn.textContent = '▶ 自动';
+    btn.classList.remove('playing');
+    return;
+  }
+  autoPlaying = true;
+  btn.textContent = '⏸ 暂停';
+  btn.classList.add('playing');
+  autoPlayTimer = setInterval(playStep, playSpeed);
+}
+
+function resetView() {
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+window.addEventListener('resize', () => {
+  const container = document.getElementById('map-area');
+  if (!container) return;
+  const rect = container.getBoundingClientRect();
+  if (svg) {
+    svg.attr('width', rect.width).attr('height', rect.height);
+    if (allChapters.length > 0) autoFitMap();
+  }
+});
+</script>
+</body>
+</html>
