@@ -32,6 +32,10 @@ header { background: linear-gradient(135deg, #1a1a25 0%, #0d0d15 100%); padding:
 .location-circle:hover { filter: brightness(1.3); }
 .location-label { font-size: 9px; fill: #a09888; pointer-events: none; user-select: none; }
 .location-label.important { font-size: 10px; font-weight: 600; }
+.location-square { cursor: pointer; transition: fill-opacity .3s; }
+.location-square:hover { filter: brightness(1.3); }
+.location-triangle { cursor: pointer; transition: fill-opacity .3s; }
+.location-triangle:hover { filter: brightness(1.3); }
 
 .path-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .path-line.visited { stroke: rgba(212,165,116,.6); }
@@ -120,12 +124,13 @@ header { background: linear-gradient(135deg, #1a1a25 0%, #0d0d15 100%); padding:
         <option value="375">4×</option>
       </select>
     </div>
-    <div class="map-legend">
+    <div class="map-legend" id="map-legend">
       <div class="legend-title">图例</div>
       <div class="legend-item"><span class="legend-dot" style="background:#d4a574;box-shadow:0 0 8px rgba(212,165,116,.6)"></span> 当前位置</div>
       <div class="legend-item"><span class="legend-dot" style="background:#5a9a8f"></span> 已访问</div>
       <div class="legend-item"><span class="legend-dot" style="background:#2a2a3a"></span> 未访问</div>
       <div class="legend-item"><span style="width:20px;height:2px;background:rgba(212,165,116,.5);flex-shrink:0"></span> 路线</div>
+      <div class="legend-section" id="type-legend"></div>
     </div>
     <svg id="map-svg"></svg>
     <div id="tooltip" style="position:fixed;background:rgba(26,26,37,.95);border:1px solid #2a2a3a;border-radius:8px;padding:10px 14px;max-width:280px;z-index:1000;opacity:0;pointer-events:none;transition:opacity .2s;font-size:12px;display:none">
@@ -152,12 +157,133 @@ let routes = [];
 let autoPlayTimer = null;
 
 let svg, mainGroup, zoom;
+let currentScale = 1;
 
 const NODE_COLORS = {
   unvisited: '#2a2a3a',
   visited: '#5a9a8f',
   active: '#d4a574'
 };
+
+const TYPE_CATEGORIES = {
+  '自然地理': ['山脉', '平原', '丘陵', '山谷', '山峰', '山岭', '山', '峡谷', '悬崖', '地形', '密林', '林地'],
+  '水域': ['湖泊', '水域', '海域', '海岛', '岛屿', '海岛礁石', '礁石', '秘境水域', '地下洞穴/灵泉'],
+  '建筑': ['宫殿', '建筑', '楼阁', '殿堂', '殿宇', '宫苑', '宫院', '园苑', '府邸', '亭台', '高台', '水榭', '桥梁', '仓库', '走廊', '房间', '居室', '密室', '酒肆', '庙宇', '民居', 'building'],
+  '城镇': ['城镇', '都城', '州府', '县', '城池', '小镇', '城镇区域', 'settlement'],
+  '秘境': ['秘境', '仙境', '魔域', '禁地', '圣地', '神秘区域', '秘境山岳', '秘境/异界', '秘境/建筑', '秘境入口'],
+  '宗教': ['道观', '佛寺', '佛教圣地', '佛门圣地'],
+  '军事': ['军事设施', '军事要塞', '军事据点', '军事营地', '军营', '关隘', '营地'],
+  '地下': ['洞穴', '地下通道', '地下洞穴', '地下洞厅', '山腹洞穴', '地下区域', '地下宫殿'],
+  '自然景观': ['自然景观', '自然奇观', 'landmark'],
+  '阵法': ['法阵', '邪阵', '阵法/禁制', '建筑/阵法', '法阵平台', '法阵室'],
+  '特殊': ['天界', '天庭', '神物', '神木通道']
+};
+
+const TYPE_COLOR_MAP = {
+  '自然地理': '#5a9a8f',
+  '水域': '#6b8cae',
+  '建筑': '#d4a574',
+  '城镇': '#9a6ad4',
+  '秘境': '#c75b5b',
+  '宗教': '#d4878a',
+  '军事': '#8eb5d0',
+  '地下': '#b8a3d4',
+  '自然景观': '#7cb87c',
+  '阵法': '#a87a6a',
+  '特殊': '#7a6a9a',
+  '其他': '#888888'
+};
+
+const TYPE_SHAPE_MAP = {
+  '自然地理': 'circle',
+  '水域': 'circle',
+  '建筑': 'square',
+  '城镇': 'circle',
+  '秘境': 'triangle',
+  '宗教': 'circle',
+  '军事': 'square',
+  '地下': 'triangle',
+  '自然景观': 'circle',
+  '阵法': 'square',
+  '特殊': 'triangle',
+  '其他': 'circle'
+};
+
+function getCategory(type) {
+  for (const [category, types] of Object.entries(TYPE_CATEGORIES)) {
+    if (types.includes(type)) {
+      return category;
+    }
+  }
+  return '其他';
+}
+
+function getTypeColor(type) {
+  const category = getCategory(type);
+  return TYPE_COLOR_MAP[category] || '#888';
+}
+
+function getTypeShape(type) {
+  const category = getCategory(type);
+  return TYPE_SHAPE_MAP[category] || 'circle';
+}
+
+// 获取短标签名称
+const LABEL_SHORTEN_MAP = {
+  '迷楼密道': '密道',
+  '迷楼': '迷楼',
+  '玉京': '玉京',
+  '大泽平原': '大泽',
+  '巨竹谷': '巨竹',
+  '千翠山': '千翠',
+  '七绝界': '七绝',
+  '天庭': '天庭',
+  '灵山': '灵山',
+  '南海': '南海',
+  '虚照境': '虚照',
+  '辟邪宫': '辟邪',
+  '快活岛': '快活',
+  '常羊山秘境': '常羊',
+  '冥界/黑焰岛': '黑焰',
+  '葫芦镇': '葫芦',
+  '迷林': '迷林'
+};
+
+function getShortLabel(name) {
+  // 首先检查是否是区域名
+  if (LABEL_SHORTEN_MAP[name]) {
+    return LABEL_SHORTEN_MAP[name];
+  }
+  
+  // 移除常见后缀
+  let short = name
+    .replace(/所在山洞$/, '')
+    .replace(/所在洞厅$/, '')
+    .replace(/所在位置$/, '')
+    .replace(/上空战场$/, '战场')
+    .replace(/上空$/, '')
+    .replace(/密道$/, '道')
+    .replace(/甬道$/, '道')
+    .replace(/后山$/, '后')
+    .replace(/后院$/, '院')
+    .replace(/后院$/, '院')
+    .replace(/后院$/, '院')
+    .replace(/城墙$/, '墙')
+    .replace(/城头$/, '头')
+    .replace(/北山岭$/, '北岭')
+    .replace(/北门外驿道$/, '驿道')
+    .replace(/山脚园子$/, '园')
+    .replace(/后山林木$/, '林木')
+    .replace(/试射场$/, '射场')
+    .replace(/内西市$/, '西市');
+  
+  // 如果还是太长，截取前3个字符
+  if (short.length > 4) {
+    short = short.substring(0, 3) + '…';
+  }
+  
+  return short || name.substring(0, 2);
+}
 
 async function loadJSON(url) {
   const resp = await fetch(url);
@@ -204,8 +330,12 @@ async function init() {
     slider.max = allChapters.length - 1;
 
     initMap();
-    updateChapter(0);
-    initSlider();
+    autoFitMap();
+    runForceLayout(() => {
+      autoFitMap();
+      updateChapter(0);
+      initSlider();
+    });
 
   } catch(e) {
     console.error('Load failed', e);
@@ -246,7 +376,11 @@ function initMap() {
 
   zoom = d3.zoom()
     .scaleExtent([0.3, 5])
-    .on('zoom', (e) => mainGroup.attr('transform', e.transform));
+    .on('zoom', (e) => {
+      mainGroup.attr('transform', e.transform);
+      currentScale = e.transform.k;
+      updateLabelsVisibility();
+    });
 
   svg.call(zoom);
   mainGroup = svg.append('g');
@@ -262,29 +396,60 @@ function initMap() {
       if (pts.length > 0) {
         const cx = d3.mean(pts, p => p.x);
         const cy = d3.mean(pts, p => p.y);
-        const maxDist = Math.max(100, pts.reduce((m, p) => Math.max(m, Math.hypot(p.x - cx, p.y - cy)), 0) + 60);
+        const maxDist = Math.max(80, pts.reduce((m, p) => Math.max(m, Math.hypot(p.x - cx, p.y - cy)), 0) + 30);
         group.append('circle')
           .attr('cx', cx).attr('cy', cy)
-          .attr('r', maxDist)
+          .attr('r', maxDist * 0.7)
           .attr('fill', r.color || '#444')
-          .attr('fill-opacity', 0.04)
-          .attr('stroke', r.color || '#444')
-          .attr('stroke-width', 1)
-          .attr('stroke-opacity', 0.1)
-          .attr('stroke-dasharray', '4,4');
+          .attr('fill-opacity', 0.015);
         group.append('text')
           .attr('class', 'region-label')
           .attr('x', cx).attr('y', cy)
           .attr('text-anchor', 'middle')
           .attr('dominant-baseline', 'middle')
-          .attr('font-size', Math.min(14, 10 + maxDist * 0.02))
+          .attr('font-size', Math.min(16, 12 + maxDist * 0.015))
           .text(r.name.split('/')[0]);
       }
     }
   });
 
   fixRegionLabels();
-  autoFitMap();
+  initTypeLegend();
+}
+
+function initTypeLegend() {
+  const legendContainer = document.getElementById('type-legend');
+  if (!legendContainer) return;
+  
+  let html = '<div style="margin-top:8px;padding-top:8px;border-top:1px solid #2a2a3a;font-size:11px;color:#888">类型区分：</div>';
+  
+  const categories = [
+    { name: '自然地理', color: '#5a9a8f', shape: 'circle' },
+    { name: '水域', color: '#6b8cae', shape: 'circle' },
+    { name: '建筑', color: '#d4a574', shape: 'square' },
+    { name: '城镇', color: '#9a6ad4', shape: 'circle' },
+    { name: '秘境', color: '#c75b5b', shape: 'triangle' },
+    { name: '宗教', color: '#d4878a', shape: 'circle' },
+    { name: '军事', color: '#8eb5d0', shape: 'square' },
+    { name: '地下', color: '#b8a3d4', shape: 'triangle' },
+    { name: '自然景观', color: '#7cb87c', shape: 'circle' },
+    { name: '阵法', color: '#a87a6a', shape: 'square' },
+    { name: '特殊', color: '#7a6a9a', shape: 'triangle' }
+  ];
+  
+  categories.forEach(cat => {
+    let shapeHtml = '';
+    if (cat.shape === 'circle') {
+      shapeHtml = `<span class="legend-dot" style="background:${cat.color}"></span>`;
+    } else if (cat.shape === 'square') {
+      shapeHtml = `<span style="width:10px;height:10px;background:${cat.color};border-radius:2px;display:inline-block;flex-shrink:0"></span>`;
+    } else if (cat.shape === 'triangle') {
+      shapeHtml = `<svg width="10" height="10" viewBox="0 0 20 20" style="flex-shrink:0"><polygon points="10,0 2,16 18,16" fill="${cat.color}"/></svg>`;
+    }
+    html += `<div class="legend-item" style="font-size:10px">${shapeHtml}<span style="margin-left:4px">${cat.name}</span></div>`;
+  });
+  
+  legendContainer.innerHTML = html;
 }
 
 function fixRegionLabels() {
@@ -387,9 +552,32 @@ function sliderUpdate(chapterIdx) {
       return `translate(${c.x},${c.y})`;
     });
 
-  nodeEnter.append('circle')
-    .attr('class', 'location-circle')
-    .attr('r', nodeRadius);
+  nodeEnter.each(function(d) {
+    const loc = allLocations[d];
+    const shape = loc ? getTypeShape(loc.type) : 'circle';
+    const selection = d3.select(this);
+    
+    if (shape === 'circle') {
+      selection.append('circle')
+        .attr('class', 'location-circle')
+        .attr('r', nodeRadius);
+    } else if (shape === 'square') {
+      const size = nodeRadius * 1.4;
+      selection.append('rect')
+        .attr('class', 'location-square')
+        .attr('width', size)
+        .attr('height', size)
+        .attr('x', -size/2)
+        .attr('y', -size/2)
+        .attr('rx', 2);
+    } else if (shape === 'triangle') {
+      const size = nodeRadius * 1.6;
+      const points = `0,-${size} ${-size*0.866},${size*0.5} ${size*0.866},${size*0.5}`;
+      selection.append('polygon')
+        .attr('class', 'location-triangle')
+        .attr('points', points);
+    }
+  });
 
   nodeEnter.append('text')
     .attr('class', d => {
@@ -401,15 +589,59 @@ function sliderUpdate(chapterIdx) {
 
   const nodeMerge = nodeEnter.merge(nodes);
 
-  nodeMerge.select('circle')
+  nodeMerge.selectAll('circle, rect, polygon')
     .transition().duration(300)
-    .attr('r', d => {
-      const loc = allLocations[d];
-      return Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8);
+    .attr('r', function(d) {
+      if (d3.select(this).node().tagName === 'circle') {
+        const loc = allLocations[d];
+        return Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8);
+      }
+      return null;
+    })
+    .attr('width', function(d) {
+      if (d3.select(this).node().tagName === 'rect') {
+        const loc = allLocations[d];
+        return Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8) * 1.4;
+      }
+      return null;
+    })
+    .attr('height', function(d) {
+      if (d3.select(this).node().tagName === 'rect') {
+        const loc = allLocations[d];
+        return Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8) * 1.4;
+      }
+      return null;
+    })
+    .attr('x', function(d) {
+      if (d3.select(this).node().tagName === 'rect') {
+        const loc = allLocations[d];
+        const size = Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8) * 1.4;
+        return -size/2;
+      }
+      return null;
+    })
+    .attr('y', function(d) {
+      if (d3.select(this).node().tagName === 'rect') {
+        const loc = allLocations[d];
+        const size = Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8) * 1.4;
+        return -size/2;
+      }
+      return null;
+    })
+    .attr('points', function(d) {
+      if (d3.select(this).node().tagName === 'polygon') {
+        const loc = allLocations[d];
+        const size = Math.max(nodeRadius, (loc && loc.importance || 1) * 1.8) * 1.6;
+        return `0,-${size} ${-size*0.866},${size*0.5} ${size*0.866},${size*0.5}`;
+      }
+      return null;
     })
     .attr('fill', d => {
       if (d === activeLoc) return NODE_COLORS.active;
-      if (visitedLocs.has(d)) return NODE_COLORS.visited;
+      if (visitedLocs.has(d)) {
+        const loc = allLocations[d];
+        return loc ? getTypeColor(loc.type) : NODE_COLORS.visited;
+      }
       return NODE_COLORS.unvisited;
     })
     .attr('fill-opacity', d => d === activeLoc ? 1 : (visitedLocs.has(d) ? 0.8 : 0.3))
@@ -421,13 +653,26 @@ function sliderUpdate(chapterIdx) {
     .text(d => {
       const loc = allLocations[d];
       if (!loc || loc.importance < 3) return '';
-      const name = d;
-      return name.length > 5 ? name.substring(0, 5) + '…' : name;
+      // 更短的标签
+      return getShortLabel(d);
     })
     .attr('fill', d => {
       if (d === activeLoc) return '#e8e4dc';
       if (visitedLocs.has(d)) return '#a09888';
       return '#555';
+    })
+    .attr('text-anchor', d => {
+      // 根据位置调整标签对齐方式
+      const c = locationCoords[d];
+      if (!c) return 'start';
+      const centerX = 1000; // 地图中心
+      return c.x < centerX ? 'end' : 'start';
+    })
+    .attr('x', d => {
+      const c = locationCoords[d];
+      if (!c) return 8;
+      const centerX = 1000;
+      return c.x < centerX ? -8 : 8;
     });
 
   nodeMerge.on('mouseover', (e, d) => {
@@ -456,6 +701,124 @@ function sliderUpdate(chapterIdx) {
   nodes.exit().remove();
 
   updatePaths(chapterIdx, visitedArray, activeLoc);
+  updateLabelsVisibility();
+  
+  // 标签避让优化
+  setTimeout(() => fixLocationLabels(), 50);
+}
+
+// 标签避让算法
+function fixLocationLabels() {
+  const labelData = [];
+  mainGroup.selectAll('.location-node').each(function(d) {
+    const text = d3.select(this).select('text.location-label');
+    if (text.empty() || !text.text()) return;
+    
+    const loc = allLocations[d];
+    if (!loc || loc.importance < 3) return;
+    
+    const c = locationCoords[d];
+    if (!c) return;
+    
+    const bbox = text.node().getBBox();
+    const fontSize = parseFloat(text.attr('font-size')) || 9;
+    
+    labelData.push({
+      el: text,
+      name: d,
+      x: +text.attr('x') + c.x,
+      y: +text.attr('y') + c.y - fontSize * 0.3,
+      cx: +text.attr('x') + c.x,
+      cy: +text.attr('y') + c.y - fontSize * 0.3,
+      w: bbox.width + 6,
+      h: bbox.height + 4,
+      importance: loc.importance || 1
+    });
+  });
+  
+  // 按重要度排序，高重要度优先
+  labelData.sort((a, b) => b.importance - a.importance);
+  
+  // 碰撞检测与避让
+  const placedLabels = [];
+  
+  for (const ld of labelData) {
+    let bestX = ld.cx;
+    let bestY = ld.cy;
+    let minOverlap = Infinity;
+    
+    // 尝试多个方向
+    const directions = [
+      { x: 0, y: 0 },      // 原位
+      { x: 15, y: 0 },     // 右
+      { x: -15, y: 0 },    // 左
+      { x: 0, y: -15 },    // 上
+      { x: 0, y: 15 },     // 下
+      { x: 12, y: -12 },   // 右上
+      { x: -12, y: -12 },  // 左上
+      { x: 12, y: 12 },    // 右下
+      { x: -12, y: 12 },   // 左下
+    ];
+    
+    for (const dir of directions) {
+      const testX = ld.cx + dir.x;
+      const testY = ld.cy + dir.y;
+      
+      let overlap = 0;
+      for (const placed of placedLabels) {
+        // 检测矩形碰撞
+        if (testX < placed.x + placed.w/2 && 
+            testX + ld.w > placed.x - placed.w/2 &&
+            testY < placed.y + placed.h/2 && 
+            testY + ld.h > placed.y - placed.h/2) {
+          overlap += 1;
+        }
+      }
+      
+      if (overlap < minOverlap) {
+        minOverlap = overlap;
+        bestX = testX;
+        bestY = testY;
+        if (overlap === 0) break; // 找到无碰撞位置
+      }
+    }
+    
+    // 如果所有方向都有碰撞，隐藏低重要度标签
+    if (minOverlap > 0 && ld.importance < 4) {
+      ld.el.style('opacity', 0);
+    } else {
+      ld.x = bestX;
+      ld.y = bestY;
+      placedLabels.push(ld);
+      
+      // 更新位置
+      const c = locationCoords[ld.name];
+      ld.el.attr('x', bestX - c.x).attr('y', bestY - c.y + 3);
+    }
+  }
+}
+
+function updateLabelsVisibility() {
+  const labels = mainGroup.selectAll('.location-label');
+  labels.style('opacity', d => {
+    const loc = allLocations[d];
+    const importance = loc ? loc.importance : 1;
+    
+    if (currentScale >= 2) {
+      return importance >= 2 ? 1 : 0.5;
+    } else if (currentScale >= 1.5) {
+      return importance >= 3 ? 1 : 0;
+    } else if (currentScale >= 1) {
+      return importance >= 4 ? 1 : 0;
+    } else if (currentScale >= 0.7) {
+      return importance >= 5 ? 1 : 0;
+    } else {
+      return 0;
+    }
+  });
+  
+  const regionLabels = mainGroup.selectAll('.region-label');
+  regionLabels.style('opacity', currentScale >= 0.5 ? 1 : 0);
 }
 
 function updatePaths(chapterIdx, visitedArray, activeLoc) {
@@ -662,8 +1025,73 @@ function toggleAutoPlay() {
   autoPlayTimer = setInterval(playStep, playSpeed);
 }
 
+// 力导向布局：将堆叠在默认坐标的节点自动散布，已定位节点保持固定
+function runForceLayout(callback) {
+  const counts = {};
+  Object.values(locationCoords).forEach(c => {
+    const key = `${Math.round(c.x * 10)},${Math.round(c.y * 10)}`;
+    counts[key] = (counts[key] || 0) + 1;
+  });
+  
+  const isStacked = c => {
+    const key = `${Math.round(c.x * 10)},${Math.round(c.y * 10)}`;
+    return counts[key] > 1;
+  };
+
+  const locNames = Object.keys(locationCoords);
+  const nodes = locNames.map(name => {
+    const c = locationCoords[name];
+    const free = isStacked(c);
+    return {
+      id: name,
+      x: free ? c.x + (Math.random() - 0.5) * 20 : c.x,
+      y: free ? c.y + (Math.random() - 0.5) * 20 : c.y,
+      fx: free ? null : c.x,
+      fy: free ? null : c.y
+    };
+  });
+
+  const links = [];
+  for (let i = 1; i < allChapters.length; i++) {
+    const from = allChapters[i - 1] && allChapters[i - 1].location_name;
+    const to = allChapters[i] && allChapters[i].location_name;
+    if (from && to && from !== to && locNames.includes(from) && locNames.includes(to)) {
+      links.push({ source: from, target: to });
+    }
+  }
+
+  const freeCount = nodes.filter(n => n.fx === null).length;
+  if (freeCount === 0) { callback(); return; }
+
+  let layoutDone = false;
+
+  const sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(60).strength(0.02))
+    .force('charge', d3.forceManyBody().strength(-40))
+    .force('collision', d3.forceCollide().radius(18))
+    .force('center', d3.forceCenter(1000, 700))
+    .alphaDecay(0.06)
+    .alphaMin(0.005)
+    .alpha(0.6);
+
+  sim.on('end', () => {
+    if (layoutDone) return;
+    layoutDone = true;
+    nodes.forEach(n => { locationCoords[n.id] = { x: n.x, y: n.y }; });
+    callback();
+  });
+
+  setTimeout(() => {
+    if (layoutDone) return;
+    layoutDone = true;
+    sim.stop();
+    nodes.forEach(n => { locationCoords[n.id] = { x: n.x, y: n.y }; });
+    callback();
+  }, 4000);
+}
+
 function resetView() {
-  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  autoFitMap();
 }
 
 if (document.readyState === 'loading') {
